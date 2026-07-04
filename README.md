@@ -1,1 +1,15 @@
 # Dividendreport
+
+红利股分析报告归档 · Dividend income equity analysis reports.
+
+由 `dividend-income-equity-analysis` 技能自动发布。每份报告都标注**数据基准日**与**对应企业**。
+
+_This is research and archival material, not personalized investment advice._
+
+## 报告索引 / Report Index
+
+| 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 结论 Summary |
+|---|---|---|---|---|---|
+| 2026-07-03 | 中银香港 BOC Hong Kong | 2388.HK | HKEX | [报告](reports/2388.HK/2026-07-03-中银香港-BOC-Hong-Kong-2388.HK.md) | Core income; net yield ~4.9%; 56% payout, CET1 24%; dividend very safe, forward growth capped by NIM compression. |
+
+最近更新 / Last updated: 2026-07-04 13:58 (Asia/Hong_Kong)
