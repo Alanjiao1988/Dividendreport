@@ -12,6 +12,17 @@
   },
   {
     "as_of_date": "2026-07-03",
+    "ticker": "GSK.L",
+    "company": "GSK plc",
+    "exchange": "LSE",
+    "path": "reports/GSK.L/2026-07-03-GSK-plc-GSK.L.md",
+    "summary": "Quality income watchlist; current yield ~3.3%, buy zone below £17.50.",
+    "score": "72 / B",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-07-04T23:48:39+08:00"
+  },
+  {
+    "as_of_date": "2026-07-03",
     "ticker": "SHEL",
     "company": "Shell plc",
     "exchange": "NYSE (ADS)",
