@@ -1,11 +1,24 @@
-[{
-  "as_of_date": "2026-07-03",
-  "ticker": "2388.HK",
-  "company": "中银香港 BOC Hong Kong",
-  "exchange": "HKEX",
-  "path": "reports/2388.HK/2026-07-03-中银香港-BOC-Hong-Kong-2388.HK.md",
-  "summary": "Core income; net yield ~4.9%; 56% payout, CET1 24%; dividend very safe, forward growth capped by NIM compression.",
-  "score": "77 / B",
-  "portfolio_role": "Core income",
-  "published_at": "2026-07-04T13:58:27+08:00"
-}]
+[
+  {
+    "as_of_date": "2026-07-03",
+    "ticker": "2388.HK",
+    "company": "中银香港 BOC Hong Kong",
+    "exchange": "HKEX",
+    "path": "reports/2388.HK/2026-07-03-中银香港-BOC-Hong-Kong-2388.HK.md",
+    "summary": "Core income; net yield ~4.9%; 56% payout, CET1 24%; dividend very safe, forward growth capped by NIM compression.",
+    "score": "77 / B",
+    "portfolio_role": "Core income",
+    "published_at": "2026-07-04T13:58:27+08:00"
+  },
+  {
+    "as_of_date": "2026-07-02",
+    "ticker": "AZN",
+    "company": "AstraZeneca PLC",
+    "exchange": "NYSE",
+    "path": "reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md",
+    "summary": "Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a growth compounder, not income at .",
+    "score": "72 / B",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-07-04T23:19:43+08:00"
+  }
+]

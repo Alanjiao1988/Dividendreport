@@ -11,5 +11,6 @@ _This is research and archival material, not personalized investment advice._
 | 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 结论 Summary |
 |---|---|---|---|---|---|
 | 2026-07-03 | 中银香港 BOC Hong Kong | 2388.HK | HKEX | [报告](reports/2388.HK/2026-07-03-中银香港-BOC-Hong-Kong-2388.HK.md) | Core income; net yield ~4.9%; 56% payout, CET1 24%; dividend very safe, forward growth capped by NIM compression. |
+| 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md) | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a growth compounder, not income at . |
 
-最近更新 / Last updated: 2026-07-04 13:58 (Asia/Hong_Kong)
+最近更新 / Last updated: 2026-07-04 23:19 (Asia/Hong_Kong)
