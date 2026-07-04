@@ -11,6 +11,17 @@
     "published_at": "2026-07-04T13:58:27+08:00"
   },
   {
+    "as_of_date": "2026-07-03",
+    "ticker": "SHEL",
+    "company": "Shell plc",
+    "exchange": "NYSE (ADS)",
+    "path": "reports/SHEL/2026-07-03-Shell-plc-SHEL.md",
+    "summary": "Grade B cyclical income; 0% UK withholding; dividend safe (~3x FCF cover); at ~$78 yield ~3.7% below hist median - buy on weakness (<~$71).",
+    "score": "79 / B",
+    "portfolio_role": "Cyclical income",
+    "published_at": "2026-07-04T23:43:03+08:00"
+  },
+  {
     "as_of_date": "2026-07-02",
     "ticker": "AZN",
     "company": "AstraZeneca PLC",
