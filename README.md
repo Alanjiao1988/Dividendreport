@@ -17,9 +17,10 @@ _This is research and archival material, not personalized investment advice._
 | 2026-07-03 | 中银香港 BOC Hong Kong | 2388.HK | HKEX | [报告](reports/2388.HK/2026-07-03-中银香港-BOC-Hong-Kong-2388.HK.md) | Core income; net yield ~4.9%; 56% payout, CET1 24%; divide[...] |
 | 2026-07-03 | GSK plc | GSK.L | LSE | [报告](reports/GSK.L/2026-07-03-GSK-plc-GSK.L.md) | Quality income watchlist; current yield ~3.3%, buy zone below £17.50. |
 | 2026-07-03 | Shell plc | SHEL | NYSE (ADS) | [报告](reports/SHEL/2026-07-03-Shell-plc-SHEL.md) | Grade B cyclical income; 0% UK withholding; dividend safe (~3x FCF cover); at ~$78 yield ~3.7% [...] |
+| 2026-07-02 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](reports/2318.HK/2026-07-02-中国平安-2318.HK.md) | Grade B core income; 10% 预扣; 13 年连增、派息率仅营运利润 36%、覆盖 2.7x; 现价 HK$52.30 净息率 5.25% 处合理持有区上段, 累积区 HK$38.7–42.9; -30% 回撤为行业贝塔非分红危机. |
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md) | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a[...] |
 
-最近更新 / Last updated: 2026-07-06 21:05 (Asia/Hong_Kong)
+最近更新 / Last updated: 2026-07-06 21:29 (Asia/Hong_Kong)
 
 ---
 

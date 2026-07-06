@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-07-02",
+    "ticker": "2318.HK",
+    "company": "中国平安 Ping An Insurance",
+    "exchange": "HKEX",
+    "path": "reports/2318.HK/2026-07-02-中国平安-2318.HK.md",
+    "summary": "Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered.",
+    "score": "75 / B",
+    "portfolio_role": "Core income",
+    "published_at": "2026-07-06T21:29:13+08:00"
+  },
+  {
     "as_of_date": "2026-07-06",
     "ticker": "6823.HK",
     "company": "香港电讯 HKT Trust and HKT Limited",
