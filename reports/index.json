@@ -1,6 +1,17 @@
 [
   {
     "as_of_date": "2026-07-06",
+    "ticker": "6823.HK",
+    "company": "香港电讯 HKT Trust and HKT Limited",
+    "exchange": "HKEX",
+    "path": "reports/6823.HK/2026-07-06-香港电讯-6823.HK.md",
+    "summary": "Grade B core income; 0% withholding; policy = 100% payout of AFF, DPS raised 14 straight years (FY2025 81.77 HK cents, +3.8%); at HK$11.87 net yield 6.9% — fair/hold zone; accumulate HK$10.93-11.68, strong buy <=HK$10.93; yellow flags: zero retention + net debt/EBITDA ~3.0x.",
+    "score": "72 / B",
+    "portfolio_role": "Core income",
+    "published_at": "2026-07-06T21:05:00+08:00"
+  },
+  {
+    "as_of_date": "2026-07-06",
     "ticker": "1088.HK",
     "company": "中国神华 China Shenhua Energy",
     "exchange": "HKEX",

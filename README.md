@@ -10,6 +10,7 @@ _This is research and archival material, not personalized investment advice._
 
 | 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 结论 Summary |
 |---|---|---|---|---|---|
+| 2026-07-06 | 香港电讯 HKT Trust | 6823.HK | HKEX | [报告](reports/6823.HK/2026-07-06-香港电讯-6823.HK.md) | Grade B core income; 0% 预扣税; 100% AFF 派出、DPS 连续 14 年递增; 现价 HK$11.87 净息率 6.9% 处合理持有区, 累积区 HK$10.93–11.68. |
 | 2026-07-06 | 中国神华 China Shenhua Energy | 1088.HK | HKEX | [报告](reports/1088.HK/2026-07-06-中国神华-1088.HK.md) | Grade C watchlist; 65% payout floor, zero cut in 18 yrs, net cash[...] |
 | 2026-07-06 | 香港中华煤气 Towngas | 0003.HK | HKEX | [报告](reports/0003.HK/2026-07-06-香港中华煤气-0003.HK.md) | C级观察仓；冻结股息(13年零增长)、FCF覆盖0.8x；当[...] |
 | 2026-07-06 | British American Tobacco | BTI | NYSE (ADR) | [报告](reports/BTI/2026-07-06-British-American-Tobacco-BTI.md) | Grade B core-income quality; 0% UK WHT; progressive dividend (FY2025[...] |
@@ -18,7 +19,7 @@ _This is research and archival material, not personalized investment advice._
 | 2026-07-03 | Shell plc | SHEL | NYSE (ADS) | [报告](reports/SHEL/2026-07-03-Shell-plc-SHEL.md) | Grade B cyclical income; 0% UK withholding; dividend safe (~3x FCF cover); at ~$78 yield ~3.7% [...] |
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md) | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a[...] |
 
-最近更新 / Last updated: 2026-07-06 17:07 (Asia/Hong_Kong)
+最近更新 / Last updated: 2026-07-06 21:05 (Asia/Hong_Kong)
 
 ---
 
