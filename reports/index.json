@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-07-06",
+    "ticker": "1088.HK",
+    "company": "中国神华 China Shenhua Energy",
+    "exchange": "HKEX",
+    "path": "reports/1088.HK/2026-07-06-中国神华-1088.HK.md",
+    "summary": "Grade C watchlist; 65% payout floor, zero cut in 18 yrs, net cash, but 2025 FCF cover only 0.68x (capex peak); at HK$46.08 net yield only ~4.5% — historically compressed; buy zone <HK$28.3.",
+    "score": "64 / C",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-07-06T17:07:15+08:00"
+  },
+  {
     "as_of_date": "2026-07-03",
     "ticker": "2388.HK",
     "company": "中银香港 BOC Hong Kong",
