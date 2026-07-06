@@ -10,6 +10,7 @@ _This is research and archival material, not personalized investment advice._
 
 | 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 结论 Summary |
 |---|---|---|---|---|---|
+| 2026-07-06 | 华润电力 China Resources Power | 836.HK | HKEX | [报告](reports/836.HK/2026-07-06-华润电力-836.HK.md) | C 级观察名单; 0% 预扣税; 40% 净利润派息率精确执行, TTM 净息率 6.5% 无水分; 扩张期 FCF 为负、净负债/权益 150.8%; 现价 HK$17.31 处合理持有区, 积累区 12.0–14.7, 强买 ≤12.0; 否决未触发. |
 | 2026-07-06 | 香港电讯 HKT Trust | 6823.HK | HKEX | [报告](reports/6823.HK/2026-07-06-香港电讯-6823.HK.md) | Grade B core income; 0% 预扣税; 100% AFF 派出、DPS 连续 14 年递增; 现价 HK$11.87 净息率 6.9% 处合理持有区, 累积区 HK$10.93–11.68. |
 | 2026-07-06 | 中国神华 China Shenhua Energy | 1088.HK | HKEX | [报告](reports/1088.HK/2026-07-06-中国神华-1088.HK.md) | Grade C watchlist; 65% payout floor, zero cut in 18 yrs, net cash[...] |
 | 2026-07-06 | 香港中华煤气 Towngas | 0003.HK | HKEX | [报告](reports/0003.HK/2026-07-06-香港中华煤气-0003.HK.md) | C级观察仓；冻结股息(13年零增长)、FCF覆盖0.8x；当[...] |
@@ -20,7 +21,7 @@ _This is research and archival material, not personalized investment advice._
 | 2026-07-02 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](reports/2318.HK/2026-07-02-中国平安-2318.HK.md) | Grade B core income; 10% 预扣; 13 年连增、派息率仅营运利润 36%、覆盖 2.7x; 现价 HK$52.30 净息率 5.25% 处合理持有区上段, 累积区 HK$38.7–42.9; -30% 回撤为行业贝塔非分红危机. |
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md) | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a[...] |
 
-最近更新 / Last updated: 2026-07-06 21:29 (Asia/Hong_Kong)
+最近更新 / Last updated: 2026-07-06 21:59 (Asia/Hong_Kong)
 
 ---
 

@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-07-06",
+    "ticker": "836.HK",
+    "company": "华润电力 China Resources Power",
+    "exchange": "HKEX",
+    "path": "reports/836.HK/2026-07-06-华润电力-836.HK.md",
+    "summary": "Grade C watchlist; 0% withholding (HK-incorporated); 40% payout ratio executed precisely (FY2025 DPS HK$1.127, 40.2%); TTM net yield 6.5% with no one-off inflation; negative est. FCF in capex-heavy build-out, net debt/equity 150.8%; at HK$17.31 in fair/hold zone, accumulate 12.0-14.7, strong buy <=12.0; veto not triggered.",
+    "score": "56 / C",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-07-06T21:59:28+08:00"
+  },
+  {
     "as_of_date": "2026-07-02",
     "ticker": "2318.HK",
     "company": "中国平安 Ping An Insurance",
