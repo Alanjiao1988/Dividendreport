@@ -1,25 +1,25 @@
 [
   {
-    "as_of_date": "2026-07-06",
-    "ticker": "836.HK",
-    "company": "华润电力 China Resources Power",
+    "as_of_date": "2026-07-07",
+    "ticker": "0008.HK",
+    "company": "PCCW Limited 电讯盈科",
     "exchange": "HKEX",
-    "path": "reports/836.HK/2026-07-06-华润电力-836.HK.md",
-    "summary": "Grade C watchlist; 0% withholding (HK-incorporated); 40% payout ratio executed precisely (FY2025 DPS HK$1.127, 40.2%); TTM net yield 6.5% with no one-off inflation; negative est. FCF in capex-heavy build-out, net debt/equity 150.8%; at HK$17.31 in fair/hold zone, accumulate 12.0-14.7, strong buy <=12.0; veto not triggered.",
-    "score": "56 / C",
+    "path": "reports/0008.HK/2026-07-07-PCCW-Limited-电讯盈科-0008.HK.md",
+    "summary": "Net yield ~7.0%; stable HKT-funded DPS, leverage watch; accumulation zone HK.25-4.78.",
+    "score": "69 / C",
     "portfolio_role": "Watchlist",
-    "published_at": "2026-07-06T21:59:28+08:00"
+    "published_at": "2026-07-07T11:05:45+08:00"
   },
   {
-    "as_of_date": "2026-07-02",
-    "ticker": "2318.HK",
-    "company": "中国平安 Ping An Insurance",
+    "as_of_date": "2026-07-06",
+    "ticker": "1088.HK",
+    "company": "中国神华 China Shenhua Energy",
     "exchange": "HKEX",
-    "path": "reports/2318.HK/2026-07-02-中国平安-2318.HK.md",
-    "summary": "Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered.",
-    "score": "75 / B",
-    "portfolio_role": "Core income",
-    "published_at": "2026-07-06T21:29:13+08:00"
+    "path": "reports/1088.HK/2026-07-06-中国神华-1088.HK.md",
+    "summary": "Grade C watchlist; 65% payout floor, zero cut in 18 yrs, net cash, but 2025 FCF cover only 0.68x (capex peak); at HK$46.08 net yield only ~4.5% — historically compressed; buy zone <HK$28.3.",
+    "score": "64 / C",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-07-06T17:07:15+08:00"
   },
   {
     "as_of_date": "2026-07-06",
@@ -34,14 +34,14 @@
   },
   {
     "as_of_date": "2026-07-06",
-    "ticker": "1088.HK",
-    "company": "中国神华 China Shenhua Energy",
+    "ticker": "836.HK",
+    "company": "华润电力 China Resources Power",
     "exchange": "HKEX",
-    "path": "reports/1088.HK/2026-07-06-中国神华-1088.HK.md",
-    "summary": "Grade C watchlist; 65% payout floor, zero cut in 18 yrs, net cash, but 2025 FCF cover only 0.68x (capex peak); at HK$46.08 net yield only ~4.5% — historically compressed; buy zone <HK$28.3.",
-    "score": "64 / C",
+    "path": "reports/836.HK/2026-07-06-华润电力-836.HK.md",
+    "summary": "Grade C watchlist; 0% withholding (HK-incorporated); 40% payout ratio executed precisely (FY2025 DPS HK$1.127, 40.2%); TTM net yield 6.5% with no one-off inflation; negative est. FCF in capex-heavy build-out, net debt/equity 150.8%; at HK$17.31 in fair/hold zone, accumulate 12.0-14.7, strong buy <=12.0; veto not triggered.",
+    "score": "56 / C",
     "portfolio_role": "Watchlist",
-    "published_at": "2026-07-06T17:07:15+08:00"
+    "published_at": "2026-07-06T21:59:28+08:00"
   },
   {
     "as_of_date": "2026-07-03",
@@ -75,6 +75,17 @@
     "score": "79 / B",
     "portfolio_role": "Cyclical income",
     "published_at": "2026-07-04T23:43:03+08:00"
+  },
+  {
+    "as_of_date": "2026-07-02",
+    "ticker": "2318.HK",
+    "company": "中国平安 Ping An Insurance",
+    "exchange": "HKEX",
+    "path": "reports/2318.HK/2026-07-02-中国平安-2318.HK.md",
+    "summary": "Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered.",
+    "score": "75 / B",
+    "portfolio_role": "Core income",
+    "published_at": "2026-07-06T21:29:13+08:00"
   },
   {
     "as_of_date": "2026-07-02",

@@ -4,4 +4,4 @@
 
 | 数据基准日 As-of | 报告 Report | 结论 Summary | 评分 Score | 组合角色 Role |
 |---|---|---|---|---|
-| 2026-07-06 | [2026-07-06-华润电力-836.HK.md](2026-07-06-华润电力-836.HK.md) | C 级观察名单；0% 预扣税；40% 净利润派息率精确执行，TTM 净息率 6.5% 无水分；重资本扩张期 FCF 为负、净负债/权益 150.8%；现价 HK$17.31 处合理持有区，积累区 12.0–14.7，强买 ≤12.0；否决未触发。 | 56 / C | Watchlist |
+| 2026-07-06 | [2026-07-06-华润电力-836.HK.md](2026-07-06-华润电力-836.HK.md) | Grade C watchlist; 0% withholding (HK-incorporated); 40% payout ratio executed precisely (FY2025 DPS HK$1.127, 40.2%); TTM net yield 6.5% with no one-off inflation; negative est. FCF in capex-heavy build-out, net debt/equity 150.8%; at HK$17.31 in fair/hold zone, accumulate 12.0-14.7, strong buy <=12.0; veto not triggered. | 56 / C | Watchlist |
