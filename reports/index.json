@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-07-17",
+    "ticker": "0005.HK",
+    "company": "汇丰控股 HSBC Holdings plc",
+    "exchange": "HKEX",
+    "path": "reports/0005.HK/2026-07-17-汇丰控股-HSBC-Holdings-0005.HK.md",
+    "summary": "Grade B cyclical income; 0% UK withholding; 50% payout of EPS ex-notables 2026-28, ~2x earnings cover, CET1 14.0%; at HK$155.6 net yield only 3.8% — below 5-yr range low after ~65% rally; fair/hold HK$87-122, accumulate 73-87, strong buy <=73; veto not triggered.",
+    "score": "74 / B",
+    "portfolio_role": "Cyclical income (watchlist at current price)",
+    "published_at": "2026-07-18T23:05:00+08:00"
+  },
+  {
     "as_of_date": "2026-07-07",
     "ticker": "0008.HK",
     "company": "PCCW Limited 电讯盈科",
