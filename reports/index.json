@@ -1,6 +1,17 @@
 [
   {
     "as_of_date": "2026-07-17",
+    "ticker": "0883.HK",
+    "company": "中国海洋石油 CNOOC Limited",
+    "exchange": "HKEX",
+    "path": "reports/0883.HK/2026-07-18-中国海洋石油-0883.HK.md",
+    "summary": "Grade B cyclical income; 10% withholding assumed (PRC tax-resident red-chip, verify broker statement); payout floor >=45% for 2025-27, FY2025 DPS HK$1.28 (-9% YoY), FCF cover 1.75x, net cash; at HK$22.72 net yield 5.1% — below 5-yr yield band low after rally; fair/hold HK$13.5-17.7, accumulate 10.4-13.5, strong buy <=10.4; veto not triggered.",
+    "score": "75 / B",
+    "portfolio_role": "Cyclical income (watchlist at current price)",
+    "published_at": "2026-07-18T23:58:00+08:00"
+  },
+  {
+    "as_of_date": "2026-07-17",
     "ticker": "0144.HK",
     "company": "招商局港口 China Merchants Port Holdings",
     "exchange": "HKEX",
