@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-07-21",
+    "ticker": "GSK.L",
+    "company": "GSK plc",
+    "exchange": "LSE",
+    "path": "reports/GSK.L/2026-07-21-GSK-plc-GSK.L.md",
+    "summary": "Grade B quality income watchlist; 0% UK withholding; progressive dividend, FY2025 DPS 66p (+8.2% YoY), 2026 guided 70p, FCF cover 1.53x (1.92x ex-Zantac), net debt/EBITDA ~1.3x, £2bn buyback completed (genuine ~3.1% share reduction); at 1,880.5p ($50.72 ADR) net yield only 3.5% — above the disciplined fair-value ceiling; fair/hold 1,167-1,750p, accumulate 917-1,167p, strong buy <=917p; veto not triggered.",
+    "score": "76 / B",
+    "portfolio_role": "Watchlist (quality income, wrong price for entry)",
+    "published_at": "2026-07-21T22:30:00+08:00"
+  },
+  {
     "as_of_date": "2026-07-17",
     "ticker": "0883.HK",
     "company": "中国海洋石油 CNOOC Limited",
