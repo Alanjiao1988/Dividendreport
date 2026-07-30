@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-07-30",
+    "ticker": "TTE",
+    "company": "TotalEnergies SE",
+    "exchange": "NYSE / Euronext Paris",
+    "path": "reports/TTE/2026-07-30-TotalEnergies-SE-TTE.md",
+    "summary": "Grade B core income on watchlist; French WHT only 12.8% for individuals (10% under HK treaty) and the NYSE line converted from ADR to ordinary shares on 2025-12-08 — no depositary fee; progressive DPS uncut through 2020 and 2025, FY2025 €3.40 (+5.6%), FY2026 run-rate €3.60 (+5.9%, only 2 of 4 interims declared), FCF cover 1.26x even in trough 2025, gearing 13.1%, share count −19% in five years; at €75.68 / $86.75 net yield only 4.15% — above the fair-value ceiling because Brent spiked 25% in a month to $89.74; fair/hold €54.60-69.76 ($62.67-80.08), accumulate €49.14-54.60 ($56.40-62.67), strong buy <=€49.14 ($56.40); veto not triggered.",
+    "score": "74 / B",
+    "portfolio_role": "Core income (watchlist at current price)",
+    "published_at": "2026-07-30T23:20:00+08:00"
+  },
+  {
     "as_of_date": "2026-07-21",
     "ticker": "GSK.L",
     "company": "GSK plc",
