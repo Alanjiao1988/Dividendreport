@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-07-31",
+    "ticker": "SHEL",
+    "company": "Shell plc",
+    "exchange": "NYSE (ADS)",
+    "path": "reports/SHEL/2026-07-31-Shell-plc-SHEL.md",
+    "summary": "Grade B cyclical income; 0% UK withholding and the depositary currently charges no fee; dividend uncut and raised 6 straight years, Q2 2026 declared $0.7812/ADS (run-rate +9.1% YoY), costing only 19% of mid-cycle CFFO with 2.8x operating-FCF cover even in trough 2025, gearing 18.7% (net debt $52.6bn → $41.8bn in one quarter), share count −27.5% in 4.5 years with no scrip and no issuance; but Q2 2026 adjusted earnings $9.84bn carry a Hormuz war premium (Brent $92 vs EIA 2027 forecast $65) and at $90.51 near the all-time high net yield is only 3.27% — a four-year low; N normalized to mid-cycle Brent $70 = $3.40/ADS; fair/hold $52.31-68.00, accumulate $48.55-52.31, strong buy <=$48.55; veto not triggered — the risk here is overpaying, not a dividend cut. Supersedes the 2026-07-03 report.",
+    "score": "77 / B",
+    "portfolio_role": "Cyclical income (avoid adding at current price)",
+    "published_at": "2026-07-31T00:00:00+08:00"
+  },
+  {
     "as_of_date": "2026-07-30",
     "ticker": "TTE",
     "company": "TotalEnergies SE",
