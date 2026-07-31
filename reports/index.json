@@ -1,6 +1,17 @@
 [
   {
     "as_of_date": "2026-07-31",
+    "ticker": "0883.HK",
+    "company": "中国海洋石油 CNOOC Limited",
+    "exchange": "HKEX",
+    "path": "reports/0883.HK/2026-07-31-中国海洋石油-0883.HK.md",
+    "summary": "Grade B cyclical income — hold, not an add point. Withholding upgraded from \"assumed\" to confirmed 10%: the announcement exempts \"natural person\" holders, but shares registered via HKSCC Nominees are deemed non-resident-enterprise holdings, so every broker-held retail position (IBKR included) suffers the 10% PRC EIT — the same mechanism already broker-observed on 0941.HK. 0883 has no tax edge over PetroChina or China Mobile. TTM net yield 4.84% at HK$23.82 (gross 5.37%), normalized 5.29%. The business is near-flawless: net cash RMB 148.7bn (D/E 0.12), all-in cost $27.9/boe (lowest global quartile), production 573→777 MMBOE in five years (7.9% CAGR) with reserves +6.9% and >100% replacement, payout floor lifted 40%→45% for 2025-27, zero dilution since the Apr-2022 A-share IPO, no scrip/DRIP, FCF cover 1.43-3.20x in every one of five years. The problem is price and cycle position: the stock sits 0.3% below its 2026-01-28 all-time high of HK$23.90 while FY2026 earnings carry a one-off Hormuz premium — Brent ran $61 (Jan) → $118 (Mar) → $82 (Jul) after the strait closed on 2026-02-28 and reopened on a US-Iran deal, and EIA's July STEO cut 2027 Brent to $64.76 from $79.39 one month earlier. FY2026 Base net DPS HK$1.53 (6.42%) is transient and must not anchor entry; FY2027 Base falls back to HK$1.152 (4.84%) — exactly today's TTM, i.e. normalization is already fully priced. FY2027-28 Bear (realized $55-56) leaves FCF cover at 0.83x/0.71x, funded from the cash pile. N=HK$1.26 (mid_cycle at realized $68/bbl, 840 MMBOE — independently equal to the 5-yr median gross HK$1.40 × 0.9), B=HK$0.88, r 7.5-10%; fair/hold HK$12.60-16.80, accumulate 8.80-12.60, strong buy <=8.80 — price must fall 29.5% to reach fair. Veto not triggered; the risk is overpaying, not a dividend cut. Watch H1 2026 results (late Aug 2026), whether 2027 Brent really settles at $65, and the 45% policy's expiry at end-2027. Supersedes the 2026-07-17 report.",
+    "score": "74 / B",
+    "portfolio_role": "Cyclical income (avoid adding at current price)",
+    "published_at": "2026-07-31T18:40:00+08:00"
+  },
+  {
+    "as_of_date": "2026-07-31",
     "ticker": "0941.HK",
     "company": "中国移动 China Mobile",
     "exchange": "HKEX",
