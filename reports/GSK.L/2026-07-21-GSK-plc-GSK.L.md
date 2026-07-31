@@ -1,3 +1,14 @@
+<!-- dividend-report-meta
+ticker: GSK.L
+company: GSK plc
+exchange: LSE
+as_of_date: 2026-07-21
+published_at: 2026-07-21T22:30:00+08:00
+generated_by: dividend-income-equity-analysis skill
+-->
+
+> **企业 / Company:** GSK plc (GSK.L) · **交易所 / Exchange:** LSE · **数据基准日 / As-of:** 2026-07-21 · **发布时间 / Published:** 2026-07-21 22:30 (Asia/Hong_Kong)
+
 # GSK plc — Dividend Income Equity Analysis
 
 *Full analysis per `dividend-income-equity-analysis` skill. As-of date: 2026-07-21. Prices are delayed-quote, not real-time. Research and archival material, not personalized investment advice.*

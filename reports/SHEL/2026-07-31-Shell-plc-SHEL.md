@@ -1,3 +1,14 @@
+<!-- dividend-report-meta
+ticker: SHEL
+company: Shell plc
+exchange: NYSE (ADS)
+as_of_date: 2026-07-31
+published_at: 2026-07-31T00:00:00+08:00
+generated_by: dividend-income-equity-analysis skill
+-->
+
+> **企业 / Company:** Shell plc (SHEL) · **交易所 / Exchange:** NYSE (ADS) · **数据基准日 / As-of:** 2026-07-31 · **发布时间 / Published:** 2026-07-31 00:00 (Asia/Hong_Kong)
+
 # Shell plc (NYSE: SHEL / LSE: SHEL.L) — Dividend Income Analysis
 
 **数据基准日 / Analysis date: 2026-07-31 | Price as-of: 2026-07-30 NYSE close | Investor assumption: HK resident individual, ordinary brokerage account**

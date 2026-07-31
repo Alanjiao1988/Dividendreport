@@ -1,3 +1,14 @@
+<!-- dividend-report-meta
+ticker: PBR
+company: Petróleo Brasileiro S.A. — Petrobras
+exchange: NYSE (ADR)
+as_of_date: 2026-07-31
+published_at: 2026-07-31T10:30:00+08:00
+generated_by: dividend-income-equity-analysis skill
+-->
+
+> **企业 / Company:** Petróleo Brasileiro S.A. — Petrobras (PBR) · **交易所 / Exchange:** NYSE (ADR) · **数据基准日 / As-of:** 2026-07-31 · **发布时间 / Published:** 2026-07-31 10:30 (Asia/Hong_Kong)
+
 # Petróleo Brasileiro S.A. — Petrobras (NYSE: PBR / PBR.A) — Dividend Income Analysis
 
 **数据基准日 / Analysis date: 2026-07-31 (price as-of 2026-07-30 close) | Investor assumption: HK resident individual, ordinary brokerage account, ADR route**
