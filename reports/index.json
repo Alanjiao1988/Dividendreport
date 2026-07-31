@@ -1,6 +1,17 @@
 [
   {
     "as_of_date": "2026-07-31",
+    "ticker": "VZ",
+    "company": "Verizon Communications Inc.",
+    "exchange": "NYSE",
+    "path": "reports/VZ/2026-07-31-Verizon-VZ.md",
+    "summary": "Grade B core income — quality yes, price no. The 30% US withholding turns a 6.14% headline gross yield into 4.30% net for an HK holder, the single biggest structural drag. The dividend itself is close to unimpeachable: 20 straight annual increases (latest +2.5% to $0.7075/qtr in Jan 2026), no scrip, no ATM, and five years of cumulative FCF $92.0bn covering cumulative dividends $55.0bn (1.67x) with not one year funded by debt, asset sales or issuance — debt growth financed spectrum and M&A, never the payout. 2026 is a genuine inflection under Dan Schulman: 2Q26 adjusted EBITDA $13.7bn (+7.2%) and 40.1% margin are both all-time records, 1H26 FCF $10.2bn (+16.0%), postpaid phone churn 0.97%->0.92%, broadband at 17.1m connections after the Frontier close on 2026-01-20 ($9.8bn cash + $12.9bn assumed debt), a $9bn opex/capex savings programme, and the first real buyback in years — shares 4,217m->4,155m (-1.5%) in six months, 2026 target raised to $4.5bn. Guidance raised twice this year: FY26 FCF $21.9-22.1bn (+9-10%), adj EPS $4.99-5.04, capex $16.0-16.5bn. The catch: wireless service revenue guided ~flat, total revenue -0.7% in 2Q26, GAAP net income -22.9%, net unsecured debt/EBITDA up 2.2x->2.5x on Frontier, LTM interest expense $7.35bn, and a reported but unsigned ~$10bn EchoStar AWS-3 spectrum deal that would defer deleveraging and buybacks. Because buybacks shrink the count, total dividend cash cost stays flat at ~$11.7bn across all three scenarios — per-share growth is self-funded; even in Bear (FCF $18.5bn, $5bn/yr debt paydown) the payout is 92% of distributable cash, so the rational cut is the buyback, not the dividend. N=$2.02 net (three_year_base_average, capex normalized to $17.0-17.5bn, cross-checked against mid-cycle $2.05), B=$1.98 (frozen, not cut), r 4.5-5.5% net (one notch below the 5-7% telecom anchor, crediting the ~2.3%/yr buyback yield); fair/hold $36.91-44.89, accumulate 36.00-36.91, strong buy <=36.00. At $46.11 the stock sits 2.7% above the fair upper bound after a ~6% one-week pop on Q2 results and the $1bn+ Google dark-fiber deal. Veto not triggered — the risk is overpaying, not a dividend cut. Withholding is legal_structure-assumed, not broker-observed.",
+    "score": "75 / B",
+    "portfolio_role": "Core income candidate (build only below $44.89)",
+    "published_at": "2026-07-31T22:30:00+08:00"
+  },
+  {
+    "as_of_date": "2026-07-31",
     "ticker": "0883.HK",
     "company": "中国海洋石油 CNOOC Limited",
     "exchange": "HKEX",
