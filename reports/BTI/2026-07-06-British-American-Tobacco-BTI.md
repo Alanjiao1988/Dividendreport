@@ -1,3 +1,14 @@
+<!-- dividend-report-meta
+ticker: BTI
+company: British American Tobacco
+exchange: NYSE (ADR)
+as_of_date: 2026-07-06
+published_at: 2026-07-31T11:09:11+08:00
+generated_by: dividend-income-equity-analysis skill
+-->
+
+> **企业 / Company:** British American Tobacco (BTI) · **交易所 / Exchange:** NYSE (ADR) · **数据基准日 / As-of:** 2026-07-06 · **发布时间 / Published:** 2026-07-31 11:09 (Asia/Hong_Kong)
+
 # BTI（British American Tobacco）红利收益分析
 
 **分析日期：2026-07-06 ｜ 框架：dividend-income-equity-analysis（税后现金分红视角）**

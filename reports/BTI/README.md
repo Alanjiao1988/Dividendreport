@@ -1,7 +1,7 @@
-# British American Tobacco p.l.c. (BTI)
+# British American Tobacco (BTI)
 
-交易所 Exchange: NYSE (ADR, 1:1) / LSE 主上市 (BATS.L)
+交易所 Exchange: NYSE (ADR)
 
 | 数据基准日 As-of | 报告 Report | 结论 Summary | 评分 Score | 组合角色 Role |
 |---|---|---|---|---|
-| 2026-07-06 | [2026-07-06-British-American-Tobacco-BTI.md](2026-07-06-British-American-Tobacco-BTI.md) | Grade B core-income quality; 0% UK withholding; progressive dividend (FY2025 DPS 245.04p, +2.0%, six straight raises), normalized FCF cover ~1.4x; but at $61.76 net yield only ~5.3% — below its 5-yr yield band; buy zone <$54.6, wait for pullback. | 73 / B | Core income（当前价观望）|
+| 2026-07-06 | [2026-07-06-British-American-Tobacco-BTI.md](2026-07-06-British-American-Tobacco-BTI.md) | 分红质地为全球烟草中最优之一——数十年未减息、正常化 FCF 覆盖约 1.4x、杠杆回到目标区间、回购逐年加码；FY2025 DPS 上调 2.0% 至 245.04p，六年 CAGR 约 2.6% 且无一年下调，季度等额支付、无特别股息噪音。英国注册公司，股息预扣税 0%，毛息=净息。但 2025–26 股价大涨（52 周约 +35%，接近历史高位区），股息率已从 2023–24 年的 8–10% 压缩至约 5.3%。公允区 $43.7–54.6（3,267–4,084p），积累区 $41.5–43.7，强力买入 ≤$41.5；当前 $61.76 高于公允区上限，纯收息角度当前价格没有安全边际。质地打 B，价格打『等』。Veto 未触发。 | 73 / B | Core income（质地）；当前价高于买入区，新资金建议等待 |
