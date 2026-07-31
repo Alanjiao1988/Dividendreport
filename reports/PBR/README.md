@@ -1,0 +1,7 @@
+# Petróleo Brasileiro S.A. — Petrobras (PBR)
+
+交易所 Exchange: NYSE (ADR, 1 ADR = 2 shares) — PBR (common) / PBR.A (preferred)
+
+| 数据基准日 As-of | 报告 Report | 结论 Summary | 评分 Score | 组合角色 Role |
+|---|---|---|---|---|
+| 2026-07-31 | [2026-07-31-Petrobras-PBR.md](2026-07-31-Petrobras-PBR.md) | Grade D opportunistic — watchlist, not an entry point. **Brazil ended 30 years of tax-free dividends on 2026-01-01**: Law 15,270/2025 imposes 10% WHT on dividends and LC 224/2025 raised JCP to 17.5%; Petrobras pays 100% in JCP form, so the HK investor now loses 17.5% with no treaty and no credit (HK is on Brazil's IN 1037 tax-haven list — ADR depositary-level withholding should preserve 17.5% vs 25%, unverified). The widely quoted "$0.96 / 5.02% yield" is already **net** — gross TTM is ~$1.17 / 6.1%. Dividend itself is honest: 45%-of-FCF formula followed to the decimal (FY2025 $7,507m = 45.5% of FCF), five straight years of FCF-funded payouts with net deleveraging and zero dilution — veto **not** triggered. But FCF halved from $39.9bn (2022) to $16.5bn (2025) as capex tripled ($6.3bn→$20.3bn), DPS fell 83% from $5.77 to $0.99/ADR, and the stock re-rated +45% y/y to $19.12. Normalized net yield only **4.3%** at mid-cycle Brent $70 / FX 5.30 (N=$0.83). Fair/hold $6.92-9.22, accumulate $3.33-6.92, strong buy <=$3.33 — conclusion robust even at a 6% required yield. Own **PBR.A** ($16.85) if ever bought: identical DPS, 11.9% cheaper, 5.71% vs 5.02% net. | 52 / D | Opportunistic (watchlist — price, not the dividend, is the problem) |
