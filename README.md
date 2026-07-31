@@ -29,4 +29,4 @@ _This is research and archival material, not personalized investment advice._
 | 2026-07-02 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](reports/2318.HK/2026-07-02-中国平安-2318.HK.md) | Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered. |
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md) | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a growth compounder, not income at . |
 
-最近更新 / Last updated: 2026-07-31 10:55 (Asia/Hong_Kong)
+最近更新 / Last updated: 2026-07-31 10:57 (Asia/Hong_Kong)
