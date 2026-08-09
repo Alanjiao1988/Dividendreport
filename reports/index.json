@@ -1,6 +1,17 @@
 [
   {
     "as_of_date": "2026-08-07",
+    "ticker": "GSK.L",
+    "company": "GSK plc",
+    "exchange": "LSE",
+    "path": "reports/GSK.L/2026-08-07-GSK-plc-GSK.L.md",
+    "summary": "Grade C / 66 分 —— 分红很好，价格不好。0% 英国预扣税（HK 个人 gross = net，是本组合税务效率最高的标的之一），FY2025 DPS 66p (+8.2%)、FY2026 公司明确指引 70p (+6.1%)，派息率连续四年稳定在 ~38.4%，低于其自设 40-60% 政策区间下限；FCF 覆盖 1.51x（三年合计 1.37x），且后剔除利息/少数股东，口径保守；DRIP 为市场购股、零摊薄，£20 亿回购已于 2026-06-26 完成、流通股 4,047m→4,007m (-1.0%)。红利陷阱清单全项通过，Value-trap veto 未触发；即使 Bear 情景 FY2028 仍有 1.03x 覆盖 —— 是\"冻结\"而非\"削减\"。但入场价不达标：股价 12 个月自 1,288.6p 低点上涨 52%，前瞻股息率被压到 3.57%，低于本框架对该风险级别要求的 4.5% 下限，较公允上限 1,600p 高出 22.5%。三项新增风险来自 2026-07-28 Q2 业绩与 7-15 完成的 Nuvalent 收购：(1) 净负债 £15.1bn → pro-forma ~£22bn（约 1.9-2.0x Core EBITDA），四年去杠杆趋势逆转；(2) camlipixant 减值 £13 亿，且回购完成后无后继计划；(3) 20-F 专利表确认 Trelegy（£30 亿、+13%）美国专利 2027 年到期、已被 Transpire 提起 ANDA 挑战 —— 比 dolutegravir 悬崖更早。dolutegravir 家族（美 2028/欧 2029，约 £58 亿）风险真实但对冲扎实：cabotegravir 长效针剂受保护至 2031、£18.4 亿 +46%、已占美国 HIV 销售 30%，且 Shionogi 或有对价（半年 £7.1 亿）随 DTG 销售同步下降，形成天然现金流对冲。结论：优质收息标的，但按红利收益率框架当前\"过贵\"；Fair 1,200-1,600p、Accumulate 1,133-1,200p、Strong buy <=1,133p（ADR 约 $32.4-43.2 / <=$30.6）。注：以盈利口径看 GSK 并不贵（约 10.8x FY2026E Core EPS），差异源于低派息政策而非分红安全性。",
+    "score": "66 / C",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-08-09T23:52:01+08:00"
+  },
+  {
+    "as_of_date": "2026-08-07",
     "ticker": "ITUB",
     "company": "Itaú Unibanco Holding S.A.",
     "exchange": "NYSE (ADR)",
@@ -40,17 +51,6 @@
     "score": "75 / B",
     "portfolio_role": "Core income quality (Watchlist at current price; reassess below $40.40)",
     "published_at": "2026-08-06T00:00:00+08:00"
-  },
-  {
-    "as_of_date": "2026-07-31",
-    "ticker": "VZ",
-    "company": "Verizon Communications Inc.",
-    "exchange": "NYSE",
-    "path": "reports/VZ/2026-07-31-Verizon-VZ.md",
-    "summary": "Grade B core income — quality yes, price no. The 30% US withholding turns a 6.14% headline gross yield into 4.30% net for an HK holder, the single biggest structural drag. The dividend itself is close to unimpeachable: 20 straight annual increases (latest +2.5% to $0.7075/qtr in Jan 2026), no scrip, no ATM, and five years of cumulative FCF $92.0bn covering cumulative dividends $55.0bn (1.67x) with not one year funded by debt, asset sales or issuance — debt growth financed spectrum and M&A, never the payout. 2026 is a genuine inflection under Dan Schulman: 2Q26 adjusted EBITDA $13.7bn (+7.2%) and 40.1% margin are both all-time records, 1H26 FCF $10.2bn (+16.0%), postpaid phone churn 0.97%->0.92%, broadband at 17.1m connections after the Frontier close on 2026-01-20 ($9.8bn cash + $12.9bn assumed debt), a $9bn opex/capex savings programme, and the first real buyback in years — shares 4,217m->4,155m (-1.5%) in six months, 2026 target raised to $4.5bn. Guidance raised twice this year: FY26 FCF $21.9-22.1bn (+9-10%), adj EPS $4.99-5.04, capex $16.0-16.5bn. The catch: wireless service revenue guided ~flat, total revenue -0.7% in 2Q26, GAAP net income -22.9%, net unsecured debt/EBITDA up 2.2x->2.5x on Frontier, LTM interest expense $7.35bn, and a reported but unsigned ~$10bn EchoStar AWS-3 spectrum deal that would defer deleveraging and buybacks. Because buybacks shrink the count, total dividend cash cost stays flat at ~$11.7bn across all three scenarios — per-share growth is self-funded; even in Bear (FCF $18.5bn, $5bn/yr debt paydown) the payout is 92% of distributable cash, so the rational cut is the buyback, not the dividend. N=$2.02 net (three_year_base_average, capex normalized to $17.0-17.5bn, cross-checked against mid-cycle $2.05), B=$1.98 (frozen, not cut), r 4.5-5.5% net (one notch below the 5-7% telecom anchor, crediting the ~2.3%/yr buyback yield); fair/hold $36.91-44.89, accumulate 36.00-36.91, strong buy <=36.00. At $46.11 the stock sits 2.7% above the fair upper bound after a ~6% one-week pop on Q2 results and the $1bn+ Google dark-fiber deal. Veto not triggered — the risk is overpaying, not a dividend cut. Withholding is legal_structure-assumed, not broker-observed.",
-    "score": "75 / B",
-    "portfolio_role": "Core income candidate (build only below $44.89)",
-    "published_at": "2026-07-31T22:30:00+08:00"
   },
   {
     "as_of_date": "2026-07-31",
@@ -95,6 +95,17 @@
     "score": "77 / B",
     "portfolio_role": "Cyclical income (avoid adding at current price)",
     "published_at": "2026-07-31T00:00:00+08:00"
+  },
+  {
+    "as_of_date": "2026-07-31",
+    "ticker": "VZ",
+    "company": "Verizon Communications Inc.",
+    "exchange": "NYSE",
+    "path": "reports/VZ/2026-07-31-Verizon-VZ.md",
+    "summary": "Grade B core income — quality yes, price no. The 30% US withholding turns a 6.14% headline gross yield into 4.30% net for an HK holder, the single biggest structural drag. The dividend itself is close to unimpeachable: 20 straight annual increases (latest +2.5% to $0.7075/qtr in Jan 2026), no scrip, no ATM, and five years of cumulative FCF $92.0bn covering cumulative dividends $55.0bn (1.67x) with not one year funded by debt, asset sales or issuance — debt growth financed spectrum and M&A, never the payout. 2026 is a genuine inflection under Dan Schulman: 2Q26 adjusted EBITDA $13.7bn (+7.2%) and 40.1% margin are both all-time records, 1H26 FCF $10.2bn (+16.0%), postpaid phone churn 0.97%->0.92%, broadband at 17.1m connections after the Frontier close on 2026-01-20 ($9.8bn cash + $12.9bn assumed debt), a $9bn opex/capex savings programme, and the first real buyback in years — shares 4,217m->4,155m (-1.5%) in six months, 2026 target raised to $4.5bn. Guidance raised twice this year: FY26 FCF $21.9-22.1bn (+9-10%), adj EPS $4.99-5.04, capex $16.0-16.5bn. The catch: wireless service revenue guided ~flat, total revenue -0.7% in 2Q26, GAAP net income -22.9%, net unsecured debt/EBITDA up 2.2x->2.5x on Frontier, LTM interest expense $7.35bn, and a reported but unsigned ~$10bn EchoStar AWS-3 spectrum deal that would defer deleveraging and buybacks. Because buybacks shrink the count, total dividend cash cost stays flat at ~$11.7bn across all three scenarios — per-share growth is self-funded; even in Bear (FCF $18.5bn, $5bn/yr debt paydown) the payout is 92% of distributable cash, so the rational cut is the buyback, not the dividend. N=$2.02 net (three_year_base_average, capex normalized to $17.0-17.5bn, cross-checked against mid-cycle $2.05), B=$1.98 (frozen, not cut), r 4.5-5.5% net (one notch below the 5-7% telecom anchor, crediting the ~2.3%/yr buyback yield); fair/hold $36.91-44.89, accumulate 36.00-36.91, strong buy <=36.00. At $46.11 the stock sits 2.7% above the fair upper bound after a ~6% one-week pop on Q2 results and the $1bn+ Google dark-fiber deal. Veto not triggered — the risk is overpaying, not a dividend cut. Withholding is legal_structure-assumed, not broker-observed.",
+    "score": "75 / B",
+    "portfolio_role": "Core income candidate (build only below $44.89)",
+    "published_at": "2026-07-31T22:30:00+08:00"
   },
   {
     "as_of_date": "2026-07-30",
