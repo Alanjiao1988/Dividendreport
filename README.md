@@ -6,9 +6,19 @@
 
 _This is research and archival material, not personalized investment advice._
 
-## 报告索引 / Report Index
+## ⚠️ 维护规则 / Maintenance rule（发布新报告时必读）
 
-> **格式说明 / Formatting rule**：为便于手机端阅读，每份报告采用「标题 + 折叠结论」的纵向卡片格式，不再使用宽表格（宽表格在手机上会被压缩或需要横向滚动，难以阅读）。新增报告时请沿用下方结构：三级标题（代码 · 企业名）→ 一行日期/交易所/报告链接 → `<details><summary>`折叠的结论摘要。
+**本仓库的报告索引固定采用下方的「纵向卡片」格式，禁止改回宽表格（`| 数据基准日 | 企业 | ... |` 那种多列 Markdown 表格）。** 宽表格在手机端会被压缩到无法阅读或需要横向滚动，这是本次改版明确要解决的问题。无论是人工提交，还是 `dividend-income-equity-analysis` 技能自动发布新报告，在更新 `README.md` 的报告索引时都必须遵守：
+
+1. **不要**重新引入 6 列表格（`数据基准日 / 企业 / 代码 / 交易所 / 报告 / 结论`）。
+2. 每条新报告追加为一个卡片，结构固定为：
+   - 三级标题：`### 代码 Ticker · 企业 Company`
+   - 一行元信息：`📅 数据基准日 As-of ｜ 🏛️ 交易所 Exchange ｜ [报告](相对路径)`
+   - 折叠的结论：`<details><summary>结论摘要 Summary (点击展开 / tap to expand)：<第一句摘要></summary>` … 完整结论正文 … `</details>`
+3. 新报告默认追加在列表**最前面**（按数据基准日倒序），与现有排序保持一致。
+4. 如果某次自动化发布仍生成了宽表格，请在合入前手动转换为上述卡片格式，而不是保留表格。
+
+## 报告索引 / Report Index
 
 ### CVX · Chevron Corporation
 📅 2026-08-06 ｜ 🏛️ NYSE ｜ [报告](reports/CVX/2026-08-06-Chevron-CVX.md)
