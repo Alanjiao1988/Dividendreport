@@ -1,6 +1,17 @@
 [
   {
     "as_of_date": "2026-08-10",
+    "ticker": "0008.HK",
+    "company": "PCCW Limited 电讯盈科",
+    "exchange": "HKEX",
+    "path": "reports/0008.HK/2026-08-10-PCCW-Limited-电讯盈科-0008.HK.md",
+    "summary": "净股息率 6.95%（五年最低）；DPS 三年冻结，仅为 HKT 分派的 91.5% pass-through 且逐年下滑；控股层杠杆上升。Accumulation HK\\.42-4.29。",
+    "score": "61 / C",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-08-10T14:26:56+08:00"
+  },
+  {
+    "as_of_date": "2026-08-10",
     "ticker": "0293.HK",
     "company": "國泰航空 Cathay Pacific",
     "exchange": "HKEX",
