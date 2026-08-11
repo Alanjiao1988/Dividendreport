@@ -12,6 +12,17 @@
   },
   {
     "as_of_date": "2026-08-11",
+    "ticker": "COP",
+    "company": "康菲石油 ConocoPhillips",
+    "exchange": "NYSE",
+    "path": "reports/COP/2026-08-11-康菲石油-ConocoPhillips-COP.md",
+    "summary": "红利质量高、覆盖强，但净收益率仅 1.87%（30% 美国预扣税），收入法买入区 27-35 美元远低于现价 125.65；作为现金红利收入标的不成立。",
+    "score": "75 / B",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-08-12T00:47:19+08:00"
+  },
+  {
+    "as_of_date": "2026-08-11",
     "ticker": "XOM",
     "company": "埃克森美孚 ExxonMobil",
     "exchange": "NYSE",
