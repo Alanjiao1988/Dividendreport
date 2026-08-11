@@ -1,6 +1,17 @@
 [
   {
     "as_of_date": "2026-08-11",
+    "ticker": "AMCR",
+    "company": "Amcor plc",
+    "exchange": "NYSE",
+    "path": "reports/AMCR/2026-08-11-Amcor-plc-AMCR.md",
+    "summary": "0% 预扣税（泽西/英国注册），到手净收益率 5.47%；股息连增 6 年从未削减，Bear 情形仍有 1.39x FCF 覆盖；但杠杆 3.8x 高于目标、销量年降 1.5%、FY2026 FCF 指引已下调。现价 47.30 处 Fair 区间上沿，Accumulation 需回落至 38.86 以下。",
+    "score": "66 / C",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-08-12T00:46:20+08:00"
+  },
+  {
+    "as_of_date": "2026-08-11",
     "ticker": "XOM",
     "company": "埃克森美孚 ExxonMobil",
     "exchange": "NYSE",

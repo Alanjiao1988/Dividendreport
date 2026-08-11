@@ -10,6 +10,7 @@ _This is research and archival material, not personalized investment advice._
 
 | 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 结论 Summary |
 |---|---|---|---|---|---|
+| 2026-08-11 | Amcor plc | AMCR | NYSE | [报告](reports/AMCR/2026-08-11-Amcor-plc-AMCR.md) | 0% 预扣税（泽西/英国注册），到手净收益率 5.47%；股息连增 6 年从未削减，Bear 情形仍有 1.39x FCF 覆盖；但杠杆 3.8x 高于目标、销量年降 1.5%、FY2026 FCF 指引已下调。现价 47.30 处 Fair 区间上沿，Accumulation 需回落至 38.86 以下。 |
 | 2026-08-11 | 埃克森美孚 ExxonMobil | XOM | NYSE | [报告](reports/XOM/2026-08-11-埃克森美孚-ExxonMobil-XOM.md) | 优质但价格过高：43年连续增派、资产负债表最稳健（净负债仅占资本10.9%），但霍尔木兹海峡危机推升股价至159.79美元，港人扣30%美国预扣税后净股息率仅1.79%，远低于5.5%-7.5%的入场要求。 |
 | 2026-08-10 | PCCW Limited 电讯盈科 | 0008.HK | HKEX | [报告](reports/0008.HK/2026-08-10-PCCW-Limited-电讯盈科-0008.HK.md) | 净股息率 6.95%（五年最低）；DPS 三年冻结，仅为 HKT 分派的 91.5% pass-through 且逐年下滑；控股层杠杆上升。Accumulation HK\.42-4.29。 |
 | 2026-08-10 | 國泰航空 Cathay Pacific | 0293.HK | HKEX | [报告](reports/0293.HK/2026-08-10-國泰航空-Cathay-Pacific-0293.HK.md) | 有明文約50%派息政策且連續兌現，股本永久收縮9.57%；但股價處2015年來高位，正常化淨收益率僅4.85%，低於所需7.5-10.5%，現價非收息買點。 |
@@ -42,4 +43,4 @@ _This is research and archival material, not personalized investment advice._
 | 2026-07-02 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](reports/2318.HK/2026-07-02-中国平安-2318.HK.md) | Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered. |
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md) | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a growth compounder, not income at . |
 
-最近更新 / Last updated: 2026-08-12 00:32 (Asia/Hong_Kong)
+最近更新 / Last updated: 2026-08-12 00:46 (Asia/Hong_Kong)
