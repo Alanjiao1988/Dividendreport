@@ -10,7 +10,7 @@ _This is research and archival material, not personalized investment advice._
 
 | 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 结论 Summary |
 |---|---|---|---|---|---|
-| 2026-08-11 | 埃克森美孚 ExxonMobil | XOM | NYSE | [报告](reports/XOM/2026-08-11-埃克森美孚-ExxonMobil-XOM.md) | 优质但价格过高：43年连续增派、资产负债表最稳健，但霍尔木兹海峡危机推升股价至US\.79，港人扣30%美国预扣税后净股息率仅1.79%，远低于5.5%-7.5%的入场要求。 |
+| 2026-08-11 | 埃克森美孚 ExxonMobil | XOM | NYSE | [报告](reports/XOM/2026-08-11-埃克森美孚-ExxonMobil-XOM.md) | 优质但价格过高：43年连续增派、资产负债表最稳健（净负债仅占资本10.9%），但霍尔木兹海峡危机推升股价至159.79美元，港人扣30%美国预扣税后净股息率仅1.79%，远低于5.5%-7.5%的入场要求。 |
 | 2026-08-10 | PCCW Limited 电讯盈科 | 0008.HK | HKEX | [报告](reports/0008.HK/2026-08-10-PCCW-Limited-电讯盈科-0008.HK.md) | 净股息率 6.95%（五年最低）；DPS 三年冻结，仅为 HKT 分派的 91.5% pass-through 且逐年下滑；控股层杠杆上升。Accumulation HK\.42-4.29。 |
 | 2026-08-10 | 國泰航空 Cathay Pacific | 0293.HK | HKEX | [报告](reports/0293.HK/2026-08-10-國泰航空-Cathay-Pacific-0293.HK.md) | 有明文約50%派息政策且連續兌現，股本永久收縮9.57%；但股價處2015年來高位，正常化淨收益率僅4.85%，低於所需7.5-10.5%，現價非收息買點。 |
 | 2026-08-07 | GSK plc | GSK.L | LSE | [报告](reports/GSK.L/2026-08-07-GSK-plc-GSK.L.md) | Grade C / 66 分 —— 分红很好，价格不好。0% 英国预扣税（HK 个人 gross = net，是本组合税务效率最高的标的之一），FY2025 DPS 66p (+8.2%)、FY2026 公司明确指引 70p (+6.1%)，派息率连续四年稳定在 ~38.4%，低于其自设 40-60% 政策区间下限；FCF 覆盖 1.51x（三年合计 1.37x），且后剔除利息/少数股东，口径保守；DRIP 为市场购股、零摊薄，£20 亿回购已于 2026-06-26 完成、流通股 4,047m→4,007m (-1.0%)。红利陷阱清单全项通过，Value-trap veto 未触发；即使 Bear 情景 FY2028 仍有 1.03x 覆盖 —— 是"冻结"而非"削减"。但入场价不达标：股价 12 个月自 1,288.6p 低点上涨 52%，前瞻股息率被压到 3.57%，低于本框架对该风险级别要求的 4.5% 下限，较公允上限 1,600p 高出 22.5%。三项新增风险来自 2026-07-28 Q2 业绩与 7-15 完成的 Nuvalent 收购：(1) 净负债 £15.1bn → pro-forma ~£22bn（约 1.9-2.0x Core EBITDA），四年去杠杆趋势逆转；(2) camlipixant 减值 £13 亿，且回购完成后无后继计划；(3) 20-F 专利表确认 Trelegy（£30 亿、+13%）美国专利 2027 年到期、已被 Transpire 提起 ANDA 挑战 —— 比 dolutegravir 悬崖更早。dolutegravir 家族（美 2028/欧 2029，约 £58 亿）风险真实但对冲扎实：cabotegravir 长效针剂受保护至 2031、£18.4 亿 +46%、已占美国 HIV 销售 30%，且 Shionogi 或有对价（半年 £7.1 亿）随 DTG 销售同步下降，形成天然现金流对冲。结论：优质收息标的，但按红利收益率框架当前"过贵"；Fair 1,200-1,600p、Accumulate 1,133-1,200p、Strong buy <=1,133p（ADR 约 $32.4-43.2 / <=$30.6）。注：以盈利口径看 GSK 并不贵（约 10.8x FY2026E Core EPS），差异源于低派息政策而非分红安全性。 |
@@ -42,4 +42,4 @@ _This is research and archival material, not personalized investment advice._
 | 2026-07-02 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](reports/2318.HK/2026-07-02-中国平安-2318.HK.md) | Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered. |
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md) | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a growth compounder, not income at . |
 
-最近更新 / Last updated: 2026-08-12 00:30 (Asia/Hong_Kong)
+最近更新 / Last updated: 2026-08-12 00:32 (Asia/Hong_Kong)

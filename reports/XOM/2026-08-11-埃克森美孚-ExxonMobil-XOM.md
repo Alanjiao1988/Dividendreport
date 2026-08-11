@@ -3,11 +3,11 @@ ticker: XOM
 company: 埃克森美孚 ExxonMobil
 exchange: NYSE
 as_of_date: 2026-08-11
-published_at: 2026-08-12T00:30:40+08:00
+published_at: 2026-08-12T00:32:02+08:00
 generated_by: dividend-income-equity-analysis skill
 -->
 
-> **企业 / Company:** 埃克森美孚 ExxonMobil (XOM) · **交易所 / Exchange:** NYSE · **数据基准日 / As-of:** 2026-08-11 · **发布时间 / Published:** 2026-08-12 00:30 (Asia/Hong_Kong)
+> **企业 / Company:** 埃克森美孚 ExxonMobil (XOM) · **交易所 / Exchange:** NYSE · **数据基准日 / As-of:** 2026-08-11 · **发布时间 / Published:** 2026-08-12 00:32 (Asia/Hong_Kong)
 
 # ExxonMobil (XOM) — Dividend Income Equity Analysis
 
