@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-08-15",
+    "ticker": "VALE",
+    "company": "Vale S.A.",
+    "exchange": "NYSE (ADR)",
+    "path": "reports/VALE/2026-08-15-Vale-S.A.-VALE.md",
+    "summary": "TTM 7.0% net yield is inflated by a one-off tax pull-forward; run-rate ~4.6% and mid-cycle ~3.5% net. Quality asset, wrong price.",
+    "score": "58 / C",
+    "portfolio_role": "Cyclical income - Watchlist",
+    "published_at": "2026-08-15T14:02:12+08:00"
+  },
+  {
     "as_of_date": "2026-08-11",
     "ticker": "AMCR",
     "company": "Amcor plc",
