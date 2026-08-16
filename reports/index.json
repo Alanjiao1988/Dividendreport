@@ -45,6 +45,17 @@
   },
   {
     "as_of_date": "2026-08-14",
+    "ticker": "1919.HK",
+    "company": "中远海控 COSCO SHIPPING Holdings",
+    "exchange": "HKEX",
+    "path": "reports/1919.HK/2026-08-14-中远海控-COSCO-SHIPPING-Holdings-1919.HK.md",
+    "summary": "周期高位、净现金充裕；税后正常化收益率6.8%低于航运周期股所需的8%门槛，当前价高于合理区间上限约18%。",
+    "score": "66 / C",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-08-16T23:05:26+08:00"
+  },
+  {
+    "as_of_date": "2026-08-14",
     "ticker": "2318.HK",
     "company": "中国平安 Ping An Insurance",
     "exchange": "HKEX",
