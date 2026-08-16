@@ -11,6 +11,17 @@
     "published_at": "2026-08-16T21:36:27+08:00"
   },
   {
+    "as_of_date": "2026-08-16",
+    "ticker": "1199.HK",
+    "company": "中远海运港口 COSCO SHIPPING Ports",
+    "exchange": "HKEX",
+    "path": "reports/1199.HK/2026-08-16-中远海运港口-COSCO-SHIPPING-Ports-1199.HK.md",
+    "summary": "股息在现金层面极安全，但每股股息被以股代息持续稀释：DPS 五年 -5.5%/年；净收益率 5.04%（0% 预扣税），未达 6.5-8.5% 入场门槛。Very safe in cash terms but structurally diluted by ~83% scrip take-up.",
+    "score": "58 / C",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-08-16T21:50:31+08:00"
+  },
+  {
     "as_of_date": "2026-08-15",
     "ticker": "VALE",
     "company": "Vale S.A.",
