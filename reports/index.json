@@ -1,5 +1,16 @@
 [
   {
+    "as_of_date": "2026-08-16",
+    "ticker": "0728.HK",
+    "company": "中国电信 China Telecom",
+    "exchange": "HKEX",
+    "path": "reports/0728.HK/2026-08-16-中国电信-China-Telecom-0728.HK.md",
+    "summary": "Cash-safe but profit-linked dividend facing a ~12% FY2026 cut from the 6%->9% telecom VAT reset; 5.77% TTM net yield is backward-looking. Fully priced at HKD 4.725; add below HKD 4.35.",
+    "score": "75 / B",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-08-16T21:36:27+08:00"
+  },
+  {
     "as_of_date": "2026-08-15",
     "ticker": "VALE",
     "company": "Vale S.A.",
