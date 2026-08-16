@@ -3,11 +3,11 @@ ticker: 0144.HK
 company: 招商局港口 China Merchants Port Holdings
 exchange: HKEX
 as_of_date: 2026-08-14
-published_at: 2026-08-16T21:43:33+08:00
+published_at: 2026-08-16T21:45:44+08:00
 generated_by: dividend-income-equity-analysis skill
 -->
 
-> **企业 / Company:** 招商局港口 China Merchants Port Holdings (0144.HK) · **交易所 / Exchange:** HKEX · **数据基准日 / As-of:** 2026-08-14 · **发布时间 / Published:** 2026-08-16 21:43 (Asia/Hong_Kong)
+> **企业 / Company:** 招商局港口 China Merchants Port Holdings (0144.HK) · **交易所 / Exchange:** HKEX · **数据基准日 / As-of:** 2026-08-14 · **发布时间 / Published:** 2026-08-16 21:45 (Asia/Hong_Kong)
 
 # 招商局港口 China Merchants Port Holdings (0144.HK) — 红利收益分析
 
