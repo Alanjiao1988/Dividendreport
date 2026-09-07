@@ -1,7 +1,11 @@
 # TotalEnergies SE (TTE)
 
-交易所 Exchange: NYSE (ordinary shares since 2025-12-08) + Euronext Paris
+交易所 Exchange: NYSE / Euronext Paris
 
-| 数据基准日 As-of | 报告 Report | 结论 Summary | 评分 Score | 组合角色 Role |
-|---|---|---|---|---|
-| 2026-07-30 | [2026-07-30-TotalEnergies-SE-TTE.md](2026-07-30-TotalEnergies-SE-TTE.md) | Grade B core income on watchlist; French WHT only 12.8% for individuals (10% under HK treaty) and NYSE line converted from ADR to ordinary shares on 2025-12-08 — no depositary fee; progressive DPS uncut since before 2015, FY2025 €3.40 (+5.6%), FY2026 run-rate €3.60 (+5.9%, 2 of 4 interims declared), FCF cover 1.26x even in trough 2025, gearing 13.1%, share count −19% in five years; at €75.68 / $86.75 net yield only 4.15% — above the fair-value ceiling because Brent spiked 25% in a month to $89.74; fair/hold €54.60-69.76 ($62.67-80.08), accumulate €49.14-54.60 ($56.40-62.67), strong buy <=€49.14 ($56.40); veto not triggered. | 74 / B | Core income (watchlist at current price) |
+历史版本按数据基准日列出；最新研究请沿版本链阅读。摘要保留原报告当时的判断。
+
+| 数据基准日 As-of | 报告 Report | 规则版本 · 摘要来源 | 结论 Summary | 评分 Score | 组合角色 Role | 前一版本 Supersedes |
+|---|---|---|---|---|---|---|
+| 2026-07-30 | [2026-07-30-TotalEnergies-SE-TTE.md](<2026-07-30-TotalEnergies-SE-TTE.md>) | pre-2.2 / 附证据 | 原报告 74 / B，Core income，目前列入观察。参考价 €75.68 / $86.75，TTM 净收益率 3.92%，正常化 4.15%；原报告累积区 €49.1–€54.6。分红递增且覆盖较强，但现价高于收入入场区。实际法国预扣税率未经券商流水确认，原报告列有不同税率情景。 | 74 / B | Core income (watchlist at current price) | — |
+
+[完整索引与发布契约](../../PUBLISHING.md)

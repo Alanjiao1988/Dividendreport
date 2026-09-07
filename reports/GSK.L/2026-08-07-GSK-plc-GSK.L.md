@@ -5,6 +5,8 @@ exchange: LSE
 as_of_date: 2026-08-07
 published_at: 2026-08-09T23:52:01+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
+supersedes: reports/GSK.L/2026-07-21-GSK-plc-GSK.L.md
 -->
 
 > **企业 / Company:** GSK plc (GSK.L) · **交易所 / Exchange:** LSE · **数据基准日 / As-of:** 2026-08-07 · **发布时间 / Published:** 2026-08-09 23:52 (Asia/Hong_Kong)

@@ -2,8 +2,12 @@
 
 交易所 Exchange: LSE
 
-| 数据基准日 As-of | 报告 Report | 结论 Summary | 评分 Score | 组合角色 Role |
-|---|---|---|---|---|
-| 2026-08-07 | [2026-08-07-GSK-plc-GSK.L.md](2026-08-07-GSK-plc-GSK.L.md) | Grade C / 66 分 —— 分红很好，价格不好。0% 英国预扣税（HK 个人 gross = net，是本组合税务效率最高的标的之一），FY2025 DPS 66p (+8.2%)、FY2026 公司明确指引 70p (+6.1%)，派息率连续四年稳定在 ~38.4%，低于其自设 40-60% 政策区间下限；FCF 覆盖 1.51x（三年合计 1.37x），且后剔除利息/少数股东，口径保守；DRIP 为市场购股、零摊薄，£20 亿回购已于 2026-06-26 完成、流通股 4,047m→4,007m (-1.0%)。红利陷阱清单全项通过，Value-trap veto 未触发；即使 Bear 情景 FY2028 仍有 1.03x 覆盖 —— 是"冻结"而非"削减"。但入场价不达标：股价 12 个月自 1,288.6p 低点上涨 52%，前瞻股息率被压到 3.57%，低于本框架对该风险级别要求的 4.5% 下限，较公允上限 1,600p 高出 22.5%。三项新增风险来自 2026-07-28 Q2 业绩与 7-15 完成的 Nuvalent 收购：(1) 净负债 £15.1bn → pro-forma ~£22bn（约 1.9-2.0x Core EBITDA），四年去杠杆趋势逆转；(2) camlipixant 减值 £13 亿，且回购完成后无后继计划；(3) 20-F 专利表确认 Trelegy（£30 亿、+13%）美国专利 2027 年到期、已被 Transpire 提起 ANDA 挑战 —— 比 dolutegravir 悬崖更早。dolutegravir 家族（美 2028/欧 2029，约 £58 亿）风险真实但对冲扎实：cabotegravir 长效针剂受保护至 2031、£18.4 亿 +46%、已占美国 HIV 销售 30%，且 Shionogi 或有对价（半年 £7.1 亿）随 DTG 销售同步下降，形成天然现金流对冲。结论：优质收息标的，但按红利收益率框架当前"过贵"；Fair 1,200-1,600p、Accumulate 1,133-1,200p、Strong buy <=1,133p（ADR 约 $32.4-43.2 / <=$30.6）。注：以盈利口径看 GSK 并不贵（约 10.8x FY2026E Core EPS），差异源于低派息政策而非分红安全性。 | 66 / C | Watchlist |
-| 2026-07-21 | [2026-07-21-GSK-plc-GSK.L.md](2026-07-21-GSK-plc-GSK.L.md) | Grade B quality income watchlist; 0% UK withholding; progressive dividend, FY2025 DPS 66p (+8.2% YoY), 2026 guided 70p, FCF cover 1.53x (1.92x ex-Zantac), net debt/EBITDA ~1.3x, £2bn buyback completed (genuine ~3.1% share reduction); at 1,880.5p ($50.72 ADR) net yield only 3.5% — above the disciplined fair-value ceiling; fair/hold 1,167-1,750p, accumulate 917-1,167p, strong buy <=917p; veto not triggered. | 76 / B | Watchlist (quality income, wrong price for entry) |
-| 2026-07-03 | [2026-07-03-GSK-plc-GSK.L.md](2026-07-03-GSK-plc-GSK.L.md) | Quality income watchlist; current yield ~3.3%, buy zone below £17.50. | 72 / B | Watchlist |
+历史版本按数据基准日列出；最新研究请沿版本链阅读。摘要保留原报告当时的判断。
+
+| 数据基准日 As-of | 报告 Report | 规则版本 · 摘要来源 | 结论 Summary | 评分 Score | 组合角色 Role | 前一版本 Supersedes |
+|---|---|---|---|---|---|---|
+| 2026-08-07 | [2026-08-07-GSK-plc-GSK.L.md](<2026-08-07-GSK-plc-GSK.L.md>) | pre-2.2 / 附证据 | 原报告 66 / C，Watchlist。TTM 净收益率 3.42%，正常化 3.67%；股息质量较高，但按现金分红要求，1,960.5p 高于原报告 Fair 上限 1,600p。积累区 1,133–1,200p；现价不建议为收息加仓。药品专利到期与收购后的杠杆仍需跟踪。盈利估值与收入要求的结论不同。 | 66 / C | Watchlist | [前一版](<2026-07-21-GSK-plc-GSK.L.md>) |
+| 2026-07-21 | [2026-07-21-GSK-plc-GSK.L.md](<2026-07-21-GSK-plc-GSK.L.md>) | pre-2.2 / 原文摘要 | Grade B quality income watchlist; 0% UK withholding; progressive dividend, FY2025 DPS 66p (+8.2% YoY), 2026 guided 70p, FCF cover 1.53x (1.92x ex-Zantac), net debt/EBITDA ~1.3x, £2bn buyback completed (genuine ~3.1% share reduction); at 1,880.5p ($50.72 ADR) net yield only 3.5% — above the disciplined fair-value ceiling; fair/hold 1,167-1,750p, accumulate 917-1,167p, strong buy <=917p; veto not triggered. | 76 / B | Watchlist (quality income, wrong price for entry) | [前一版](<2026-07-03-GSK-plc-GSK.L.md>) |
+| 2026-07-03 | [2026-07-03-GSK-plc-GSK.L.md](<2026-07-03-GSK-plc-GSK.L.md>) | pre-2.2 / 原文摘要 | Quality income watchlist; current yield ~3.3%, buy zone below £17.50. | 72 / B | Watchlist | — |
+
+[完整索引与发布契约](../../PUBLISHING.md)

@@ -5,6 +5,7 @@ exchange: NYSE
 as_of_date: 2026-07-31
 published_at: 2026-07-31T22:30:00+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** Verizon Communications Inc. (VZ) · **交易所 / Exchange:** NYSE · **数据基准日 / As-of:** 2026-07-31 · **发布时间 / Published:** 2026-07-31 22:30 (Asia/Hong_Kong)

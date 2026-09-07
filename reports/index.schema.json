@@ -1,0 +1,146 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Alanjiao1988/Dividendreport/blob/main/reports/index.schema.json",
+  "title": "Dividend report archive index contract 1.1",
+  "type": "array",
+  "minItems": 1,
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "as_of_date",
+      "ticker",
+      "company",
+      "exchange",
+      "path",
+      "summary",
+      "score",
+      "portfolio_role",
+      "published_at",
+      "ruleset",
+      "summary_provenance",
+      "summary_evidence"
+    ],
+    "properties": {
+      "as_of_date": {
+        "type": "string",
+        "format": "date"
+      },
+      "ticker": {
+        "type": "string",
+        "pattern": "^(?:[A-Z][A-Z0-9]*(?:[.-][A-Z0-9]+)?|[0-9]{4}\\.HK|[1-9][0-9]{4}\\.HK)$"
+      },
+      "company": {
+        "type": "string",
+        "minLength": 1
+      },
+      "exchange": {
+        "type": "string",
+        "minLength": 1
+      },
+      "path": {
+        "type": "string",
+        "pattern": "^reports/[^/]+/[^/]+\\.md$"
+      },
+      "summary": {
+        "type": "string",
+        "minLength": 1,
+        "maxLength": 600,
+        "pattern": "^[^\r\n|]+$"
+      },
+      "score": {
+        "type": "string",
+        "pattern": "^(?:100|[0-9]{1,2}) / [A-E]$|^Not assessed$"
+      },
+      "portfolio_role": {
+        "type": "string",
+        "minLength": 1
+      },
+      "published_at": {
+        "type": "string",
+        "format": "date-time",
+        "pattern": "(?:Z|[+-][0-9]{2}:[0-9]{2})$"
+      },
+      "ruleset": {
+        "enum": [
+          "pre-2.2",
+          "2.2"
+        ],
+        "description": "Ruleset the report was produced under. pre-2.2 predates the retired sector yield presets and the five-year outlook requirement."
+      },
+      "summary_provenance": {
+        "enum": [
+          "original_unverified",
+          "repaired_with_evidence"
+        ],
+        "description": "original_unverified keeps the author's original summary text without transcription evidence; repaired_with_evidence requires summary_evidence."
+      },
+      "supersedes": {
+        "type": "string",
+        "pattern": "^reports/[^/]+/[^/]+\\.md$"
+      },
+      "publication_provenance": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "kind",
+          "note"
+        ],
+        "properties": {
+          "kind": {
+            "enum": [
+              "report_metadata",
+              "git_first_add"
+            ]
+          },
+          "git_commit": {
+            "type": "string",
+            "pattern": "^[0-9a-f]{40}$"
+          },
+          "note": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "if": {
+          "properties": {
+            "kind": {
+              "const": "git_first_add"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "git_commit"
+          ]
+        }
+      },
+      "summary_evidence": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "field",
+            "value",
+            "source_excerpt"
+          ],
+          "properties": {
+            "field": {
+              "type": "string",
+              "minLength": 1
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1
+            },
+            "source_excerpt": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

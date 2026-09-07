@@ -5,6 +5,8 @@ exchange: HKEX
 as_of_date: 2026-08-14
 published_at: 2026-08-16T21:45:44+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
+supersedes: reports/0144.HK/2026-07-17-招商局港口-China-Merchants-Port-Holdings-0144.HK.md
 -->
 
 > **企业 / Company:** 招商局港口 China Merchants Port Holdings (0144.HK) · **交易所 / Exchange:** HKEX · **数据基准日 / As-of:** 2026-08-14 · **发布时间 / Published:** 2026-08-16 21:45 (Asia/Hong_Kong)

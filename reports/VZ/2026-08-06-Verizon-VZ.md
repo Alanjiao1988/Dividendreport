@@ -5,6 +5,7 @@ exchange: NYSE
 as_of_date: 2026-08-06
 published_at: 2026-08-06T00:00:00+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 supersedes: reports/VZ/2026-07-31-Verizon-VZ.md
 -->
 

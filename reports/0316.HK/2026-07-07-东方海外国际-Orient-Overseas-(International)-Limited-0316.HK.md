@@ -5,6 +5,7 @@ exchange: HKEX
 as_of_date: 2026-07-07
 published_at: 2026-07-07T11:06:15+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** 东方海外国际 Orient Overseas (International) Limited (0316.HK) · **交易所 / Exchange:** HKEX · **数据基准日 / As-of:** 2026-07-07 · **发布时间 / Published:** 2026-07-07 11:06 (Asia/Hong_Kong)

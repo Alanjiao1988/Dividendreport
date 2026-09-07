@@ -5,6 +5,7 @@ exchange: NYSE
 as_of_date: 2026-08-11
 published_at: 2026-08-12T00:46:20+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** Amcor plc (AMCR) · **交易所 / Exchange:** NYSE · **数据基准日 / As-of:** 2026-08-11 · **发布时间 / Published:** 2026-08-12 00:46 (Asia/Hong_Kong)
