@@ -5,6 +5,7 @@ exchange: NYSE
 as_of_date: 2026-08-07
 published_at: 2026-08-09T20:30:00+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** Pfizer Inc. (PFE) · **交易所 / Exchange:** NYSE · **数据基准日 / As-of:** 2026-08-07（收盘） · **发布时间 / Published:** 2026-08-09 20:30 (Asia/Hong_Kong)

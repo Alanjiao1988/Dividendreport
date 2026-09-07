@@ -25,14 +25,24 @@ class ArchiveTests(unittest.TestCase):
                          path=f'reports/0316.HK/2026-01-{day}-Fictional-(Holding)-0316.HK.md',
                          summary='Archived price HK$4.78.', score='75 / B', portfolio_role='Watchlist',
                          published_at=f'2026-01-{day}T20:00:00+08:00',
+                         ruleset='pre-2.2', summary_provenance='repaired_with_evidence',
                          summary_evidence=[dict(field='price', value='4.78', source_excerpt='Price: HK$4.78.')])
             if self.entries:
                 entry['supersedes'] = self.entries[-1]['path']
             self.entries.append(entry)
-            (self.root / entry['path']).write_text(f"<!-- dividend-report-meta\nticker: 0316.HK\nas_of_date: {entry['as_of_date']}\n-->\nPrice: HK$4.78.\n", encoding='utf8')
-        for name in ('PUBLISHING.md', 'ARCHIVE-REPAIRS.md'):
+            self.write_report(entry)
+        for name in ('PUBLISHING.md', 'ARCHIVE-REPAIRS.md', 'MIGRATION.md'):
             (self.root / name).write_text('Fixture documentation\n', encoding='utf8')
         self.write_views()
+
+    def write_report(self, entry):
+        meta = [f"ticker: {entry['ticker']}", f"company: {entry['company']}",
+                f"exchange: {entry['exchange']}", f"as_of_date: {entry['as_of_date']}",
+                f"published_at: {entry['published_at']}", f"ruleset: {entry['ruleset']}"]
+        if entry.get('supersedes'):
+            meta.append(f"supersedes: {entry['supersedes']}")
+        body = '\n'.join(['<!-- dividend-report-meta'] + meta + ['-->', 'Price: HK$4.78.', ''])
+        (self.root / entry['path']).write_text(body, encoding='utf8')
 
     def write_views(self):
         (self.root / 'reports/index.json').write_text(json.dumps(self.entries), encoding='utf8')
@@ -82,3 +92,40 @@ class ArchiveTests(unittest.TestCase):
         self.assertTrue(contains_value('Range HK$4.25-4.78.', '4.78'))
         self.assertFalse(contains_value('HK$14.78', '4.78'))
         self.assertFalse(contains_value('HK$4.789', '4.78'))
+
+    def test_report_without_metadata_block_fails(self):
+        (self.root / self.entries[0]['path']).write_text('Price: HK$4.78.\n', encoding='utf8')
+        self.assertTrue(any('missing its dividend-report-meta' in e
+                            for e in validate_entries(self.entries, self.root)))
+
+    def test_metadata_version_chain_must_match_index(self):
+        self.entries[1]['supersedes'] = self.entries[0]['path']
+        self.write_report(self.entries[1])
+        del self.entries[1]['supersedes']
+        self.assertTrue(any('index supersedes' in e
+                            for e in validate_entries(self.entries, self.root)))
+
+    def test_metadata_ruleset_must_match_index(self):
+        self.entries[0]['ruleset'] = '2.2'
+        self.assertTrue(any('index ruleset' in e
+                            for e in validate_entries(self.entries, self.root)))
+
+    def test_repaired_summary_requires_evidence(self):
+        self.entries[0]['summary_evidence'] = []
+        self.assertTrue(any('transcription evidence' in e
+                            for e in validate_entries(self.entries, self.root)))
+
+    def test_original_summary_may_omit_evidence_but_current_ruleset_may_not(self):
+        self.entries[0]['summary_provenance'] = 'original_unverified'
+        self.entries[0]['summary_evidence'] = []
+        self.assertEqual(validate_entries(self.entries, self.root), [])
+        self.entries[0]['ruleset'] = '2.2'
+        self.write_report(self.entries[0])
+        self.assertTrue(any('current ruleset' in e
+                            for e in validate_entries(self.entries, self.root)))
+
+    def test_navigation_exposes_ruleset_and_evidence_coverage(self):
+        readme = rendered_files(self.entries)['README.md']
+        self.assertIn('pre-2.2', readme)
+        self.assertIn('MIGRATION.md', readme)
+        self.assertIn('摘要证据覆盖', readme)

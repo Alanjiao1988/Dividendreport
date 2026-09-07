@@ -5,6 +5,7 @@ exchange: NYSE
 as_of_date: 2026-08-11
 published_at: 2026-08-12T00:47:19+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** 康菲石油 ConocoPhillips (COP) · **交易所 / Exchange:** NYSE · **数据基准日 / As-of:** 2026-08-11 · **发布时间 / Published:** 2026-08-12 00:47 (Asia/Hong_Kong)

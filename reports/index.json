@@ -9,6 +9,8 @@
     "score": "75 / B",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-16T21:36:27+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -21,6 +23,8 @@
     "score": "58 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-16T21:50:31+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -33,6 +37,8 @@
     "score": "58 / C",
     "portfolio_role": "Cyclical income - Watchlist",
     "published_at": "2026-08-15T14:02:12+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -45,6 +51,8 @@
     "score": "70 / B",
     "portfolio_role": "Cyclical income (hold, add below 14.18)",
     "published_at": "2026-08-16T21:45:44+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "supersedes": "reports/0144.HK/2026-07-17-招商局港口-China-Merchants-Port-Holdings-0144.HK.md",
     "summary_evidence": []
   },
@@ -58,6 +66,8 @@
     "score": "66 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-16T23:05:26+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -70,6 +80,9 @@
     "score": "76 / B",
     "portfolio_role": "Core income（现价持有，非加仓区）",
     "published_at": "2026-08-16T16:07:38+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/2318.HK/2026-07-02-中国平安-2318.HK.md",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -106,8 +119,7 @@
         "value": "41.43",
         "source_excerpt": "- **Expected buy zone**：Fair **HK$41.43 – 55.24** ｜ Accumulation **HK$39.10 – 41.43** ｜ Strong Buy **≤ HK$39.10**"
       }
-    ],
-    "supersedes": "reports/2318.HK/2026-07-02-中国平安-2318.HK.md"
+    ]
   },
   {
     "as_of_date": "2026-08-14",
@@ -119,6 +131,8 @@
     "score": "76 / B",
     "portfolio_role": "Core income",
     "published_at": "2026-08-16T22:56:09+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -142,6 +156,8 @@
     "score": "66 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-12T00:46:20+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -154,6 +170,8 @@
     "score": "75 / B",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-12T00:47:19+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -166,6 +184,8 @@
     "score": "70 / B",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-12T00:32:02+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -178,6 +198,9 @@
     "score": "61 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-10T14:26:56+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/0008.HK/2026-07-07-PCCW-Limited-电讯盈科-0008.HK.md",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -199,8 +222,7 @@
         "value": "4.29",
         "source_excerpt": "**结论：这是一只\"股息被冻结、但股价已经涨到位\"的控股公司。** 以 2026-08-10 股价 HK$5.50、TTM DPS HK$0.3825、0% 预扣税计算，净股息率 **6.95%** —— 这是过去五年最低的收益率水平。核心问题不是 HKT 不行，而是 **HKT 的分派每年涨 3%，PCCW 却连续三年把 DPS 冻结在 38.25 港仙**，把增量现金留在控股层面还债和养 Viu。公司自己披露 FY2025 派息只是 HKT 分派收入的 **91.5% pass-through**，且这个比例正在逐年下滑（97.7% → 94.9% → 91.5% → 约 88.5%）。评分 **61 / C，Watchlist**，纪律化的 accumulation 区间在 **HK$3.42-4.29**，当前价属于 **fair value 上沿、接近\"不宜加仓\"**。"
       }
-    ],
-    "supersedes": "reports/0008.HK/2026-07-07-PCCW-Limited-电讯盈科-0008.HK.md"
+    ]
   },
   {
     "as_of_date": "2026-08-10",
@@ -212,6 +234,8 @@
     "score": "62 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-10T12:17:28+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -224,6 +248,9 @@
     "score": "66 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-08-09T23:52:01+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/GSK.L/2026-07-21-GSK-plc-GSK.L.md",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -260,8 +287,7 @@
         "value": "1,200",
         "source_excerpt": "- **Expected buy zone:** Fair 1,200–1,600p · Accumulation 1,133–1,200p · Strong buy ≤1,133p (ADR: ~$32.4–43.2 / ≤$30.6 at GBP/USD 1.35)"
       }
-    ],
-    "supersedes": "reports/GSK.L/2026-07-21-GSK-plc-GSK.L.md"
+    ]
   },
   {
     "as_of_date": "2026-08-07",
@@ -273,6 +299,8 @@
     "score": "78 / B",
     "portfolio_role": "Cyclical income (持有可以，加仓等 $7.57 以下)",
     "published_at": "2026-08-09T09:00:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -308,6 +336,16 @@
     "exchange": "NYSE",
     "path": "reports/PFE/2026-08-07-Pfizer-PFE.md",
     "summary": "原报告 51 / D，Watchlist。股息冻结、自由现金流覆盖不足与专利到期使预测置信度为 Low；TTM 净收益率 4.50%，正常化 3.66%。现价 US$26.76 高于原报告收入法 Fair 上限 $17.82；当前不建仓。跟踪经营现金流、后续股息申报、成本计划与管线兑现；原报告 veto 未触发。",
+    "score": "51 / D",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-08-09T20:30:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
+    "publication_provenance": {
+      "kind": "report_metadata",
+      "git_commit": "7238b1b549a3eea66c25d4b132b4b2a7ddf9bddd",
+      "note": "Restored verbatim from dividend-report-meta. This is the author-declared timestamp, not independently verified publication time. The first-add commit is dated 2026-08-09T08:17:47+08:00, earlier than the report declaration; the discrepancy is retained rather than guessed away."
+    },
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -334,15 +372,7 @@
         "value": "17.82",
         "source_excerpt": "- **预期买入区间:** Fair **$14.00–$17.82**｜Accumulation **$10.50–$14.00**｜Strong Buy **≤$10.50** —— 当前价高于公允区上沿 **50.2%**"
       }
-    ],
-    "score": "51 / D",
-    "portfolio_role": "Watchlist",
-    "published_at": "2026-08-09T20:30:00+08:00",
-    "publication_provenance": {
-      "kind": "report_metadata",
-      "git_commit": "7238b1b549a3eea66c25d4b132b4b2a7ddf9bddd",
-      "note": "Restored verbatim from dividend-report-meta. This is the author-declared timestamp, not independently verified publication time. The first-add commit is dated 2026-08-09T08:17:47+08:00, earlier than the report declaration; the discrepancy is retained rather than guessed away."
-    }
+    ]
   },
   {
     "as_of_date": "2026-08-06",
@@ -354,6 +384,8 @@
     "score": "74 / B",
     "portfolio_role": "Watchlist (Grade B quality; fails the after-tax income mandate - revisit below $71.20)",
     "published_at": "2026-08-06T23:55:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -398,11 +430,13 @@
     "company": "Verizon Communications Inc.",
     "exchange": "NYSE",
     "path": "reports/VZ/2026-08-06-Verizon-VZ.md",
-    "supersedes": "reports/VZ/2026-07-31-Verizon-VZ.md",
     "summary": "原报告 75 / B，核心收息质地、当前观察。TTM 净收益率 4.19%，前瞻净收益率 4.24%；现价 $46.70 高于原报告收入法 Fair 上限 $40.40。相较前版收紧所需净收益率，积累区降为 $30.46–$31.08。已持有则持有，现价不为收息加仓；关注杠杆及未确定的频谱交易。",
     "score": "75 / B",
     "portfolio_role": "Core income quality (Watchlist at current price; reassess below $40.40)",
     "published_at": "2026-08-06T00:00:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/VZ/2026-07-31-Verizon-VZ.md",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -451,6 +485,9 @@
     "score": "74 / B",
     "portfolio_role": "Cyclical income (avoid adding at current price)",
     "published_at": "2026-07-31T18:40:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/0883.HK/2026-07-17-中国海洋石油-0883.HK.md",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -482,8 +519,7 @@
         "value": "10%",
         "source_excerpt": "> 3. **预扣税由\"假设 10%、待核实\"升级为\"确认 10%、机制明确\"**：公司公告的\"自然人股东全额派发\"豁免不适用于经券商持有的散户——凡以香港中央结算（代理人）有限公司名义登记的股份，一律被视为非居民企业股东持有，扣 10% 企业所得税。"
       }
-    ],
-    "supersedes": "reports/0883.HK/2026-07-17-中国海洋石油-0883.HK.md"
+    ]
   },
   {
     "as_of_date": "2026-07-31",
@@ -495,6 +531,8 @@
     "score": "77 / B",
     "portfolio_role": "Core income — hold; add below HK$69.6",
     "published_at": "2026-07-31T10:57:27+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -533,6 +571,8 @@
     "score": "52 / D",
     "portfolio_role": "Opportunistic (watchlist — price, not the dividend, is the problem)",
     "published_at": "2026-07-31T10:30:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -571,6 +611,9 @@
     "score": "77 / B",
     "portfolio_role": "Cyclical income (avoid adding at current price)",
     "published_at": "2026-07-31T00:00:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/SHEL/2026-07-03-Shell-plc-SHEL.md",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -607,8 +650,7 @@
         "value": "48.55",
         "source_excerpt": "- **Expected buy zone**：合理 $52.31–$68.00｜累积 $48.55–$52.31｜强力买入 ≤ $48.55"
       }
-    ],
-    "supersedes": "reports/SHEL/2026-07-03-Shell-plc-SHEL.md"
+    ]
   },
   {
     "as_of_date": "2026-07-31",
@@ -620,6 +662,8 @@
     "score": "75 / B",
     "portfolio_role": "Core income candidate (build only below $44.89)",
     "published_at": "2026-07-31T22:30:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -668,6 +712,8 @@
     "score": "74 / B",
     "portfolio_role": "Core income (watchlist at current price)",
     "published_at": "2026-07-30T23:20:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -716,6 +762,8 @@
     "score": "76 / B",
     "portfolio_role": "Watchlist (quality income, wrong price for entry)",
     "published_at": "2026-07-21T22:30:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "supersedes": "reports/GSK.L/2026-07-03-GSK-plc-GSK.L.md",
     "summary_evidence": []
   },
@@ -729,6 +777,8 @@
     "score": "74 / B",
     "portfolio_role": "Cyclical income (watchlist at current price)",
     "published_at": "2026-07-18T23:05:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -741,6 +791,8 @@
     "score": "70 / B",
     "portfolio_role": "Cyclical income (hold, add on weakness)",
     "published_at": "2026-07-31T11:12:30+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -753,6 +805,8 @@
     "score": "75 / B",
     "portfolio_role": "Cyclical income (watchlist at current price)",
     "published_at": "2026-07-18T23:58:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -765,6 +819,8 @@
     "score": "69 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-07-07T11:05:45+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",
@@ -793,6 +849,8 @@
     "score": "57 / C",
     "portfolio_role": "Cyclical income",
     "published_at": "2026-07-07T11:06:15+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -805,6 +863,8 @@
     "score": "60 / C",
     "portfolio_role": "Watchlist（观察仓）",
     "published_at": "2026-07-31T11:09:03+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -817,6 +877,8 @@
     "score": "60 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-07-31T11:09:18+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -829,6 +891,8 @@
     "score": "64 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-07-06T17:07:15+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -841,6 +905,8 @@
     "score": "72 / B",
     "portfolio_role": "Core income",
     "published_at": "2026-07-06T21:05:00+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -853,6 +919,8 @@
     "score": "56 / C",
     "portfolio_role": "Watchlist",
     "published_at": "2026-07-06T21:59:28+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -865,6 +933,8 @@
     "score": "73 / B",
     "portfolio_role": "Core income（质地）；当前价高于买入区，新资金建议等待",
     "published_at": "2026-07-31T11:09:11+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -877,6 +947,8 @@
     "score": "77 / B",
     "portfolio_role": "Core income",
     "published_at": "2026-07-04T13:58:27+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -889,6 +961,8 @@
     "score": "72 / B",
     "portfolio_role": "Watchlist",
     "published_at": "2026-07-04T23:48:39+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -901,6 +975,8 @@
     "score": "79 / B",
     "portfolio_role": "Cyclical income",
     "published_at": "2026-07-04T23:43:03+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -913,6 +989,8 @@
     "score": "75 / B",
     "portfolio_role": "Core income",
     "published_at": "2026-07-06T21:29:13+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "original_unverified",
     "summary_evidence": []
   },
   {
@@ -925,6 +1003,8 @@
     "score": "72 / B",
     "portfolio_role": "Watchlist",
     "published_at": "2026-07-04T23:19:43+08:00",
+    "ruleset": "pre-2.2",
+    "summary_provenance": "repaired_with_evidence",
     "summary_evidence": [
       {
         "field": "summary_numeric_value",

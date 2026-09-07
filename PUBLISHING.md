@@ -2,7 +2,14 @@
 
 `reports/index.json` 是索引唯一维护入口，格式由 `reports/index.schema.json` 定义。报告正文保存其基准日的研究，不因导航修复而改成当前观点。修复记录见 [ARCHIVE-REPAIRS.md](ARCHIVE-REPAIRS.md)。
 
-每条记录须包含 `as_of_date`、`ticker`、`company`、`exchange`、`path`、`summary`、`score`、`portfolio_role`、`published_at` 和 `summary_evidence`。评分使用 `75 / B` 形式；无法评估时使用 `Not assessed`。发布日期带时区，数据基准日不随修复更新。
+每条记录须包含 `as_of_date`、`ticker`、`company`、`exchange`、`path`、`summary`、`score`、`portfolio_role`、`published_at`、`ruleset`、`summary_provenance` 和 `summary_evidence`。评分使用 `75 / B` 形式，等级范围 A–E；无法评估时使用 `Not assessed`。发布日期带时区，数据基准日不随修复更新。
+
+
+`ruleset` 记录报告产生时的规则版本：`pre-2.2` 或 `2.2`。技能 v2.2 变更了所需收益率推导、预测期长度、收息区间标签、保险行业现金口径与以股代息口径，因此 `pre-2.2` 报告的区间、标签与 veto 结论不得当作当前判断复用；差异见 [MIGRATION.md](MIGRATION.md)。
+
+`summary_provenance` 取 `original_unverified` 或 `repaired_with_evidence`。前者保留原作者摘要文字，允许 `summary_evidence` 为空数组——这是显式记录的豁免，不代表内容已核实；后者必须附非空 `summary_evidence`。以 `ruleset: 2.2` 发布的新报告必须为 `repaired_with_evidence`。
+
+每份报告正文开头须有 `dividend-report-meta` 注释块，字段 `ticker`、`company`、`exchange`、`as_of_date`、`published_at`、`ruleset` 与索引一致；索引有 `supersedes` 时注释块须给出相同值，索引没有时注释块也不得出现该字段。缺少注释块会使全部元数据交叉核对失效，因此验证器将其视为错误而非跳过。
 
 港股代码补至至少四位并保留有效五位代码，例如 `0836.HK`。路径为 `reports/<ticker>/<YYYY-MM-DD>-<company-slug>-<ticker>.md`。新文件名采用可读名称与连字符；保留已有合法路径，括号本身不是断链。移动路径时同步所有引用。
 

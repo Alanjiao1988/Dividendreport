@@ -5,6 +5,7 @@ exchange: NYSE / Euronext Paris
 as_of_date: 2026-07-30
 published_at: 2026-07-30T23:20:00+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** TotalEnergies SE (TTE) · **交易所 / Exchange:** NYSE / Euronext Paris · **数据基准日 / As-of:** 2026-07-30 · **发布时间 / Published:** 2026-07-30 23:20 (Asia/Hong_Kong)

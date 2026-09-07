@@ -5,6 +5,7 @@ exchange: NYSE
 as_of_date: 2026-07-02
 published_at: 2026-07-04T23:19:43+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** AstraZeneca PLC (AZN) · **交易所 / Exchange:** NYSE · **数据基准日 / As-of:** 2026-07-02 · **发布时间 / Published:** 2026-07-04 23:19 (Asia/Hong_Kong)

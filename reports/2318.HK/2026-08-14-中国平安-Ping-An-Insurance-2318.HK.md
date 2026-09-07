@@ -5,6 +5,8 @@ exchange: HKEX
 as_of_date: 2026-08-14
 published_at: 2026-08-16T16:07:38+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
+supersedes: reports/2318.HK/2026-07-02-中国平安-2318.HK.md
 -->
 
 > **企业 / Company:** 中国平安 Ping An Insurance (2318.HK) · **交易所 / Exchange:** HKEX · **数据基准日 / As-of:** 2026-08-14 · **发布时间 / Published:** 2026-08-16 16:07 (Asia/Hong_Kong)

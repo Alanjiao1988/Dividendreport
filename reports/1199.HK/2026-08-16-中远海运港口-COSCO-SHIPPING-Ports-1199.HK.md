@@ -5,6 +5,7 @@ exchange: HKEX
 as_of_date: 2026-08-16
 published_at: 2026-08-16T21:50:31+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** 中远海运港口 COSCO SHIPPING Ports (1199.HK) · **交易所 / Exchange:** HKEX · **数据基准日 / As-of:** 2026-08-16 · **发布时间 / Published:** 2026-08-16 21:50 (Asia/Hong_Kong)

@@ -1,3 +1,13 @@
+<!-- dividend-report-meta
+ticker: ITUB
+company: Itaú Unibanco Holding S.A.
+exchange: NYSE (ADR)
+as_of_date: 2026-08-07
+published_at: 2026-08-09T09:00:00+08:00
+generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
+-->
+
 # Itaú Unibanco Holding S.A. (NYSE: ITUB) — Dividend Income Analysis
 
 **Mode: Full Analysis** · 投资者假设：HK resident individual，普通券商账户，全现金派息选择

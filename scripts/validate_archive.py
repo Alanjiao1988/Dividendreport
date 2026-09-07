@@ -53,12 +53,22 @@ def validate_entries(entries, root=ROOT):
         groups[entry['ticker']].append(entry)
         text = path.read_text(encoding='utf-8')
         metadata = re.search(r'<!--\s*dividend-report-meta\s*\n(.*?)-->', text, re.S)
-        if metadata:
+        if not metadata:
+            # An optional block would let a report silently skip every metadata cross-check.
+            errors.append(f'{label}: report is missing its dividend-report-meta block')
+        else:
             fields = dict(line.split(':', 1) for line in metadata.group(1).splitlines() if ':' in line)
             fields = {k.strip(): v.strip() for k, v in fields.items()}
-            for key in ('ticker', 'company', 'exchange', 'as_of_date', 'published_at'):
-                if key in fields and fields[key] != entry[key]:
+            for key in ('ticker', 'company', 'exchange', 'as_of_date', 'published_at', 'ruleset'):
+                if fields.get(key) != entry[key]:
                     errors.append(f'{label}: report metadata disagrees with index {key}')
+            # The index is the sole maintenance entry, so a second version chain must not diverge.
+            if fields.get('supersedes') != entry.get('supersedes'):
+                errors.append(f'{label}: report metadata disagrees with index supersedes')
+        if entry['summary_provenance'] == 'repaired_with_evidence' and not entry['summary_evidence']:
+            errors.append(f'{label}: a repaired summary must record its transcription evidence')
+        if entry['ruleset'] != 'pre-2.2' and entry['summary_provenance'] != 'repaired_with_evidence':
+            errors.append(f'{label}: a report published under the current ruleset must carry summary evidence')
         if datetime.fromisoformat(entry['published_at'].replace('Z', '+00:00')).date().isoformat() < entry['as_of_date']:
             errors.append(f'{label}: publication predates analysis cutoff')
         if re.search(r'\b(?:HK|US|HKD|USD)\s*\\?\.[0-9]|\$\s*\.[0-9]|\bat\s+\.(?:\s|$)', entry['summary']):

@@ -5,6 +5,7 @@ exchange: NYSE (ADS)
 as_of_date: 2026-07-03
 published_at: 2026-07-04T23:43:03+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** Shell plc (SHEL) · **交易所 / Exchange:** NYSE (ADS) · **数据基准日 / As-of:** 2026-07-03 · **发布时间 / Published:** 2026-07-04 23:43 (Asia/Hong_Kong)

@@ -5,6 +5,7 @@ exchange: NYSE
 as_of_date: 2026-08-06
 published_at: 2026-08-06T23:55:00+08:00
 generated_by: dividend-income-equity-analysis skill
+ruleset: pre-2.2
 -->
 
 > **企业 / Company:** Chevron Corporation (CVX) · **交易所 / Exchange:** NYSE · **数据基准日 / As-of:** 2026-08-06 · **发布时间 / Published:** 2026-08-06 23:55 (Asia/Hong_Kong)
