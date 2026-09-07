@@ -2,6 +2,10 @@
 
 交易所 Exchange: HKEX
 
-| 数据基准日 As-of | 报告 Report | 结论 Summary | 评分 Score | 组合角色 Role |
-|---|---|---|---|---|
-| 2026-07-31 | [2026-07-31-中国移动-China-Mobile-0941.HK.md](2026-07-31-中国移动-China-Mobile-0941.HK.md) | Grade B core income — hold, not an add point. 10% PRC withholding applies via HKSCC Nominees (broker-observed, IBKR) despite HK incorporation, because the company is a PRC tax-resident enterprise; TTM net yield 5.70% at HK$83.25, normalized 5.85%. Net cash RMB 130-276bn, D/E ~0.07, zero dilution (no scrip, no DRIP, no issuance since Dec 2021, and no buyback ever), 6 straight years of DPS growth to HK$5.27. But 57% of the four-year DPS growth came from ratcheting the payout ratio 65%->75.5%, not from earnings (DPS CAGR 6.7% vs EPS CAGR 2.9%) — that lever has only ~5pp left, after which DPS growth converges to ~2-3% earnings growth. FY2025 broke a four-year coverage streak: FCF RMB 82bn < dividends RMB 104bn (0.79x), funded from the cash pile not debt; OCF fell RMB 316bn->233bn unexplained, though Q1 2026 OCF +128% points to working-capital timing. Payout is ratio-linked, not progressive, so the Bear case is a -7.4% cut to HK$4.88, not merely slower growth. N=HK$4.87 (mid_cycle, normalized to a 77% payout, deliberately below the Base 78-80% ratchet), B=HK$4.39, r 5.5-7.0%; fair/hold HK$69.6-88.6, accumulate 62.7-69.6, strong buy <=62.7 — price must fall 16.4% to accumulate. Current 6.33% gross yield is the lowest of the past six annual observations. Veto not triggered. Watch H1 2026 results (~14 Aug 2026) for OCF recovery, and mobile ARPU (RMB 46.8, falling) — the highest-leverage driver. | 77 / B | Core income — hold; add below HK$69.6 |
+历史版本按数据基准日列出；最新研究请沿版本链阅读。摘要保留原报告当时的判断。
+
+| 数据基准日 As-of | 报告 Report | 结论 Summary | 评分 Score | 组合角色 Role | 前一版本 Supersedes |
+|---|---|---|---|---|---|
+| 2026-07-31 | [2026-07-31-中国移动-China-Mobile-0941.HK.md](<2026-07-31-中国移动-China-Mobile-0941.HK.md>) | 原报告 77 / B，Core income；持有，等待 HKD 69.6 以下再加仓。参考价 HKD 83.25，TTM 净收益率 5.70%，正常化 5.85%。现金与分红政策较强，但过往股息增长依赖派息率上调，经营增长和现金覆盖需跟踪。原报告税务依据属于当时的研究记录，归档整理未重新验证。 | 77 / B | Core income — hold; add below HK$69.6 | — |
+
+[完整索引与发布契约](../../PUBLISHING.md)
