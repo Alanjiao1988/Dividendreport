@@ -2,7 +2,7 @@
 
 红利股分析报告归档 · Dividend income equity analysis reports.
 
-归档含 **40 份报告、32 个不同标的**；同一标的的多个版本不构成独立样本。
+归档含 **41 份报告、32 个不同标的**；同一标的的多个版本不构成独立样本。
 
 以下为各报告基准日的历史结论。价格、税务、评分与买入区间未因本次归档整理而重新研究；旧版 Fair / Strong Buy 等标签沿用原文，不代表当前建议。
 
@@ -10,14 +10,15 @@
 
 [发布契约与验证方式](PUBLISHING.md) · [规则版本迁移说明](MIGRATION.md) · [历史修复依据](ARCHIVE-REPAIRS.md)
 
-规则版本：**pre-2.2 40 份、2.2 0 份**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。
+规则版本：**pre-2.2 40 份、2.2 0 份、2.4 1 份**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。
 
-摘要证据覆盖：**16 / 40** 份附原文数字摘录；其余 24 份保留原作者摘要，未逐项核验。
+摘要证据覆盖：**17 / 41** 份附原文数字摘录；其余 24 份保留原作者摘要，未逐项核验。
 
 ## 报告索引 / Report Index
 
 | 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 规则版本 · 摘要来源 | 结论 Summary |
 |---|---|---|---|---|---|---|
+| 2026-09-10 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](<reports/2318.HK/2026-09-10-中国平安-Ping-An-Insurance-2318.HK.md>) | 2.4 / 附证据 | 2026中期每股股息RMB0.98（同比+3.2%）；按截止前HKD54.80参考价，已付TTM净股息率5.01%（10%初始预扣情景、费用前）。H股中期股息10月16日才付款，未纳入TTM。历史现金收付可核查，但经常性资本上缴与母公司强制用途未闭环，股息安全性及veto为Unclear，估值暂停，列Watchlist；不沿用旧版OPAT定比转现推算的覆盖率和买入区间。 |
 | 2026-08-16 | 中远海运港口 COSCO SHIPPING Ports | 1199.HK | HKEX | [报告](<reports/1199.HK/2026-08-16-中远海运港口-COSCO-SHIPPING-Ports-1199.HK.md>) | pre-2.2 / 原文摘要 | 股息在现金层面极安全，但每股股息被以股代息持续稀释：DPS 五年 -5.5%/年；净收益率 5.04%（0% 预扣税），未达 6.5-8.5% 入场门槛。Very safe in cash terms but structurally diluted by ~83% scrip take-up. |
 | 2026-08-16 | 中国电信 China Telecom | 0728.HK | HKEX | [报告](<reports/0728.HK/2026-08-16-中国电信-China-Telecom-0728.HK.md>) | pre-2.2 / 原文摘要 | Cash-safe but profit-linked dividend facing a ~12% FY2026 cut from the 6%->9% telecom VAT reset; 5.77% TTM net yield is backward-looking. Fully priced at HKD 4.725; add below HKD 4.35. |
 | 2026-08-15 | Vale S.A. | VALE | NYSE (ADR) | [报告](<reports/VALE/2026-08-15-Vale-S.A.-VALE.md>) | pre-2.2 / 原文摘要 | TTM 7.0% net yield is inflated by a one-off tax pull-forward; run-rate ~4.6% and mid-cycle ~3.5% net. Quality asset, wrong price. |
@@ -59,6 +60,6 @@
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](<reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md>) | pre-2.2 / 附证据 | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a growth compounder, not an income holding at $195 in the archived report. |
 | 2026-07-02 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](<reports/2318.HK/2026-07-02-中国平安-2318.HK.md>) | pre-2.2 / 原文摘要 | Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered. |
 
-最近报告声明发布时间 / Latest author-declared publication timestamp: 2026-08-16T23:05:26+08:00
+最近报告声明发布时间 / Latest author-declared publication timestamp: 2026-09-10T14:51:55+08:00
 
 _This is research and archival material, not personalized investment advice._

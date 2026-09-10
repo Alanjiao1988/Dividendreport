@@ -1,5 +1,61 @@
 [
   {
+    "as_of_date": "2026-09-10",
+    "ticker": "2318.HK",
+    "company": "中国平安 Ping An Insurance",
+    "exchange": "HKEX",
+    "path": "reports/2318.HK/2026-09-10-中国平安-Ping-An-Insurance-2318.HK.md",
+    "summary": "2026中期每股股息RMB0.98（同比+3.2%）；按截止前HKD54.80参考价，已付TTM净股息率5.01%（10%初始预扣情景、费用前）。H股中期股息10月16日才付款，未纳入TTM。历史现金收付可核查，但经常性资本上缴与母公司强制用途未闭环，股息安全性及veto为Unclear，估值暂停，列Watchlist；不沿用旧版OPAT定比转现推算的覆盖率和买入区间。",
+    "score": "Not assessed",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-09-10T14:51:55+08:00",
+    "ruleset": "2.4",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/2318.HK/2026-08-14-中国平安-Ping-An-Insurance-2318.HK.md",
+    "summary_evidence": [
+      {
+        "field": "reference_price_hkd",
+        "value": "54.80",
+        "source_excerpt": "**报价：HKD54.80／股**"
+      },
+      {
+        "field": "paid_ttm_net_yield",
+        "value": "5.01%",
+        "source_excerpt": "**已支付TTM税前股息率为5.57%，税后股息率为5.01%。**"
+      },
+      {
+        "field": "declared_interim_dps_rmb",
+        "value": "0.98",
+        "source_excerpt": "**2026中期每股股息RMB0.98，同比增长3.2%；默认港元毛额HKD1.13347。**"
+      },
+      {
+        "field": "declared_interim_dps_growth",
+        "value": "3.2%",
+        "source_excerpt": "**2026中期每股股息RMB0.98，同比增长3.2%；默认港元毛额HKD1.13347。**"
+      },
+      {
+        "field": "initial_withholding_scenario",
+        "value": "10%",
+        "source_excerpt": "10%初始预扣情景净额HKD2.746593／股，费用前。"
+      },
+      {
+        "field": "h_share_interim_payment_date",
+        "value": "10月16日",
+        "source_excerpt": "但H股付款日为10月16日，尚未计入已付TTM；9月10日新买入不享有这笔权益。"
+      },
+      {
+        "field": "dividend_safety_and_veto",
+        "value": "Unclear",
+        "source_excerpt": "**股息安全性：Unclear；红利陷阱否决：Unclear。**"
+      },
+      {
+        "field": "portfolio_role",
+        "value": "Watchlist",
+        "source_excerpt": "**结论：列入观察名单（Watchlist），不发布可执行买入区间。**"
+      }
+    ]
+  },
+  {
     "as_of_date": "2026-08-16",
     "ticker": "0728.HK",
     "company": "中国电信 China Telecom",
