@@ -119,9 +119,34 @@ class ArchiveTests(unittest.TestCase):
         self.entries[0]['summary_provenance'] = 'original_unverified'
         self.entries[0]['summary_evidence'] = []
         self.assertEqual(validate_entries(self.entries, self.root), [])
-        self.entries[0]['ruleset'] = '2.2'
-        self.write_report(self.entries[0])
-        self.assertTrue(any('current ruleset' in e
+        for ruleset in ('2.2', '2.4'):
+            with self.subTest(ruleset=ruleset):
+                self.entries[0]['ruleset'] = ruleset
+                self.write_report(self.entries[0])
+                self.assertTrue(any('current ruleset' in e
+                                    for e in validate_entries(self.entries, self.root)))
+
+    def test_supported_current_rulesets_validate_and_render_separately(self):
+        for ruleset in ('2.2', '2.4'):
+            with self.subTest(ruleset=ruleset):
+                self.entries[1]['ruleset'] = ruleset
+                self.entries[1]['score'] = 'Not assessed'
+                self.write_report(self.entries[1])
+                self.write_views()
+                self.assertEqual(validate_archive(self.root), [])
+                readme = rendered_files(self.entries)['README.md']
+                self.assertIn('pre-2.2 1 份', readme)
+                self.assertIn(f'{ruleset} 1 份', readme)
+                other_ruleset = '2.4' if ruleset == '2.2' else '2.2'
+                self.assertIn(f'{other_ruleset} 0 份', readme)
+                self.assertIn(f'{ruleset} / 附证据', readme)
+                ticker_readme = rendered_files(self.entries)['reports/0316.HK/README.md']
+                self.assertIn(f'{ruleset} / 附证据', ticker_readme)
+
+    def test_unsupported_ruleset_is_rejected(self):
+        self.entries[1]['ruleset'] = '3.0'
+        self.write_report(self.entries[1])
+        self.assertTrue(any('ruleset' in e
                             for e in validate_entries(self.entries, self.root)))
 
     def test_navigation_exposes_ruleset_and_evidence_coverage(self):
