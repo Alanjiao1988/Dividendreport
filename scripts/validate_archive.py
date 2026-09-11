@@ -7,12 +7,75 @@ import re
 import unicodedata
 from collections import defaultdict
 from datetime import datetime
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
+REPORT_SUFFIXES = {'.md', '.html'}
+
+
+class HtmlReportText(HTMLParser):
+    """Read static body evidence without executing scripts or interpreting stylesheets."""
+
+    VOID_TAGS = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+                 'link', 'meta', 'param', 'source', 'track', 'wbr'}
+    TEXT_BREAKS = {'address', 'article', 'aside', 'blockquote', 'br', 'caption',
+                   'dd', 'div', 'dl', 'dt', 'figcaption', 'figure', 'footer',
+                   'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'header', 'hr', 'li',
+                   'main', 'nav', 'ol', 'p', 'pre', 'section', 'table', 'td',
+                   'th', 'tr', 'ul'}
+
+    def __init__(self):
+        super().__init__()
+        self.stack = []
+        self.parts = []
+        self.html_attributes = None
+        self.has_body = False
+        self.utf8 = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == 'html':
+            self.html_attributes = attrs
+        if tag == 'body':
+            self.has_body = True
+        if tag == 'meta' and (attrs.get('charset') or '').lower() == 'utf-8':
+            self.utf8 = True
+        hidden = (
+            (self.stack and self.stack[-1][1])
+            or tag in {'head', 'script', 'style', 'template', 'noscript'}
+            or 'hidden' in attrs
+            or (attrs.get('aria-hidden') or '').lower() == 'true'
+            or re.search(r'(?:^|;)\s*(?:display\s*:\s*none|visibility\s*:\s*(?:hidden|collapse))\b',
+                         attrs.get('style') or '', re.I) is not None
+        )
+        if tag in self.TEXT_BREAKS:
+            self.parts.append('\n')
+        if tag not in self.VOID_TAGS:
+            self.stack.append((tag, bool(hidden)))
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID_TAGS:
+            self.handle_endtag(tag)
+
+    def handle_endtag(self, tag):
+        if tag in self.TEXT_BREAKS:
+            self.parts.append('\n')
+        for i in range(len(self.stack) - 1, -1, -1):
+            if self.stack[i][0] == tag:
+                del self.stack[i:]
+                break
+
+    def handle_data(self, data):
+        if self.stack and not self.stack[-1][1] and any(tag == 'body' for tag, _ in self.stack):
+            self.parts.append(data)
+
+    def body_text(self):
+        return ' '.join(''.join(self.parts).split())
 
 
 def plain(text):
@@ -48,10 +111,24 @@ def validate_entries(entries, root=ROOT):
         if entry['path'] in paths:
             errors.append(f'{label}: duplicate report path')
         paths.add(entry['path'])
-        if relative.parent.as_posix() != f"reports/{entry['ticker']}" or not relative.name.startswith(entry['as_of_date'] + '-') or not relative.name.endswith('-' + entry['ticker'] + '.md'):
+        if (relative.parent.as_posix() != f"reports/{entry['ticker']}"
+                or not relative.name.startswith(entry['as_of_date'] + '-')
+                or relative.suffix not in REPORT_SUFFIXES
+                or not relative.stem.endswith('-' + entry['ticker'])):
             errors.append(f'{label}: report path disagrees with ticker/date')
         groups[entry['ticker']].append(entry)
         text = path.read_text(encoding='utf-8')
+        evidence_text = text
+        if relative.suffix == '.html':
+            document = HtmlReportText()
+            document.feed(text)
+            document.close()
+            if document.html_attributes is None or not document.has_body or not document.utf8:
+                errors.append(f'{label}: HTML report requires html/body elements and UTF-8 charset')
+            if (document.html_attributes is not None
+                    and document.html_attributes.get('data-ruleset') != entry['ruleset']):
+                errors.append(f'{label}: HTML data-ruleset disagrees with index ruleset')
+            evidence_text = document.body_text()
         metadata = re.search(r'<!--\s*dividend-report-meta\s*\n(.*?)-->', text, re.S)
         if not metadata:
             # An optional block would let a report silently skip every metadata cross-check.
@@ -75,7 +152,8 @@ def validate_entries(entries, root=ROOT):
             errors.append(f'{label}: damaged monetary literal in summary')
         for evidence in entry['summary_evidence']:
             excerpt, value = evidence['source_excerpt'], evidence['value']
-            if excerpt not in text:
+            comparable_excerpt = ' '.join(excerpt.split()) if relative.suffix == '.html' else excerpt
+            if comparable_excerpt not in evidence_text:
                 errors.append(f'{label}: evidence excerpt is absent from archived report')
             if not contains_value(excerpt, value) or not contains_value(entry['summary'], value):
                 errors.append(f'{label}: evidence value is inconsistent with source/summary')
@@ -109,7 +187,8 @@ def validate_archive(root=ROOT):
             if not target.is_relative_to(root) or not target.is_file():
                 errors.append(f'{relative}: missing or unsafe local link {angle or ordinary}')
     indexed = {e['path'] for e in entries}
-    actual = {p.relative_to(root).as_posix() for p in (root / 'reports').glob('*/*.md') if p.name != 'README.md'}
+    actual = {p.relative_to(root).as_posix() for p in (root / 'reports').glob('*/*')
+              if p.is_file() and p.suffix.lower() in REPORT_SUFFIXES and p.name != 'README.md'}
     for orphan in sorted(actual - indexed):
         errors.append(f'{orphan}: archived report missing from index')
     return errors

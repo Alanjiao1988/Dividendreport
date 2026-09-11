@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/Alanjiao1988/Dividendreport/blob/main/reports/index.schema.json",
-  "title": "Dividend report archive index contract 1.1",
+  "title": "Dividend report archive index contract 1.2",
   "type": "array",
   "minItems": 1,
   "items": {
@@ -40,7 +40,7 @@
       },
       "path": {
         "type": "string",
-        "pattern": "^reports/[^/]+/[^/]+\\.md$"
+        "pattern": "^reports/[^/]+/[^/]+\\.(?:md|html)$"
       },
       "summary": {
         "type": "string",
@@ -64,7 +64,8 @@
       "ruleset": {
         "enum": [
           "pre-2.2",
-          "2.2"
+          "2.2",
+          "2.4"
         ],
         "description": "Ruleset the report was produced under. pre-2.2 predates the retired sector yield presets and the five-year outlook requirement."
       },
@@ -77,7 +78,7 @@
       },
       "supersedes": {
         "type": "string",
-        "pattern": "^reports/[^/]+/[^/]+\\.md$"
+        "pattern": "^reports/[^/]+/[^/]+\\.(?:md|html)$"
       },
       "publication_provenance": {
         "type": "object",
