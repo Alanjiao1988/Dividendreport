@@ -41,8 +41,27 @@ class ArchiveTests(unittest.TestCase):
                 f"published_at: {entry['published_at']}", f"ruleset: {entry['ruleset']}"]
         if entry.get('supersedes'):
             meta.append(f"supersedes: {entry['supersedes']}")
-        body = '\n'.join(['<!-- dividend-report-meta'] + meta + ['-->', 'Price: HK$4.78.', ''])
+        body = '\n'.join(['<!-- dividend-report-meta'] + meta + ['-->', ''])
+        if Path(entry['path']).suffix == '.html':
+            body = ('<!DOCTYPE html>\n' + body
+                    + f'<html lang="zh-CN" data-ruleset="{entry["ruleset"]}">'
+                    '<head><title>Fixture</title></head><body>'
+                    '<p>Price: <strong>HK$4.78</strong> &amp; cash.</p>'
+                    '</body></html>\n')
+        else:
+            body += 'Price: HK$4.78.\n'
         (self.root / entry['path']).write_text(body, encoding='utf8')
+
+    def add_html_report(self, day='03'):
+        entry = copy.deepcopy(self.entries[-1])
+        entry.update(as_of_date=f'2026-01-{day}', published_at=f'2026-01-{day}T20:00:00+08:00',
+                     path=f'reports/0316.HK/2026-01-{day}-Fictional-0316.HK.html',
+                     ruleset='2.4', score='Not assessed', supersedes=self.entries[-1]['path'],
+                     summary_evidence=[dict(field='price', value='4.78',
+                                            source_excerpt='Price: HK$4.78 & cash.')])
+        self.entries.append(entry)
+        self.write_report(entry)
+        return entry
 
     def write_views(self):
         (self.root / 'reports/index.json').write_text(json.dumps(self.entries), encoding='utf8')
@@ -129,3 +148,87 @@ class ArchiveTests(unittest.TestCase):
         self.assertIn('pre-2.2', readme)
         self.assertIn('MIGRATION.md', readme)
         self.assertIn('摘要证据覆盖', readme)
+
+    def test_html_and_markdown_versions_validate_together(self):
+        self.add_html_report()
+        self.add_html_report('04')
+        self.write_views()
+        self.assertEqual(validate_archive(self.root), [])
+        readme = (self.root / 'README.md').read_text(encoding='utf8')
+        self.assertIn('pre-2.2 2 份、2.2 0 份、2.4 2 份', readme)
+        self.assertIn('[HTML 报告]', readme)
+        self.assertIn('下载后用浏览器打开', readme)
+        ticker_readme = (self.root / 'reports/0316.HK/README.md').read_text(encoding='utf8')
+        self.assertIn('[前一版](<2026-01-03-Fictional-0316.HK.html>)', ticker_readme)
+
+    def test_html_evidence_decodes_entities_and_preserves_inline_text(self):
+        entry = self.add_html_report()
+        entry['summary_evidence'][0]['source_excerpt'] = 'Price:\n HK$4.78 & cash.'
+        self.assertEqual(validate_entries(self.entries, self.root), [])
+        entry['summary_evidence'][0]['source_excerpt'] = '<strong>HK$4.78</strong>'
+        self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_html_evidence_excludes_non_body_and_hidden_text(self):
+        entry = self.add_html_report()
+        path = self.root / entry['path']
+        fragments = [
+            '<!-- Price: HK$4.78 & cash. -->',
+            '<script>Price: HK$4.78 & cash.</script>',
+            '<style>Price: HK$4.78 & cash.</style>',
+            '<template><p>Price: HK$4.78 &amp; cash.</p></template>',
+            '<div hidden><p>Price: HK$4.78 &amp; cash.</p></div>',
+        ]
+        for fragment in fragments:
+            with self.subTest(fragment=fragment):
+                self.write_report(entry)
+                body = path.read_text(encoding='utf8').replace(
+                    '<p>Price: <strong>HK$4.78</strong> &amp; cash.</p>', fragment)
+                path.write_text(body, encoding='utf8')
+                self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
+        self.write_report(entry)
+        body = path.read_text(encoding='utf8').replace(
+            '<p>Price: <strong>HK$4.78</strong> &amp; cash.</p>', '')
+        body = body.replace('<title>Fixture</title>', '<title>Price: HK$4.78 &amp; cash.</title>')
+        path.write_text(body, encoding='utf8')
+        self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_html_void_tags_do_not_hide_following_evidence(self):
+        entry = self.add_html_report()
+        path = self.root / entry['path']
+        body = path.read_text(encoding='utf8').replace(
+            '<body>', '<body><img hidden><br/><hr>')
+        path.write_text(body, encoding='utf8')
+        self.assertEqual(validate_entries(self.entries, self.root), [])
+
+    def test_html_document_and_embedded_ruleset_must_be_valid(self):
+        entry = self.add_html_report()
+        path = self.root / entry['path']
+        body = path.read_text(encoding='utf8')
+        path.write_text(body.replace('data-ruleset="2.4"', 'data-ruleset="2.2"'), encoding='utf8')
+        self.assertTrue(any('HTML ruleset' in e for e in validate_entries(self.entries, self.root)))
+        path.write_text(body[:body.index('<html')] + 'Price: HK$4.78 & cash.', encoding='utf8')
+        self.assertTrue(any('html and body' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_html_ruleset_requires_evidence_and_matching_metadata(self):
+        entry = self.add_html_report()
+        entry['summary_evidence'] = []
+        self.assertTrue(any('transcription evidence' in e for e in validate_entries(self.entries, self.root)))
+        entry['summary_provenance'] = 'original_unverified'
+        self.assertTrue(any('current ruleset' in e for e in validate_entries(self.entries, self.root)))
+        entry['company'] = 'Changed'
+        self.assertTrue(any('metadata disagrees' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_unindexed_html_report_is_detected(self):
+        entry = self.add_html_report()
+        self.entries.pop()
+        self.write_views()
+        self.assertTrue(any(entry['path'] in e and 'missing from index' in e
+                            for e in validate_archive(self.root)))
+
+    def test_unsupported_report_extension_or_ruleset_is_rejected(self):
+        entry = self.add_html_report()
+        entry['ruleset'] = '9.9'
+        self.assertTrue(validate_entries(self.entries, self.root))
+        entry['ruleset'] = '2.4'
+        entry['path'] = entry['path'].replace('.html', '.txt')
+        self.assertTrue(validate_entries(self.entries, self.root))
