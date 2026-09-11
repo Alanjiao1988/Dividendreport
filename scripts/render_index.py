@@ -50,7 +50,7 @@ def rendered_files(entries):
         '|---|---|---|---|---|---|---|',
     ])
     for e in ordered:
-        report_label = 'HTML 报告' if Path(e['path']).suffix == '.html' else '报告'
+        report_label = 'HTML（下载后打开）' if Path(e['path']).suffix == '.html' else '报告'
         row=[e['as_of_date'],e['company'],e['ticker'],e['exchange'],f"[{report_label}](<{e['path']}>)",ruleset_cell(e),e['summary']]
         root.append('| ' + ' | '.join(map(cell,row)) + ' |')
     latest=max(entries,key=lambda e:datetime.fromisoformat(e['published_at']))['published_at']
