@@ -187,6 +187,11 @@ class ArchiveTests(unittest.TestCase):
         entry['summary_evidence'][0]['source_excerpt'] = 'Price: HK$<strong>4.78</strong>.'
         self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
 
+    def test_html_void_tags_do_not_hide_following_evidence(self):
+        entry = self.use_html()
+        self.write_report(entry, '<img hidden><br><hr>Price: HK$4.78.')
+        self.assertEqual(validate_entries(self.entries, self.root), [])
+
     def test_html_non_body_and_hidden_text_cannot_supply_evidence(self):
         entry = self.use_html()
         hidden_fragments = [

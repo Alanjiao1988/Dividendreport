@@ -11,7 +11,7 @@
 
 每份报告正文开头须有 `dividend-report-meta` 注释块，字段 `ticker`、`company`、`exchange`、`as_of_date`、`published_at`、`ruleset` 与索引一致；索引有 `supersedes` 时注释块须给出相同值，索引没有时注释块也不得出现该字段。HTML 可将该注释放在 `<!DOCTYPE html>` 之后，须含 `html`、`body` 元素及与索引一致的 `data-ruleset`。缺少注释块会使全部元数据交叉核对失效，因此验证器将其视为错误而非跳过。
 
-港股代码补至至少四位并保留有效五位代码，例如 `0836.HK`。路径为 `reports/<ticker>/<YYYY-MM-DD>-<company-slug>-<ticker>.html` 或已有的 `.md` 报告。默认新报告为可独立阅读的单文件 HTML，样式、图表及正文内嵌，不批量转换或重命名历史 Markdown。新文件名采用可读名称与连字符；保留已有合法路径，括号本身不是断链。移动路径时同步所有引用。
+港股代码补至至少四位并保留有效五位代码，例如 `0836.HK`。路径为 `reports/<ticker>/<YYYY-MM-DD>-<company-slug>-<ticker>.md` 或 `.html`。Markdown 与可独立阅读的单文件 HTML 均可用于新报告；HTML 的样式、图表及正文内嵌，不批量转换或重命名历史报告。新文件名采用可读名称与连字符；保留已有合法路径，括号本身不是断链。移动路径时同步所有引用。
 
 摘要为不超过 600 个 Unicode 字符的单行文字，不含表格分隔符。保留原报告的结论、时点与关键限制。修复或重写的关键数字须在 `summary_evidence` 中记录 `field`、`value`、`source_excerpt`，摘录须来自对应原文。HTML 摘录采用静态正文文本，解码实体、连接行内标签并折叠空白；注释、`head`、`script`、`style`、`template` 及 `hidden` 内容不作为正文证据。Markdown 保持原有原文匹配口径。解析器不执行脚本或完整 CSS 布局，发布者仍须核对实际显示内容及经济上下文。原样保留且未补录证据的历史摘要可以为空数组；这不代表其内容已经逐条核实。验证器核对已提供摘录的存在和数字转录，不替代来源审阅。
 
