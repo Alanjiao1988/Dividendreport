@@ -2,7 +2,7 @@
 
 红利股分析报告归档 · Dividend income equity analysis reports.
 
-归档含 **41 份报告、32 个不同标的**；同一标的的多个版本不构成独立样本。
+归档含 **42 份报告、32 个不同标的**；同一标的的多个版本不构成独立样本。
 
 以下为各报告基准日的历史结论。价格、税务、评分与买入区间未因本次归档整理而重新研究；旧版 Fair / Strong Buy 等标签沿用原文，不代表当前建议。
 
@@ -10,14 +10,15 @@
 
 [发布契约与验证方式](PUBLISHING.md) · [规则版本迁移说明](MIGRATION.md) · [历史修复依据](ARCHIVE-REPAIRS.md)
 
-规则版本：**pre-2.2 40 份、2.2 0 份、2.4 1 份**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。
+规则版本：**pre-2.2 40 份、2.2 0 份、2.4 2 份**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。
 
-摘要证据覆盖：**17 / 41** 份附原文数字摘录；其余 24 份保留原作者摘要，未逐项核验。
+摘要证据覆盖：**18 / 42** 份附原文数字摘录；其余 24 份保留原作者摘要，未逐项核验。
 
 ## 报告索引 / Report Index
 
 | 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 规则版本 · 摘要来源 | 结论 Summary |
 |---|---|---|---|---|---|---|
+| 2026-09-11 | British American Tobacco p.l.c.（英美烟草） | BTI | NYSE (ADS) | [HTML（下载后打开）](<reports/BTI/2026-09-11-英美烟草-British-American-Tobacco-BTI.html>) | 2.4 / 附证据 | 按2026-09-10收盘US$54.86及报告统一汇率，公告年度化收益扣已公告ADR存托费后约5.96%，未扣个人券商及换汇成本；不是已核验TTM实收或正常化收益。FY2025公司FCF仅覆盖现金股息0.773倍；加拿大和解付款预计至少40年。经常性FAD、母公司可用现金与未来有权股数证据未闭合，评分暂不评估；角色为观察名单（Watchlist），暂停N/B、买入区间及成长估值，不自动交易。 |
 | 2026-09-10 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](<reports/2318.HK/2026-09-10-中国平安-Ping-An-Insurance-2318.HK.md>) | 2.4 / 附证据 | 2026中期每股股息RMB0.98（同比+3.2%）；按截止前HKD54.80参考价，已付TTM净股息率5.01%（10%初始预扣情景、费用前）。H股中期股息10月16日才付款，未纳入TTM。历史现金收付可核查，但经常性资本上缴与母公司强制用途未闭环，股息安全性及veto为Unclear，估值暂停，列Watchlist；不沿用旧版OPAT定比转现推算的覆盖率和买入区间。 |
 | 2026-08-16 | 中远海运港口 COSCO SHIPPING Ports | 1199.HK | HKEX | [报告](<reports/1199.HK/2026-08-16-中远海运港口-COSCO-SHIPPING-Ports-1199.HK.md>) | pre-2.2 / 原文摘要 | 股息在现金层面极安全，但每股股息被以股代息持续稀释：DPS 五年 -5.5%/年；净收益率 5.04%（0% 预扣税），未达 6.5-8.5% 入场门槛。Very safe in cash terms but structurally diluted by ~83% scrip take-up. |
 | 2026-08-16 | 中国电信 China Telecom | 0728.HK | HKEX | [报告](<reports/0728.HK/2026-08-16-中国电信-China-Telecom-0728.HK.md>) | pre-2.2 / 原文摘要 | Cash-safe but profit-linked dividend facing a ~12% FY2026 cut from the 6%->9% telecom VAT reset; 5.77% TTM net yield is backward-looking. Fully priced at HKD 4.725; add below HKD 4.35. |
@@ -60,6 +61,8 @@
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](<reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md>) | pre-2.2 / 附证据 | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a growth compounder, not an income holding at $195 in the archived report. |
 | 2026-07-02 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](<reports/2318.HK/2026-07-02-中国平安-2318.HK.md>) | pre-2.2 / 原文摘要 | Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered. |
 
-最近报告声明发布时间 / Latest author-declared publication timestamp: 2026-09-10T14:51:55+08:00
+HTML 报告为自包含文件，请下载后用浏览器打开；GitHub 文件页可能只显示源码，并非在线报告网站。
+
+最近报告声明发布时间 / Latest author-declared publication timestamp: 2026-09-11T18:03:58+08:00
 
 _This is research and archival material, not personalized investment advice._
