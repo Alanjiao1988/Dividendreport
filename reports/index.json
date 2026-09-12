@@ -1,5 +1,64 @@
 [
   {
+    "as_of_date": "2026-09-12",
+    "ticker": "0101.HK",
+    "company": "恒隆地产 Hang Lung Properties Limited",
+    "exchange": "HKEX",
+    "path": "reports/0101.HK/2026-09-12-恒隆地产-Hang-Lung-Properties-0101.HK.md",
+    "summary": "观察名单（Watchlist）：按2026-09-11收盘HK$6.805，已付TTM现金选项DPS0.52、0%预扣情景下费用前收益率7.64%，并非正常化收益。2025全投入后合并现金余额对实际现金股息1.60倍，对同期全现金权益仅0.46倍，两者均非已验证经常性FAD。2026中期0.12将于9月25日全现金支付，截止日已除净、尚未付。租金复苏但上缴、分年投入及未来派息股数链未闭合，质量总分暂不评估，暂停N/B和买入区间，不自动交易。",
+    "score": "Not assessed",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-09-12T22:15:21+08:00",
+    "ruleset": "2.4",
+    "summary_provenance": "repaired_with_evidence",
+    "publication_provenance": {
+      "kind": "report_metadata",
+      "note": "新报告信息截止2026-09-12 20:59香港时间，初稿形成于2026-09-12T21:43:36+08:00；2026-09-12T22:15:21+08:00声明归档发布。按用户要求以同一正文生成独立HTML与仓库Markdown；声明时间不是独立验证的远端推送时刻。"
+    },
+    "summary_evidence": [
+      {
+        "field": "reference_close_hkd",
+        "value": "6.805",
+        "source_excerpt": "**按2026-09-11收盘HK$6.805，已付TTM现金选项DPS为0.52港元，0%预扣情景下费用前收益率为7.64%。**"
+      },
+      {
+        "field": "paid_ttm_cash_election_dps_hkd",
+        "value": "0.52",
+        "source_excerpt": "**按2026-09-11收盘HK$6.805，已付TTM现金选项DPS为0.52港元，0%预扣情景下费用前收益率为7.64%。**"
+      },
+      {
+        "field": "withholding_scenario",
+        "value": "0%",
+        "source_excerpt": "**按2026-09-11收盘HK$6.805，已付TTM现金选项DPS为0.52港元，0%预扣情景下费用前收益率为7.64%。**"
+      },
+      {
+        "field": "paid_ttm_yield_before_fees",
+        "value": "7.64%",
+        "source_excerpt": "**按2026-09-11收盘HK$6.805，已付TTM现金选项DPS为0.52港元，0%预扣情景下费用前收益率为7.64%。**"
+      },
+      {
+        "field": "fy2025_actual_cash_budget_ratio_not_fad",
+        "value": "1.60",
+        "source_excerpt": "| 2025现金覆盖表象 | 全投入后合并现金余额1,165，对实际现金股息727的比值为1.60倍 | 不是经常性FAD；大量股东选择代息股使实际现金分母缩小 |"
+      },
+      {
+        "field": "fy2025_full_cash_entitlement_ratio_not_fad",
+        "value": "0.46",
+        "source_excerpt": "| 2025全现金权益检验 | 同期付款事件全部现金等值权益2,513.714；比值仅0.46倍 | 若全部现金结算，静态差额为1,348.714；不是已发生的欠付 |"
+      },
+      {
+        "field": "declared_interim_dps_hkd",
+        "value": "0.12",
+        "source_excerpt": "| 最新已宣布、未支付 | 2026中期0.12；2026-09-25支付 | 全现金；除净2026-08-12，登记2026-08-14 |"
+      },
+      {
+        "field": "portfolio_role",
+        "value": "Watchlist",
+        "source_excerpt": "**最终角色：观察名单（Watchlist）。**"
+      }
+    ]
+  },
+  {
     "as_of_date": "2026-09-11",
     "ticker": "1919.HK",
     "company": "中远海控 COSCO SHIPPING Holdings",
