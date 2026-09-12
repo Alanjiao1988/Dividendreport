@@ -95,6 +95,56 @@
     ]
   },
   {
+    "as_of_date": "2026-09-10",
+    "ticker": "CVX",
+    "company": "Chevron Corporation",
+    "exchange": "NYSE",
+    "path": "reports/CVX/2026-09-10-雪佛龙-Chevron-CVX.md",
+    "summary": "观察名单（Watchlist）：参考价USD 213.81，现行季度分红年化在30%预扣假设下净收益率约2.33%（费用前，并非已证实前瞻收益率或正常化N）。2026H1实际FCF／普通现金股息为2.35倍，不是经常性FAD覆盖。长期现金与资金约束模型尚未闭合，质量总分暂不评估，暂停N/B、成长估值及操作价格；用户收入目标未设，不自动交易。",
+    "score": "Not assessed",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-09-12T18:59:02+08:00",
+    "ruleset": "2.4",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/CVX/2026-08-06-Chevron-CVX.md",
+    "publication_provenance": {
+      "kind": "report_metadata",
+      "note": "原HTML报告于2026-09-10T17:25:50+08:00本地生成，当时未声明归档发布时间；2026-09-12按用户要求转换为Markdown，首次声明归档发布时间为2026-09-12T18:59:02+08:00。研究截止仍为2026-09-10 15:42香港时间，数字、空值及研究结论保持不变；声明时间不是独立验证的远端推送时刻。"
+    },
+    "summary_evidence": [
+      {
+        "field": "reference_close_usd",
+        "value": "213.81",
+        "source_excerpt": "当前已宣告的季度普通现金股息为 1.78 美元；按 213.81 美元收盘价，现行率年化的预扣后收益率约 2.33%，费用另计。"
+      },
+      {
+        "field": "ordinary_dividend_withholding_scenario",
+        "value": "30%",
+        "source_excerpt": "| 现行率年化毛／净现金 | 7.12 / 4.984 USD／股，30%预扣后、费用前；不是N或长期承诺 |"
+      },
+      {
+        "field": "current_rate_annualized_net_yield_before_fees",
+        "value": "2.33%",
+        "source_excerpt": "| 现行季度率 × 4 | 7.12 | 4.984 | 3.33% | 2.33% | 不是完整前瞻承诺，也不是 N |"
+      },
+      {
+        "field": "actual_fcf_common_dividend_coverage_h1_2026",
+        "value": "2.35",
+        "source_excerpt": "| 2026H1实际FCF／普通现金股息 | **2.35×** | 不是已正常化的Recurring FAD覆盖 |"
+      },
+      {
+        "field": "portfolio_role",
+        "value": "Watchlist",
+        "source_excerpt": "| 暂不评估 | Not Assessed：未提供用户现金目标 | N未成立；估值suspended | Watchlist |"
+      },
+      {
+        "field": "valuation_status",
+        "value": "暂停N/B",
+        "source_excerpt": "CVX更适合作为油气周期现金资产来研究，而非仅凭长增息历史就视作固定收益替代。当前普通股息率经30%预扣后年化约2.33%；最新半年现金有覆盖，但长期FAD/DPS及正常化估值尚未闭合，本次结论是观察，暂停N/B及操作价格。"
+      }
+    ]
+  },
+  {
     "as_of_date": "2026-08-16",
     "ticker": "0728.HK",
     "company": "中国电信 China Telecom",
