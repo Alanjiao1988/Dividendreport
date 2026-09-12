@@ -44,6 +44,13 @@ class ArchiveTests(unittest.TestCase):
         body = '\n'.join(['<!-- dividend-report-meta'] + meta + ['-->', 'Price: HK$4.78.', ''])
         (self.root / entry['path']).write_text(body, encoding='utf8')
 
+    def use_v24(self):
+        entry = self.entries[1]
+        entry['ruleset'] = '2.4'
+        entry['score'] = 'Not assessed'
+        self.write_report(entry)
+        return entry
+
     def write_views(self):
         (self.root / 'reports/index.json').write_text(json.dumps(self.entries), encoding='utf8')
         for relative, text in rendered_files(self.entries).items():
@@ -129,3 +136,40 @@ class ArchiveTests(unittest.TestCase):
         self.assertIn('pre-2.2', readme)
         self.assertIn('MIGRATION.md', readme)
         self.assertIn('摘要证据覆盖', readme)
+
+    def test_v24_markdown_preserves_previous_version_and_navigation(self):
+        entry = self.use_v24()
+        self.write_views()
+        self.assertEqual(validate_archive(self.root), [])
+        views = rendered_files(self.entries)
+        self.assertIn(f"[报告](<{entry['path']}>)", views['README.md'])
+        self.assertIn('pre-2.2 1 份、2.2 0 份、2.4 1 份', views['README.md'])
+        self.assertIn('Not assessed', views['reports/0316.HK/README.md'])
+        self.assertIn(Path(self.entries[0]['path']).name, views['reports/0316.HK/README.md'])
+        self.assertTrue((self.root / self.entries[0]['path']).is_file())
+
+    def test_v24_preserves_exact_markdown_evidence_validation(self):
+        entry = self.use_v24()
+        entry['summary_evidence'][0]['source_excerpt'] = 'Price: HK$<strong>4.78</strong>.'
+        self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_v24_requires_transcription_evidence(self):
+        entry = self.use_v24()
+        entry['summary_provenance'] = 'original_unverified'
+        entry['summary_evidence'] = []
+        self.assertTrue(any('current ruleset' in e for e in validate_entries(self.entries, self.root)))
+        entry['summary_provenance'] = 'repaired_with_evidence'
+        self.assertTrue(any('transcription evidence' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_markdown_format_remains_required(self):
+        entry = self.use_v24()
+        entry['path'] = Path(entry['path']).with_suffix('.html').as_posix()
+        self.assertTrue(any('.path' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_v22_and_v24_counts_are_not_combined(self):
+        self.entries[0]['ruleset'] = '2.2'
+        self.write_report(self.entries[0])
+        self.use_v24()
+        self.write_views()
+        self.assertEqual(validate_archive(self.root), [])
+        self.assertIn('pre-2.2 0 份、2.2 1 份、2.4 1 份', rendered_files(self.entries)['README.md'])

@@ -1,5 +1,55 @@
 [
   {
+    "as_of_date": "2026-09-11",
+    "ticker": "BTI",
+    "company": "British American Tobacco p.l.c.（英美烟草）",
+    "exchange": "NYSE (ADS)",
+    "path": "reports/BTI/2026-09-11-英美烟草-British-American-Tobacco-BTI.md",
+    "summary": "按2026-09-10收盘US$54.86及报告统一汇率，公告年度化收益扣已公告ADR存托费后约5.96%，未扣个人券商及换汇成本；不是已核验TTM实收或正常化收益。FY2025公司FCF仅覆盖现金股息0.773倍；加拿大和解付款预计至少40年。经常性FAD、母公司可用现金与未来有权股数证据未闭合，评分暂不评估；角色为观察名单（Watchlist），暂停N/B、买入区间及成长估值，不自动交易。",
+    "score": "Not assessed",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-09-11T18:03:58+08:00",
+    "ruleset": "2.4",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/BTI/2026-07-06-British-American-Tobacco-BTI.md",
+    "publication_provenance": {
+      "kind": "report_metadata",
+      "note": "原报告于2026-09-11T14:06:45+08:00本地生成，2026-09-11T18:03:58+08:00归档发布；2026-09-12按用户要求转换为Markdown，原时间与研究截止2026-09-11 12:45（UTC+08:00）保持，研究结论未更新。"
+    },
+    "summary_evidence": [
+      {
+        "field": "price_usd",
+        "value": "54.86",
+        "source_excerpt": "| 报价基准 | 2026-09-10纽约收盘 US$54.86／ADS |"
+      },
+      {
+        "field": "annualized_yield_after_announced_adr_fee",
+        "value": "5.96%",
+        "source_excerpt": "| 年度化收入 | 费前约6.04%；扣已公告存托费后约5.96% | 0%英国预扣税研究情景；个人券商/兑换费用仍未扣 |"
+      },
+      {
+        "field": "issuer_fcf_dividend_coverage_2025",
+        "value": "0.773",
+        "source_excerpt": "FY2025公司披露FCF只覆盖当年现金股息的0.773倍；把特殊付款加回可以解释历史差异，但不能证明剩余现金可持续、可汇回、可分派。"
+      },
+      {
+        "field": "canada_expected_payment_duration_years",
+        "value": "40",
+        "source_excerpt": "| 加拿大和解 | 初期非New Categories税后净收入的85%；H1预计至少40年 | 保留长期负担、付款滞后和汇回条件；不能只排除2025初始付款 |"
+      },
+      {
+        "field": "portfolio_role",
+        "value": "Watchlist",
+        "source_excerpt": "最终角色：观察名单（Watchlist）。"
+      },
+      {
+        "field": "valuation_status",
+        "value": "暂停N/B",
+        "source_excerpt": "由于普通股可分配现金及母公司可用资金尚未闭合，暂停N/B、买入区间和成长估值。"
+      }
+    ]
+  },
+  {
     "as_of_date": "2026-08-16",
     "ticker": "0728.HK",
     "company": "中国电信 China Telecom",
