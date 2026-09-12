@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import datetime
 from pathlib import Path
 
@@ -12,7 +12,6 @@ ROOT = Path(__file__).resolve().parents[1]
 
 RULESET_NOTE = {'pre-2.2': 'pre-2.2', '2.2': '2.2', '2.4': '2.4'}
 PROVENANCE_NOTE = {'original_unverified': '原文摘要', 'repaired_with_evidence': '附证据'}
-HTML_NOTE = 'HTML 报告请下载后用浏览器打开；GitHub 文件页可能显示源码，归档不提供在线网页托管。'
 
 
 def ruleset_cell(entry):
@@ -28,9 +27,8 @@ def rendered_files(entries):
     groups = defaultdict(list)
     for entry in ordered:
         groups[entry['ticker']].append(entry)
-    counts = {ruleset: sum(1 for e in entries if e['ruleset'] == ruleset)
-              for ruleset in RULESET_NOTE}
-    versions_note = '、'.join(f'{ruleset} {count} 份' for ruleset, count in counts.items())
+    counts = Counter(e['ruleset'] for e in entries)
+    ruleset_counts = '、'.join(f'{label} {counts[key]} 份' for key, label in RULESET_NOTE.items())
     evid = sum(1 for e in entries if e['summary_provenance'] == 'repaired_with_evidence')
     root = [
         '# Dividendreport', '',
@@ -39,19 +37,14 @@ def rendered_files(entries):
         '以下为各报告基准日的历史结论。价格、税务、评分与买入区间未因本次归档整理而重新研究；旧版 Fair / Strong Buy 等标签沿用原文，不代表当前建议。', '',
         '索引以 [reports/index.json](reports/index.json) 为唯一维护入口；本页及各标的 README 由本地工具生成。', '',
         '[发布契约与验证方式](PUBLISHING.md) · [规则版本迁移说明](MIGRATION.md) · [历史修复依据](ARCHIVE-REPAIRS.md)', '',
-        f'规则版本：**{versions_note}**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。', '',
+        f'规则版本：**{ruleset_counts}**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。', '',
         f'摘要证据覆盖：**{evid} / {len(entries)}** 份附原文数字摘录；其余 {len(entries) - evid} 份保留原作者摘要，未逐项核验。', '',
-    ]
-    if any(Path(e['path']).suffix == '.html' for e in entries):
-        root.extend([HTML_NOTE, ''])
-    root.extend([
         '## 报告索引 / Report Index', '',
         '| 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 规则版本 · 摘要来源 | 结论 Summary |',
         '|---|---|---|---|---|---|---|',
-    ])
+    ]
     for e in ordered:
-        report_label = 'HTML 报告' if Path(e['path']).suffix == '.html' else '报告'
-        row=[e['as_of_date'],e['company'],e['ticker'],e['exchange'],f"[{report_label}](<{e['path']}>)",ruleset_cell(e),e['summary']]
+        row=[e['as_of_date'],e['company'],e['ticker'],e['exchange'],f"[报告](<{e['path']}>)",ruleset_cell(e),e['summary']]
         root.append('| ' + ' | '.join(map(cell,row)) + ' |')
     latest=max(entries,key=lambda e:datetime.fromisoformat(e['published_at']))['published_at']
     root.extend(['', f'最近报告声明发布时间 / Latest author-declared publication timestamp: {latest}', '',
@@ -60,12 +53,9 @@ def rendered_files(entries):
     for ticker, versions in groups.items():
         newest=versions[0]
         lines=[f"# {newest['company']} ({ticker})", '', f"交易所 Exchange: {newest['exchange']}", '',
-               '历史版本按数据基准日列出；最新研究请沿版本链阅读。摘要保留原报告当时的判断。', '']
-        if any(Path(e['path']).suffix == '.html' for e in versions):
-            lines.extend([HTML_NOTE, ''])
-        lines.extend([
+               '历史版本按数据基准日列出；最新研究请沿版本链阅读。摘要保留原报告当时的判断。', '',
                '| 数据基准日 As-of | 报告 Report | 规则版本 · 摘要来源 | 结论 Summary | 评分 Score | 组合角色 Role | 前一版本 Supersedes |',
-               '|---|---|---|---|---|---|---|'])
+               '|---|---|---|---|---|---|---|']
         for e in versions:
             name=Path(e['path']).name
             prev=e.get('supersedes')
