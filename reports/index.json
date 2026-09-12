@@ -1,5 +1,65 @@
 [
   {
+    "as_of_date": "2026-09-12",
+    "ticker": "0005.HK",
+    "company": "汇丰控股 HSBC Holdings plc",
+    "exchange": "HKEX",
+    "path": "reports/0005.HK/2026-09-12-汇丰控股-HSBC-Holdings-0005.HK.md",
+    "summary": "截至2026-09-12，参考价HKD163.30；已付TTM普通股息HKD5.861530／股，香港个人普通股息0%预扣情景下费用前收益率3.59%。2026第二期USD0.10已宣告未付，不计TTM。2025母公司实收子公司股息USD23.816bn，但未来资本、可上缴现金与正常化N未闭合，暂停N/B及操作价格；质量与兼容总分暂不评估，角色Watchlist。",
+    "score": "Not assessed",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-09-12T21:01:51+08:00",
+    "ruleset": "2.4",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/0005.HK/2026-07-17-汇丰控股-HSBC-Holdings-0005.HK.md",
+    "publication_provenance": {
+      "kind": "report_metadata",
+      "note": "HTML与Markdown同源生成；该时间为报告生成及归档声明时间，不是独立核验的远端推送时刻。现行归档仅接收Markdown；HTML作为本地离线文件交付，研究截止为2026-09-12 19:56:57香港时间。"
+    },
+    "summary_evidence": [
+      {
+        "field": "as_of_date",
+        "value": "2026-09-12",
+        "source_excerpt": "2026-09-12 19:56:57香港时间；市场收盘采用2026-09-11"
+      },
+      {
+        "field": "reference_price_hkd",
+        "value": "163.30",
+        "source_excerpt": "按HKD163.30及发行人已付港元金额计算，过去十二个月扣预扣税后、费用前股息率为3.59%。"
+      },
+      {
+        "field": "paid_ttm_ordinary_hkd_per_share",
+        "value": "5.861530",
+        "source_excerpt": "| 付款口径TTM | USD0.75；HKD5.861530 |"
+      },
+      {
+        "field": "ordinary_dividend_withholding_scenario",
+        "value": "0%",
+        "source_excerpt": "| 普通股息预扣 | 0%；withholding_basis=legal_structure |"
+      },
+      {
+        "field": "paid_ttm_yield_after_withholding_before_fees",
+        "value": "3.59%",
+        "source_excerpt": "按HKD163.30及发行人已付港元金额计算，过去十二个月扣预扣税后、费用前股息率为3.59%。"
+      },
+      {
+        "field": "declared_unpaid_ordinary_dps_usd",
+        "value": "0.10",
+        "source_excerpt": "| 最新已宣告未支付 | USD0.10／股 |"
+      },
+      {
+        "field": "parent_cash_dividends_received_2025_usd_billion",
+        "value": "23.816",
+        "source_excerpt": "| 2025母公司实收子公司股息 | USD23.816bn |"
+      },
+      {
+        "field": "portfolio_role",
+        "value": "Watchlist",
+        "source_excerpt": "本次结论为观察（Watchlist）：未来资本、母公司可用现金、正常化及经济汇率桥尚未完整闭合，暂停N/B和操作价格；"
+      }
+    ]
+  },
+  {
     "as_of_date": "2026-09-11",
     "ticker": "1919.HK",
     "company": "中远海控 COSCO SHIPPING Holdings",
