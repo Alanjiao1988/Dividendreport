@@ -35,22 +35,17 @@ class ArchiveTests(unittest.TestCase):
             (self.root / name).write_text('Fixture documentation\n', encoding='utf8')
         self.write_views()
 
-    def write_report(self, entry, content='Price: HK$4.78.', head=''):
+    def write_report(self, entry):
         meta = [f"ticker: {entry['ticker']}", f"company: {entry['company']}",
                 f"exchange: {entry['exchange']}", f"as_of_date: {entry['as_of_date']}",
                 f"published_at: {entry['published_at']}", f"ruleset: {entry['ruleset']}"]
         if entry.get('supersedes'):
             meta.append(f"supersedes: {entry['supersedes']}")
-        body = '\n'.join(['<!-- dividend-report-meta'] + meta + ['-->', content, ''])
-        if Path(entry['path']).suffix == '.html':
-            body = (f'<!DOCTYPE html><html data-ruleset="{entry["ruleset"]}">'
-                    f'<head><meta charset="UTF-8">{head}</head><body>{body}</body></html>')
+        body = '\n'.join(['<!-- dividend-report-meta'] + meta + ['-->', 'Price: HK$4.78.', ''])
         (self.root / entry['path']).write_text(body, encoding='utf8')
 
-    def use_html(self):
+    def use_v24(self):
         entry = self.entries[1]
-        (self.root / entry['path']).unlink()
-        entry['path'] = Path(entry['path']).with_suffix('.html').as_posix()
         entry['ruleset'] = '2.4'
         entry['score'] = 'Not assessed'
         self.write_report(entry)
@@ -142,101 +137,39 @@ class ArchiveTests(unittest.TestCase):
         self.assertIn('MIGRATION.md', readme)
         self.assertIn('摘要证据覆盖', readme)
 
-    def test_html_v24_report_preserves_markdown_version_and_navigation(self):
-        entry = self.use_html()
+    def test_v24_markdown_preserves_previous_version_and_navigation(self):
+        entry = self.use_v24()
         self.write_views()
         self.assertEqual(validate_archive(self.root), [])
         views = rendered_files(self.entries)
-        self.assertIn(f"HTML（下载后打开）](<{entry['path']}>)", views['README.md'])
+        self.assertIn(f"[报告](<{entry['path']}>)", views['README.md'])
         self.assertIn('pre-2.2 1 份、2.2 0 份、2.4 1 份', views['README.md'])
+        self.assertIn('Not assessed', views['reports/0316.HK/README.md'])
         self.assertIn(Path(self.entries[0]['path']).name, views['reports/0316.HK/README.md'])
         self.assertTrue((self.root / self.entries[0]['path']).is_file())
 
-    def test_html_evidence_uses_decoded_static_body_and_inline_formatting(self):
-        entry = self.use_html()
-        entry['summary'] += ' A & B.'
-        entry['summary_evidence'].append(dict(field='note', value='A & B',
-                                              source_excerpt='A & B.'))
-        self.write_report(entry, '<p>Price: HK$<strong>4.78</strong>.</p><p>A &amp;\n B.</p>')
-        self.assertEqual(validate_entries(self.entries, self.root), [])
+    def test_v24_preserves_exact_markdown_evidence_validation(self):
+        entry = self.use_v24()
         entry['summary_evidence'][0]['source_excerpt'] = 'Price: HK$<strong>4.78</strong>.'
         self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
 
-    def test_html_non_body_and_hidden_text_cannot_supply_evidence(self):
-        entry = self.use_html()
-        hidden_fragments = [
-            ('<script>Price: HK$4.78.</script>', ''),
-            ('<style>/* Price: HK$4.78. */</style>', ''),
-            ('<!-- Price: HK$4.78. -->', ''),
-            ('<span data-evidence="Price: HK$4.78.">No price</span>', ''),
-            ('<div hidden><span>Price: HK$4.78.</span></div>', ''),
-            ('<p aria-hidden="true">Price: HK$4.78.</p>', ''),
-            ('<p style="display: none !important">Price: HK$4.78.</p>', ''),
-            ('<p style="visibility: hidden">Price: HK$4.78.</p>', ''),
-            ('<template><p>Price: HK$4.78.</p></template>', ''),
-            ('<noscript>Price: HK$4.78.</noscript>', ''),
-            ('<p>No price</p>', '<title>Price: HK$4.78.</title>'),
-        ]
-        for body, head in hidden_fragments:
-            with self.subTest(body=body, head=head):
-                self.write_report(entry, body, head)
-                self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
-
-    def test_html_document_and_ruleset_must_match_contract(self):
-        entry = self.use_html()
-        path = self.root / entry['path']
-        original = path.read_text(encoding='utf8')
-        for old, new, message in [
-            ('<meta charset="UTF-8">', '<meta charset>', 'UTF-8'),
-            ('<body>', '', 'html/body'),
-            ('data-ruleset="2.4"', 'data-ruleset="2.2"', 'HTML data-ruleset'),
-        ]:
-            with self.subTest(message=message):
-                path.write_text(original.replace(old, new), encoding='utf8')
-                self.assertTrue(any(message in e for e in validate_entries(self.entries, self.root)))
-
-    def test_html_filename_and_metadata_checks_remain_enforced(self):
-        entry = self.use_html()
-        entry['company'] = 'Wrong company'
-        self.assertTrue(any('index company' in e for e in validate_entries(self.entries, self.root)))
-        self.write_report(entry)
-        entry['path'] = entry['path'].replace('-0316.HK.html', '-9999.HK.html')
-        self.write_report(entry)
-        self.assertTrue(any('ticker/date' in e for e in validate_entries(self.entries, self.root)))
-
-    def test_html_v24_requires_transcription_evidence(self):
-        entry = self.use_html()
+    def test_v24_requires_transcription_evidence(self):
+        entry = self.use_v24()
         entry['summary_provenance'] = 'original_unverified'
         entry['summary_evidence'] = []
         self.assertTrue(any('current ruleset' in e for e in validate_entries(self.entries, self.root)))
         entry['summary_provenance'] = 'repaired_with_evidence'
         self.assertTrue(any('transcription evidence' in e for e in validate_entries(self.entries, self.root)))
 
-    def test_html_can_supersede_html_but_cannot_skip_previous_version(self):
-        previous = self.use_html()
-        entry = copy.deepcopy(previous)
-        entry['as_of_date'] = '2026-01-03'
-        entry['published_at'] = '2026-01-03T20:00:00+08:00'
-        entry['path'] = entry['path'].replace('2026-01-02', '2026-01-03')
-        entry['supersedes'] = previous['path']
-        self.entries.append(entry)
-        self.write_report(entry)
-        self.write_views()
-        self.assertEqual(validate_archive(self.root), [])
-        entry['supersedes'] = self.entries[0]['path']
-        self.write_report(entry)
-        self.assertTrue(any('immediate prior' in e for e in validate_entries(self.entries, self.root)))
-
-    def test_unindexed_html_report_is_detected(self):
-        path = self.root / 'reports/0316.HK/2026-01-03-Orphan-0316.HK.html'
-        path.write_text('<html><body>Orphan</body></html>', encoding='utf8')
-        self.assertTrue(any('Orphan' in e and 'missing from index' in e
-                            for e in validate_archive(self.root)))
+    def test_markdown_format_remains_required(self):
+        entry = self.use_v24()
+        entry['path'] = Path(entry['path']).with_suffix('.html').as_posix()
+        self.assertTrue(any('.path' in e for e in validate_entries(self.entries, self.root)))
 
     def test_v22_and_v24_counts_are_not_combined(self):
         self.entries[0]['ruleset'] = '2.2'
         self.write_report(self.entries[0])
-        self.use_html()
+        self.use_v24()
         self.write_views()
         self.assertEqual(validate_archive(self.root), [])
         self.assertIn('pre-2.2 0 份、2.2 1 份、2.4 1 份', rendered_files(self.entries)['README.md'])

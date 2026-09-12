@@ -44,11 +44,8 @@ def rendered_files(entries):
         '|---|---|---|---|---|---|---|',
     ]
     for e in ordered:
-        label = 'HTML（下载后打开）' if Path(e['path']).suffix == '.html' else '报告'
-        row=[e['as_of_date'],e['company'],e['ticker'],e['exchange'],f"[{label}](<{e['path']}>)",ruleset_cell(e),e['summary']]
+        row=[e['as_of_date'],e['company'],e['ticker'],e['exchange'],f"[报告](<{e['path']}>)",ruleset_cell(e),e['summary']]
         root.append('| ' + ' | '.join(map(cell,row)) + ' |')
-    if any(Path(e['path']).suffix == '.html' for e in entries):
-        root.extend(['', 'HTML 报告为自包含文件，请下载后用浏览器打开；GitHub 文件页可能只显示源码，并非在线报告网站。'])
     latest=max(entries,key=lambda e:datetime.fromisoformat(e['published_at']))['published_at']
     root.extend(['', f'最近报告声明发布时间 / Latest author-declared publication timestamp: {latest}', '',
                  '_This is research and archival material, not personalized investment advice._', ''])
@@ -65,8 +62,6 @@ def rendered_files(entries):
             previous=f"[前一版](<{Path(prev).name}>)" if prev else '—'
             row=[e['as_of_date'],f'[{name}](<{name}>)',ruleset_cell(e),e['summary'],e['score'],e['portfolio_role'],previous]
             lines.append('| '+' | '.join(map(cell,row))+' |')
-        if any(Path(e['path']).suffix == '.html' for e in versions):
-            lines.extend(['', 'HTML 报告请下载后用浏览器打开；旧 Markdown 版本及其历史结论保持不变。'])
         lines.extend(['', '[完整索引与发布契约](../../PUBLISHING.md)', ''])
         outputs[f'reports/{ticker}/README.md']='\n'.join(lines)
     return outputs

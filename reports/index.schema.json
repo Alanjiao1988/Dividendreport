@@ -40,7 +40,7 @@
       },
       "path": {
         "type": "string",
-        "pattern": "^reports/[^/]+/[^/]+\\.(?:md|html)$"
+        "pattern": "^reports/[^/]+/[^/]+\\.md$"
       },
       "summary": {
         "type": "string",
@@ -78,7 +78,7 @@
       },
       "supersedes": {
         "type": "string",
-        "pattern": "^reports/[^/]+/[^/]+\\.(?:md|html)$"
+        "pattern": "^reports/[^/]+/[^/]+\\.md$"
       },
       "publication_provenance": {
         "type": "object",
