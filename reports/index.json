@@ -1,6 +1,51 @@
 [
   {
     "as_of_date": "2026-09-11",
+    "ticker": "1919.HK",
+    "company": "中远海控 COSCO SHIPPING Holdings",
+    "exchange": "HKEX",
+    "path": "reports/1919.HK/2026-09-11-中远海控-COSCO-SHIPPING-Holdings-1919.HK.md",
+    "summary": "观察名单：参考价HKD16.60，按10%代名人预扣情景，已付TTM净股息率6.06%（费用前，非实际账户确认）。2026中期DPS为RMB0.43，同比下降23.21%。近期需求与运价有韧性，但长期资本支出及子公司上缴现金尚未估定；估值暂停，不提供N/B或买入价，完整评分暂不评估。",
+    "score": "Not assessed",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-09-11T18:02:35+08:00",
+    "ruleset": "2.4",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/1919.HK/2026-08-14-中远海控-COSCO-SHIPPING-Holdings-1919.HK.md",
+    "publication_provenance": {
+      "kind": "report_metadata",
+      "note": "原报告生成于2026-09-11 14:50+08:00，2026-09-11T18:02:35+08:00声明归档发布；2026-09-12按用户要求转换为Markdown，研究截止仍为2026-09-11 12:44香港时间，原时间与研究结论不变。声明时间不是独立验证的远端推送时刻。"
+    },
+    "summary_evidence": [
+      {
+        "field": "reference_price_hkd",
+        "value": "16.60",
+        "source_excerpt": "| 参考价／行情时间 | HKD 16.60；2026-09-11 12:00香港时间午间分时；腾讯16.600，与Yahoo 11:59分钟收盘对应核对 | 历史时点比较，不是实时交易报价。 |"
+      },
+      {
+        "field": "nominee_withholding_scenario",
+        "value": "10%",
+        "source_excerpt": "| 过去12个月股息率 | 税前6.74%；预扣后6.06% | 条件性10%预扣情景、费用前；不等于用户券商实际到账收益率。 |"
+      },
+      {
+        "field": "paid_ttm_net_yield_before_fees",
+        "value": "6.06%",
+        "source_excerpt": "| 过去12个月股息率 | 税前6.74%；预扣后6.06% | 条件性10%预扣情景、费用前；不等于用户券商实际到账收益率。 |"
+      },
+      {
+        "field": "declared_interim_dps_rmb",
+        "value": "0.43",
+        "source_excerpt": "| 最新已宣布中期息 | 2026年中期每股RMB 0.43，同比下降23.21% | 盈利挂钩的普通现金分红；不把半年DPS乘二当作未来一年预测。 |"
+      },
+      {
+        "field": "interim_dps_decline_pct",
+        "value": "23.21%",
+        "source_excerpt": "| 最新已宣布中期息 | 2026年中期每股RMB 0.43，同比下降23.21% | 盈利挂钩的普通现金分红；不把半年DPS乘二当作未来一年预测。 |"
+      }
+    ]
+  },
+  {
+    "as_of_date": "2026-09-11",
     "ticker": "BTI",
     "company": "British American Tobacco p.l.c.（英美烟草）",
     "exchange": "NYSE (ADS)",
