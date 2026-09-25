@@ -2,22 +2,25 @@
 
 红利股分析报告归档 · Dividend income equity analysis reports.
 
-归档含 **45 份报告、33 个不同标的**；同一标的的多个版本不构成独立样本。
+归档含 **46 份报告、34 个不同标的**；同一标的的多个版本不构成独立样本。
 
 以下为各报告基准日的历史结论。价格、税务、评分与买入区间未因本次归档整理而重新研究；旧版 Fair / Strong Buy 等标签沿用原文，不代表当前建议。
 
 索引以 [reports/index.json](reports/index.json) 为唯一维护入口；本页及各标的 README 由本地工具生成。
 
+HTML 报告为可离线阅读的单文件；GitHub 文件页可能显示源码，请下载后用浏览器打开。归档不启用在线托管。
+
 [发布契约与验证方式](PUBLISHING.md) · [规则版本迁移说明](MIGRATION.md) · [历史修复依据](ARCHIVE-REPAIRS.md)
 
-规则版本：**pre-2.2 40 份、2.2 0 份、2.4 5 份**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。
+规则版本：**pre-2.2 40 份、2.2 0 份、2.4 5 份、2.5 1 份**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。
 
-摘要证据覆盖：**21 / 45** 份附原文数字摘录；其余 24 份保留原作者摘要，未逐项核验。
+摘要证据覆盖：**22 / 46** 份附原文数字摘录；其余 24 份保留原作者摘要，未逐项核验。
 
 ## 报告索引 / Report Index
 
 | 数据基准日 As-of | 企业 Company | 代码 Ticker | 交易所 Exchange | 报告 Report | 规则版本 · 摘要来源 | 结论 Summary |
 |---|---|---|---|---|---|---|
+| 2026-09-25 | 中国燃气 China Gas Holdings Limited | 0384.HK | HKEX | [HTML报告（下载后打开）](<reports/0384.HK/2026-09-25-中国燃气-China-Gas-0384.HK.html>) | 2.5 / 附证据 | 观察名单（Watchlist），等待资金证据而非只等降价。参考价5.335港元；已付TTM股息0.50、预扣税后费用前收益率9.37%，最新全年普通股息0.35对应6.56%，不是正常化N。FY2026披露FCF48.38亿港元不等于股东可分派现金；剔除资本回收并扣利息、租赁及少数权益等后，保守全投入现金代理4.24亿，对当期实付股息覆盖0.16倍，非经常性FAD。质量17–44/85、收息9/15，暂定综合26–53/100、等级E–D，证据覆盖80%。母公司资金及再融资链未闭合，暂停买点；不自动交易。 |
 | 2026-09-12 | 恒隆地产 Hang Lung Properties Limited | 0101.HK | HKEX | [报告](<reports/0101.HK/2026-09-12-恒隆地产-Hang-Lung-Properties-0101.HK.md>) | 2.4 / 附证据 | 观察名单（Watchlist）：按2026-09-11收盘HK$6.805，已付TTM现金选项DPS0.52、0%预扣情景下费用前收益率7.64%，并非正常化收益。2025全投入后合并现金余额对实际现金股息1.60倍，对同期全现金权益仅0.46倍，两者均非已验证经常性FAD。2026中期0.12将于9月25日全现金支付，截止日已除净、尚未付。租金复苏但上缴、分年投入及未来派息股数链未闭合，质量总分暂不评估，暂停N/B和买入区间，不自动交易。 |
 | 2026-09-12 | 汇丰控股 HSBC Holdings plc | 0005.HK | HKEX | [报告](<reports/0005.HK/2026-09-12-汇丰控股-HSBC-Holdings-0005.HK.md>) | 2.4 / 附证据 | 截至2026-09-12，参考价HKD163.30；已付TTM普通股息HKD5.861530／股，香港个人普通股息0%预扣情景下费用前收益率3.59%。2026第二期USD0.10已宣告未付，不计TTM。2025母公司实收子公司股息USD23.816bn，但未来资本、可上缴现金与正常化N未闭合，暂停N/B及操作价格；质量与兼容总分暂不评估，角色Watchlist。 |
 | 2026-09-11 | British American Tobacco p.l.c.（英美烟草） | BTI | NYSE (ADS) | [报告](<reports/BTI/2026-09-11-英美烟草-British-American-Tobacco-BTI.md>) | 2.4 / 附证据 | 按2026-09-10收盘US$54.86及报告统一汇率，公告年度化收益扣已公告ADR存托费后约5.96%，未扣个人券商及换汇成本；不是已核验TTM实收或正常化收益。FY2025公司FCF仅覆盖现金股息0.773倍；加拿大和解付款预计至少40年。经常性FAD、母公司可用现金与未来有权股数证据未闭合，评分暂不评估；角色为观察名单（Watchlist），暂停N/B、买入区间及成长估值，不自动交易。 |
@@ -64,6 +67,6 @@
 | 2026-07-02 | AstraZeneca PLC | AZN | NYSE | [报告](<reports/AZN/2026-07-02-AstraZeneca-PLC-AZN.md>) | pre-2.2 / 附证据 | Watchlist: top-quality, 0% WHT, ~2x-covered progressive dividend, but yield only ~1.6% — a growth compounder, not an income holding at $195 in the archived report. |
 | 2026-07-02 | 中国平安 Ping An Insurance | 2318.HK | HKEX | [报告](<reports/2318.HK/2026-07-02-中国平安-2318.HK.md>) | pre-2.2 / 原文摘要 | Grade B core income; 10% withholding; 13-yr rising DPS (FY2025 RMB 2.70, +5.9%), payout only 36% of operating profit, coverage 2.7x; at HK$52.30 net yield 5.25% — fair/hold zone upper band; accumulate HK$38.7-42.9, strong buy <=HK$38.7; -30% drawdown is sector beta, not a dividend crisis; veto not triggered. |
 
-最近报告声明发布时间 / Latest author-declared publication timestamp: 2026-09-12T22:15:21+08:00
+最近报告声明发布时间 / Latest author-declared publication timestamp: 2026-09-25T11:01:29+08:00
 
 _This is research and archival material, not personalized investment advice._

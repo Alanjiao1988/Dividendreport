@@ -1,5 +1,94 @@
 [
   {
+    "as_of_date": "2026-09-25",
+    "ticker": "0384.HK",
+    "company": "中国燃气 China Gas Holdings Limited",
+    "exchange": "HKEX",
+    "path": "reports/0384.HK/2026-09-25-中国燃气-China-Gas-0384.HK.html",
+    "summary": "观察名单（Watchlist），等待资金证据而非只等降价。参考价5.335港元；已付TTM股息0.50、预扣税后费用前收益率9.37%，最新全年普通股息0.35对应6.56%，不是正常化N。FY2026披露FCF48.38亿港元不等于股东可分派现金；剔除资本回收并扣利息、租赁及少数权益等后，保守全投入现金代理4.24亿，对当期实付股息覆盖0.16倍，非经常性FAD。质量17–44/85、收息9/15，暂定综合26–53/100、等级E–D，证据覆盖80%。母公司资金及再融资链未闭合，暂停买点；不自动交易。",
+    "score": "26-53 / E-D (provisional)",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-09-25T11:01:29+08:00",
+    "ruleset": "2.5",
+    "summary_provenance": "repaired_with_evidence",
+    "publication_provenance": {
+      "kind": "report_metadata",
+      "note": "新建单文件HTML；基准日2026-09-25，冻结腾讯10:20:58 HKT延迟盘中报价。生成/归档声明时间不是独立核验的远端推送时刻；保留历史报告，不部署网站。"
+    },
+    "summary_evidence": [
+      {
+        "field": "reference_price_hkd",
+        "value": "5.335",
+        "source_excerpt": "参考价为5.335港元"
+      },
+      {
+        "field": "paid_ttm_dps_hkd",
+        "value": "0.50",
+        "source_excerpt": "已付TTM现金股息0.50港元"
+      },
+      {
+        "field": "paid_ttm_net_yield_before_fees",
+        "value": "9.37%",
+        "source_excerpt": "0%发行人预扣情景下费用前收益率9.37%"
+      },
+      {
+        "field": "declared_fiscal_dps_hkd",
+        "value": "0.35",
+        "source_excerpt": "最新全年普通股息0.35港元对应6.56%"
+      },
+      {
+        "field": "declared_fiscal_net_yield_before_fees",
+        "value": "6.56%",
+        "source_excerpt": "最新全年普通股息0.35港元对应6.56%"
+      },
+      {
+        "field": "company_reported_fcf_hkd_100m",
+        "value": "48.38",
+        "source_excerpt": "FY2026的48.38亿港元披露FCF不是利息后、全投入后、可上缴的普通股东FAD。"
+      },
+      {
+        "field": "conservative_all_in_cash_proxy_hkd_100m",
+        "value": "4.24",
+        "source_excerpt": "FY2026保守全投入现金代理为4.24亿港元，对同年实付普通股息覆盖0.16倍，非经常性FAD。"
+      },
+      {
+        "field": "actual_proxy_coverage",
+        "value": "0.16",
+        "source_excerpt": "FY2026保守全投入现金代理为4.24亿港元，对同年实付普通股息覆盖0.16倍，非经常性FAD。"
+      },
+      {
+        "field": "quality_score_range",
+        "value": "17–44",
+        "source_excerpt": "17–44 / 85（暂定）"
+      },
+      {
+        "field": "income_score",
+        "value": "9",
+        "source_excerpt": "9 / 15（暂定）"
+      },
+      {
+        "field": "combined_score_range",
+        "value": "26–53",
+        "source_excerpt": "26–53 / 100；等级E–D（暂定）"
+      },
+      {
+        "field": "grade_range",
+        "value": "E–D",
+        "source_excerpt": "26–53 / 100；等级E–D（暂定）"
+      },
+      {
+        "field": "evidence_coverage_pct",
+        "value": "80",
+        "source_excerpt": "80/100；质量65/85"
+      },
+      {
+        "field": "portfolio_role",
+        "value": "Watchlist",
+        "source_excerpt": "最终角色：观察名单（Watchlist）。"
+      }
+    ]
+  },
+  {
     "as_of_date": "2026-09-12",
     "ticker": "0101.HK",
     "company": "恒隆地产 Hang Lung Properties Limited",

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-report-mode="full_analysis" data-ruleset="2.5" data-presentation="html-1">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>中国燃气（0384.HK）红利收入完整分析</title>
+  <script>
+    (() => {
+      const param = new URLSearchParams(window.location.search).get("scoutTheme");
+      const theme =
+        param || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+      document.documentElement.setAttribute("data-theme", theme);
+    })();
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --cp-bg: #f7f4ef;
+      --cp-bg-elevated: #fcfbf8;
+      --cp-surface: #ffffff;
+      --cp-surface-soft: #f5f5f5;
+      --cp-border: #dedede;
+      --cp-border-strong: #919191;
+      --cp-text: #242424;
+      --cp-text-muted: #5c5c5c;
+      --cp-text-soft: #6f6f6f;
+      --cp-accent: #b11f4b;
+      --cp-accent-hover: #9a1a41;
+      --cp-accent-soft: rgba(177, 31, 75, 0.08);
+      --cp-accent-fg: #ffffff;
+      --cp-success: #16a34a;
+      --cp-danger: #dc2626;
+      --cp-warning: #f59e0b;
+      --cp-link: #0078d4;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.12);
+      --cp-overlay: rgba(255, 255, 255, 0.8);
+      --cp-panel: rgba(255, 255, 255, 0.86);
+      --cp-panel-strong: rgba(255, 255, 255, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.55);
+      --cp-highlight: rgba(177, 31, 75, 0.12);
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --cp-bg: #3d3b3a;
+      --cp-bg-elevated: #343231;
+      --cp-surface: #292929;
+      --cp-surface-soft: #2e2e2e;
+      --cp-border: #474747;
+      --cp-border-strong: #5f5f5f;
+      --cp-text: #dedede;
+      --cp-text-muted: #919191;
+      --cp-text-soft: #b0b0b0;
+      --cp-accent: #fd8ea1;
+      --cp-accent-hover: #fb7b91;
+      --cp-accent-soft: rgba(253, 142, 161, 0.14);
+      --cp-accent-fg: #1a1a1a;
+      --cp-success: #4ade80;
+      --cp-danger: #f87171;
+      --cp-warning: #fbbf24;
+      --cp-link: #4da6ff;
+      --cp-shadow: 0 18px 48px rgba(0, 0, 0, 0.32);
+      --cp-overlay: rgba(41, 41, 41, 0.88);
+      --cp-panel: rgba(41, 41, 41, 0.72);
+      --cp-panel-strong: rgba(41, 41, 41, 0.96);
+      --cp-sheen: rgba(255, 255, 255, 0.04);
+      --cp-highlight: rgba(253, 142, 161, 0.12);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 1rem; }
+    body {
+      margin: 0;
+      background: var(--cp-bg);
+      color: var(--cp-text);
+      font: 1rem/1.75 "Segoe UI", Aptos, Calibri, -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-wrap: anywhere;
+    }
+    a { color: var(--cp-link); text-underline-offset: 0.2em; }
+    a:hover { color: var(--cp-accent-hover); }
+    a:focus-visible { outline: 2px solid var(--cp-accent); outline-offset: 4px; }
+    code, pre { font-family: Consolas, "Courier New", Courier, monospace; }
+    code { background: var(--cp-surface-soft); padding: 0.125rem 0.25rem; }
+    pre { white-space: pre-wrap; overflow-wrap: anywhere; }
+    .report-header, .report-layout, .report-footer {
+      width: min(100% - 3rem, 88rem);
+      margin-inline: auto;
+    }
+    .report-header { padding-block: 3rem 1.5rem; }
+    h1 { margin: 0 0 1rem; font-size: clamp(1.75rem, 4vw, 2.75rem); line-height: 1.3; }
+    h2 { margin: 0 0 1rem; line-height: 1.4; font-size: 1.5rem; }
+    h3 { font-size: 1.125rem; margin: 1.5rem 0 0.75rem; }
+    p, ul, ol, dl, figure { margin-block: 0.75rem; }
+    .report-metadata { color: var(--cp-text-muted); }
+    .report-metadata dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.25rem 1rem; }
+    .report-metadata dd { margin: 0; }
+    .report-layout { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+    .report-toc {
+      position: sticky;
+      top: 1rem;
+      max-height: calc(100vh - 2rem);
+      overflow-y: auto;
+      padding: 1rem;
+      border: 1px solid var(--cp-border);
+      border-radius: 0.625rem;
+      background: var(--cp-surface);
+    }
+    .report-toc h2 { font-size: 1rem; }
+    .report-toc ol { padding-left: 1.5rem; }
+    .report-toc li { margin-block: 0.5rem; }
+    main { min-width: 0; }
+    main > section {
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid var(--cp-border);
+      border-radius: 16px;
+      background: var(--cp-surface);
+    }
+    .takeaway {
+      padding: 0.75rem 1rem;
+      border-left: 4px solid var(--cp-accent);
+      background: var(--cp-accent-soft);
+    }
+    .limitations { padding: 1rem; border: 1px solid var(--cp-warning); border-radius: 0.625rem; }
+    .muted, figcaption { color: var(--cp-text-muted); }
+    .table-scroll { width: 100%; overflow-x: auto; margin-block: 1rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; }
+    caption { text-align: left; color: var(--cp-text-muted); padding-bottom: 0.5rem; }
+    th, td { padding: 0.75rem; text-align: left; vertical-align: top; border-bottom: 1px solid var(--cp-border); }
+    th { background: var(--cp-surface-soft); font-weight: 600; }
+    .numeric { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+    figure { margin-inline: 0; }
+    img, svg { display: block; max-width: 100%; height: auto; }
+    .report-footer { padding-block: 0.5rem 2rem; color: var(--cp-text-muted); }
+    @media (max-width: 56rem) {
+      .report-layout { grid-template-columns: minmax(0, 1fr); }
+      .report-toc { position: static; max-height: none; }
+    }
+    @media (max-width: 36rem) {
+      .report-header, .report-layout, .report-footer { width: calc(100% - 1.5rem); }
+      .report-header { padding-top: 1.5rem; }
+      main > section { padding: 1rem; }
+      .report-metadata dl { grid-template-columns: 1fr; gap: 0; }
+      .report-metadata dd { margin-bottom: 0.5rem; }
+    }
+    @media print {
+      @page { size: auto; margin: 15mm; }
+      html, html[data-theme="dark"] {
+        color-scheme: light;
+        --cp-bg: #ffffff;
+        --cp-surface: #ffffff;
+        --cp-surface-soft: #f5f5f5;
+        --cp-text: #242424;
+        --cp-text-muted: #5c5c5c;
+        --cp-border: #dedede;
+        --cp-accent: #b11f4b;
+        --cp-accent-soft: rgba(177, 31, 75, 0.08);
+        --cp-link: #0078d4;
+        --cp-warning: #919191;
+      }
+      body { font-size: 10pt; }
+      .report-header, .report-layout, .report-footer { width: 100%; }
+      .report-header { padding-top: 0; }
+      .report-layout { display: block; }
+      .report-toc { position: static; max-height: none; overflow: visible; margin-bottom: 1rem; }
+      main > section { padding: 1rem 0; border: 0; border-radius: 0; }
+      h2, h3, caption { break-after: avoid; }
+      tr, figure, .takeaway { break-inside: avoid; }
+      thead { display: table-header-group; }
+      .table-scroll { overflow: visible; }
+      table { table-layout: fixed; font-size: 9pt; }
+      th, td { overflow-wrap: anywhere; padding: 0.375rem; }
+      .numeric { white-space: normal; }
+    }
+
+    @media screen {
+      table { min-width: 34rem; }
+      table.wide-table { min-width: 46rem; }
+      .table-scroll:focus-visible { outline: 2px solid var(--cp-accent); outline-offset: 2px; }
+    }
+  </style>
+</head>
+<body>
+<!-- dividend-report-meta
+ticker: 0384.HK
+company: 中国燃气 China Gas Holdings Limited
+exchange: HKEX
+as_of_date: 2026-09-25
+published_at: 2026-09-25T11:01:29+08:00
+ruleset: 2.5
+-->
+  <header class="report-header">
+    <h1>中国燃气（0384.HK）红利收入完整分析</h1>
+    <div class="report-metadata"><dl><dt>公司／市场</dt><dd>中国燃气 China Gas Holdings Limited · 0384.HK · HKEX</dd><dt>模式／规则</dt><dd>完整分析（full_analysis）· Schema 2.5 · scoring rubric 2 · html-1</dd><dt>信息截止</dt><dd>2026-09-25；集团最新审计财年2026-03-31</dd><dt>行情快照</dt><dd>HKD5.335 · 2026-09-25 10:20:58 +08:00（延迟盘中）</dd><dt>生成时间</dt><dd>2026-09-25T11:12:46+08:00；归档时间另见元数据，不代表交易所数据更新时间</dd><dt>研究场景</dt><dd>香港税务居民个人／普通券商非港股通；HKD报告；0%发行人预扣、费用未知</dd><dt>阅读方式</dt><dd>单文件离线可读；宽表可左右滑动；目录锚点、明暗主题与浏览器打印；正文不依赖脚本</dd></dl></div>
+  </header>
+  <div class="report-layout">
+    <nav class="report-toc" aria-label="报告目录">
+      <h2>目录</h2>
+      <ol><li><a href="#section-1">核心结论</a></li><li><a href="#section-2">股息概览</a></li><li><a href="#section-3">核心图表</a></li><li><a href="#section-4">公司与上市结构</a></li><li><a href="#section-5">股息税务与领取方式</a></li><li><a href="#section-6">业务基本面与五年展望</a></li><li><a href="#section-7">股息轨迹与实际购买力</a></li><li><a href="#section-8">历史现金流与分红覆盖</a></li><li><a href="#section-9">管理层资本配置与资金约束</a></li><li><a href="#section-10">回购质量与每股权益</a></li><li><a href="#section-11">五年经营与现金流情景</a></li><li><a href="#section-12">分配现金桥与股份假设</a></li><li><a href="#section-13">未来股息与收益率路径</a></li><li><a href="#section-14">红利陷阱清单</a></li><li><a href="#section-15">回报要求与分阶段入场计划</a></li><li><a href="#section-16">图文总结</a></li><li><a href="#section-17">评分、组合角色与持仓复评</a></li><li><a href="#section-18">来源、数据质量与边界</a></li></ol>
+    </nav>
+    <main id="report-content">
+      <section id="section-1"><h2>1. 核心结论</h2>
+<p class="takeaway"><strong>当前行动：等待资金证据（wait_for_evidence），列入观察名单；不是“等到某个低价即可买入”。</strong>最新普通股息已削减，而集团口径的“自由现金流”包含资本回收并在融资现金利息之前。未能确认上市母公司的经常性上缴现金、可动用资金及滚续债务后的分红能力，因此暂停正常化N/B、试建仓、加仓和强买价格。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="质量、收入与行动分别回答；综合分不能替代入场条件。"><table class="wide-table"><caption>质量、收入与行动分别回答；综合分不能替代入场条件。</caption><thead><tr><th scope="col">质量／85</th><th scope="col">收息／15</th><th scope="col">证据覆盖</th><th scope="col">正常化净收益率</th><th scope="col">当前行动</th><th scope="col">证券角色</th></tr></thead><tbody><tr><td>17–44（暂定）</td><td>9（暂定代理）</td><td>80/100；质量65/85</td><td>未建立；不以TTM替代</td><td>等待资金证据</td><td>观察名单（Watchlist）</td></tr></tbody></table></div>
+<p><strong>暂定综合评分26–53/100，等级E–D；质量标签低（Low）。</strong>这是评分规则边界而非置信区间：精确已评权重40、有界权重40、缺失权重20。现金覆盖模块尚不能按经常性母公司FAD评估，保留其0–20分数学贡献，不给中性分、不取中点。质量覆盖率76.47%；分数和证据覆盖均不代表违约概率或胜率。详见第17节。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="三个入场阶段均被证据门槛暂停；没有用猜测价格填满表格。"><table class="wide-table"><caption>三个入场阶段均被证据门槛暂停；没有用猜测价格填满表格。</caption><thead><tr><th scope="col">阶段</th><th scope="col">估值价格</th><th scope="col">收入约束后价格</th><th scope="col">距现价</th><th scope="col">状态／重开条件</th></tr></thead><tbody><tr><td>试建仓</td><td>未估计</td><td>未估计</td><td>不适用</td><td>等待证据：经营现金、母公司上缴、资本及派息链闭合</td></tr>
+<tr><td>加仓</td><td>未估计</td><td>未估计</td><td>不适用</td><td>等待证据：新股息全现金权益被经常性及实际现金同时覆盖</td></tr>
+<tr><td>强力买入</td><td>未估计</td><td>未估计</td><td>不适用</td><td>不可用：还须高预测置信度、强分红安全及压力情景支持</td></tr></tbody></table></div>
+<p>参考价为<strong>5.335港元</strong>（2026-09-25 10:20:58 +08:00延迟盘中快照；不是9月24日收盘）。已付TTM现金股息<strong>0.50港元</strong>，0%发行人预扣情景下费用前收益率<strong>9.37%</strong>；最新全年普通股息<strong>0.35港元</strong>对应<strong>6.56%</strong>。后者只是最新宣告年度口径，不是正常化、已担保远期或新买入后十二个月的实收收益。<a href="#S01">[S01]</a> <a href="#S05">[S05]</a> <a href="#S08">[S08]</a></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="其余决定性条件：研究假设不是用户已确认的个人资料。"><table><caption>其余决定性条件：研究假设不是用户已确认的个人资料。</caption><thead><tr><th scope="col">事项</th><th scope="col">结论／边界</th><th scope="col">证据</th></tr></thead><tbody><tr><td>研究对象</td><td>中国燃气 China Gas Holdings Limited；0384.HK；HKEX普通股；完整分析</td><td><a href="#S01">[S01]</a></td></tr>
+<tr><td>截止与币种</td><td>信息截止2026-09-25；最新集团审计财年截至2026-03-31；记账/派息/报价HKD，主要经济功能货币RMB</td><td><a href="#S01">[S01]</a> <a href="#S12">[S12]</a></td></tr>
+<tr><td>税务假设</td><td>香港税务居民个人、非港股通普通券商账户；发行人普通股息0%预扣，费用未知；未核验个人流水</td><td><a href="#S05">[S05]</a> <a href="#S15">[S15]</a></td></tr>
+<tr><td>派息安全／预测</td><td>安全性不明确（Unclear）；集团经营可做条件估计，股东可支配派息预测置信度低（Low）</td><td>第8、11–14节</td></tr>
+<tr><td>业务与风险</td><td>转型／高度不确定；城市燃气存量网络尚在，接驳下降、新能源投入和LNG长协增加资本/执行风险</td><td><a href="#S01">[S01]</a> <a href="#S11">[S11]</a> <a href="#S13">[S13]</a></td></tr>
+<tr><td>购买力／汇率</td><td>近一年同额已付现金的香港消费购买力下降约1.63%；RMB经营对HKD股息有实质影响，不能因港元派息而忽略</td><td>第7、11节</td></tr>
+<tr><td>估值与角色</td><td>估值模式suspended；红利陷阱否决Unclear；非已证实违规或资不抵债；不能列为核心收息</td><td>第14–17节</td></tr>
+<tr><td>个人约束</td><td>未提供最低收益目标、持仓、资金或替代品；不评估仓位、换仓和个人收入达标情况</td><td>不自动交易</td></tr></tbody></table></div>
+<p>机会假说是：存量气量与顺价、资本开支纪律能否最终带来真正归属普通股东的现金改善。相反证据是：利润、接驳和最新DPS下降，现金改善部分依赖资本回收，母公司短期负债远超自身现金。下一次催化应是集团中期现金及上缴披露，而不是仅有新合同新闻或估值倍数下跌。</p>
+</section>
+<section id="section-2"><h2>2. 股息概览</h2>
+<p class="takeaway">TTM仍包含较高的旧末期股息，不能把9.37%理解为可重复的未来现金收入。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="按已支付事件计算TTM：2025-09-26至2026-09-25；金额每股HKD。"><table class="wide-table"><caption>按已支付事件计算TTM：2025-09-26至2026-09-25；金额每股HKD。</caption><thead><tr><th scope="col">类别</th><th scope="col">归属期间</th><th scope="col">金额</th><th scope="col">付款／权益状态</th><th scope="col">处理</th></tr></thead><tbody><tr><td>普通末期</td><td>FY2025</td><td class="numeric">0.35</td><td>2025-10-09已支付</td><td>计入已付TTM</td></tr>
+<tr><td>普通中期</td><td>FY2026</td><td class="numeric">0.15</td><td>2026-02-06已支付</td><td>计入已付TTM</td></tr>
+<tr><td>普通末期</td><td>FY2026</td><td class="numeric">0.20</td><td>2026-08-21批准；8月25日除净；8月31日登记；10月2日待支付</td><td>不计已付TTM；截止日买入无此权益</td></tr>
+<tr><td>特别／可变／资本返还</td><td>本次现金股息口径</td><td>未发现单独宣告项目</td><td>上述均为普通股息</td><td>不能将资产处置收益改称特别股息</td></tr></tbody></table></div>
+<p>截至本次截止，过去十二个月实付DPS为0.50；当2025年10月的0.35滚出窗口、2026年10月0.20实际支付后，在没有其他分派的条件下该窗口将变为0.35。这是已宣告支付表的滚动逻辑，不是增长预测。<a href="#S01">[S01]</a> <a href="#S05">[S05]</a> <a href="#S06">[S06]</a> <a href="#S18">[S18]</a></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="最新年度股息与账面利润的比较不是现金安全证明。"><table><caption>最新年度股息与账面利润的比较不是现金安全证明。</caption><thead><tr><th scope="col">指标</th><th scope="col">复算结果</th><th scope="col">定义／限制</th></tr></thead><tbody><tr><td>FY2026年度股息下降</td><td class="numeric">-30.00%</td><td>0.15中期＋0.20末期；上一财年0.50</td></tr>
+<tr><td>年度全现金等值权益</td><td>1,906.853百万港元</td><td>当前完整有权普通股数的年度量级；不是FY2026实际付款额</td></tr>
+<tr><td>权益／归母利润</td><td class="numeric">70.13%</td><td>约70%；董事会政策不是固定70%承诺</td></tr>
+<tr><td>实付TTM净收益率</td><td class="numeric">9.37%</td><td>0%预扣、费用前；不是远期</td></tr>
+<tr><td>最新年度净收益率</td><td class="numeric">6.56%</td><td>0%预扣、费用前；非正常化N</td></tr>
+<tr><td>券商实际实收／最终个人税后</td><td>未核验</td><td>没有券商流水、费用表、股数和个人纳税资料</td></tr></tbody></table></div>
+</section>
+<section id="section-3"><h2>3. 核心图表</h2>
+<p class="takeaway">现金口径的变化比高股息率更重要：扣完融资项并剔除资本回收后，可留给普通股东的历史现金显著减少。</p>
+<figure><svg viewBox="0 0 760 304" role="img" aria-labelledby="cash-chart-title cash-chart-desc"><title id="cash-chart-title">FY2026现金口径与实付股息（百万港元）；并非正常化FAD。</title><desc id="cash-chart-desc">公司披露FCF：4,838.4；扣现金利息/租赁/NCI后：2,244.2；保守全投入现金代理：424.0；当期普通现金股息：2,724.1</desc><text x="8" y="65" fill="var(--cp-text)" font-size="15">公司披露FCF</text><rect x="215" y="45" width="380.00" height="30" rx="4" fill="var(--cp-accent)"/><text x="605.00" y="65" fill="var(--cp-text)" font-size="15">4,838.4</text><text x="8" y="121" fill="var(--cp-text)" font-size="15">扣现金利息/租赁/NCI后</text><rect x="215" y="101" width="176.26" height="30" rx="4" fill="var(--cp-accent)"/><text x="401.26" y="121" fill="var(--cp-text)" font-size="15">2,244.2</text><text x="8" y="177" fill="var(--cp-text)" font-size="15">保守全投入现金代理</text><rect x="215" y="157" width="33.30" height="30" rx="4" fill="var(--cp-accent)"/><text x="258.30" y="177" fill="var(--cp-text)" font-size="15">424.0</text><text x="8" y="233" fill="var(--cp-text)" font-size="15">当期普通现金股息</text><rect x="215" y="213" width="213.95" height="30" rx="4" fill="var(--cp-accent)"/><text x="438.95" y="233" fill="var(--cp-text)" font-size="15">2,724.1</text></svg><figcaption>FY2026现金口径与实付股息（百万港元）；并非正常化FAD。</figcaption></figure>
+<p>图中第二柱＝4,838.378－1,929.918现金利息－96.043租赁本金－568.198少数股东股息。第三柱还扣其他收购结算，并剔除处置、借款回收和保证金释放；第8节提供逐项算式。资产回收本身可以改善流动性，但不能自动成为持续股息的分子。</p>
+<figure><svg viewBox="0 0 760 360" role="img" aria-labelledby="dividend-chart-title dividend-chart-desc"><title id="dividend-chart-title">五年归属财年的普通DPS（港元/股）；FY2026末期尚未支付。</title><desc id="dividend-chart-desc">FY2022：0.55；FY2023：0.50；FY2024：0.50；FY2025：0.50；FY2026：0.35</desc><text x="8" y="65" fill="var(--cp-text)" font-size="15">FY2022</text><rect x="215" y="45" width="380.00" height="30" rx="4" fill="var(--cp-accent)"/><text x="605.00" y="65" fill="var(--cp-text)" font-size="15">0.55</text><text x="8" y="121" fill="var(--cp-text)" font-size="15">FY2023</text><rect x="215" y="101" width="345.45" height="30" rx="4" fill="var(--cp-accent)"/><text x="570.45" y="121" fill="var(--cp-text)" font-size="15">0.50</text><text x="8" y="177" fill="var(--cp-text)" font-size="15">FY2024</text><rect x="215" y="157" width="345.45" height="30" rx="4" fill="var(--cp-accent)"/><text x="570.45" y="177" fill="var(--cp-text)" font-size="15">0.50</text><text x="8" y="233" fill="var(--cp-text)" font-size="15">FY2025</text><rect x="215" y="213" width="345.45" height="30" rx="4" fill="var(--cp-accent)"/><text x="570.45" y="233" fill="var(--cp-text)" font-size="15">0.50</text><text x="8" y="289" fill="var(--cp-text)" font-size="15">FY2026</text><rect x="215" y="269" width="241.82" height="30" rx="4" fill="var(--cp-accent)"/><text x="466.82" y="289" fill="var(--cp-text)" font-size="15">0.35</text></svg><figcaption>五年归属财年的普通DPS（港元/股）；FY2026末期尚未支付。</figcaption></figure>
+<p>未来图形不画一条“保证增长”的曲线：第11–13节的十五行情景均有经营和投资假设，但因母公司资金链未获核实，DPS只能标为示意试算，不能给正常化或买入区间背书。</p>
+</section>
+<section id="section-4"><h2>4. 公司与上市结构</h2>
+<p class="takeaway">这不是香港本地燃气业务，也不是内地H股；上市母公司的功能货币与多数经营子公司一样是人民币。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="上市结构、股份和控制关系要分别识别。"><table><caption>上市结构、股份和控制关系要分别识别。</caption><thead><tr><th scope="col">项目</th><th scope="col">已核实事实</th><th scope="col">投资含义</th></tr></thead><tbody><tr><td>注册／证券</td><td>百慕达获豁免有限公司；HKEX 0384.HK普通股</td><td>非ADR，无存托比例换算；每一报价单位为一股</td></tr>
+<tr><td>经营与币种</td><td>主要在中国经营；功能货币RMB，报表和股息HKD</td><td>人民币盈利、跨境上缴、港元股息三层不同</td></tr>
+<tr><td>普通已发行股份</td><td>5,448,152,741股（2026-08-31）</td><td>最新月报和行情股数一致；不把加权平均EPS分母用于派息</td></tr>
+<tr><td>FY2026 EPS分母</td><td>5,395,413,000股加权平均；扣除奖励信托持股</td><td>与已发行有权股数不同，EPS反推股息时须纠正</td></tr>
+<tr><td>最大股东体系</td><td>北控集团披露权益23.60%；刘明辉13.49%；赵氏相关权益12.10%</td><td>部分间接权益重叠，不直接相加；未据此认定单一最终控制人</td></tr>
+<tr><td>治理风险范围</td><td>北控关联LNG采购、管理层有关联的增值服务及生物质业务</td><td>监测资金由上市集团向关联方流出的条款，而不把子公司上缴混为控制人抽取</td></tr>
+<tr><td>以股代息</td><td>FY2025付款期曾发行代息股；最新FY2026两次普通分派为现金</td><td>不沿用旧现金结算比例，也不以信托无投票权推断无股息权</td></tr></tbody></table></div>
+<p>控制人风险记录：<code>controller=null</code>表示本次无法由披露股权直接确认单一最终控制人，<code>status=watch</code>、<code>materiality=unknown</code>、<code>material_harm_confirmed=false</code>。存在需跟踪的关联交易和权利调整，但没有证据证明为满足控制人融资需要而损害上市公司。未知重要性不是“已确认抽取”，也不是已通过治理安全门槛。<a href="#S01">[S01]</a> <a href="#S06">[S06]</a> <a href="#S07">[S07]</a> <a href="#S10">[S10]</a> <a href="#S11">[S11]</a></p>
+</section>
+<section id="section-5"><h2>5. 股息税务与领取方式</h2>
+<p class="takeaway">本报告普通股息按发行人0%预扣、费用前计算；这不是关于用户税籍或真实券商流水的确认。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="适用性按当前股息事件核对，不以港股代码推断税率。"><table><caption>适用性按当前股息事件核对，不以港股代码推断税率。</caption><thead><tr><th scope="col">税务／领取环节</th><th scope="col">处理</th><th scope="col">证据与限制</th></tr></thead><tbody><tr><td>投资者场景</td><td>香港税务居民个人；普通券商；非港股通</td><td>技能默认研究场景，未获用户个人确认</td></tr>
+<tr><td>发行人预扣</td><td>0%；withholding_basis=company_announcement</td><td>S05预扣税栏Not applicable；S15百慕达规则交叉核对</td></tr>
+<tr><td>实收核验</td><td>broker_observed=Unknown；cash_line_type=unknown</td><td>未提供普通股息/PIL、税项、费用和退款流水；不声称券商实收无扣税</td></tr>
+<tr><td>子公司上缴税</td><td>计入现金桥或作为待核约束</td><td>S01税务附注：内地利润分红有上缴税；不能再从已经宣告的股东DPS重复扣一次</td></tr>
+<tr><td>投资者换汇</td><td>HKD股息→HKD报告币种，直接换汇因子1</td><td>经营层RMB风险仍然存在；券商若兑换他币须另计</td></tr>
+<tr><td>费用</td><td>未知；净收益率仅扣发行人预扣税、未扣费用及其他个人税</td><td>无持股数量或费率，不能假设固定费用为0</td></tr>
+<tr><td>现金／代息</td><td>当前无scrip；available=No、cash_election_available=Not Applicable</td><td>历史FY2025代息另列；券商自主DRIP不创造额外发行人股息</td></tr>
+<tr><td>权益限制</td><td>截止日新买入无权收2026-10-02的0.20</td><td>8月25日已除净；不能把旧权益放进新投资回报</td></tr></tbody></table></div>
+<p class="limitations">派息0%预扣有当前公告支持，不代表所有将来的托管链处理永久不变。若持有人为其他税务居民、公司账户、港股通渠道，或现金行实际为证券借贷替代支付，须重新核对。</p>
+</section>
+<section id="section-6"><h2>6. 业务基本面与五年展望</h2>
+<p class="takeaway">现金发动机仍是存量城燃售气与增值服务；“天然气总销量增长”并不能抵消高利润接驳业务的下降。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="FY2026分部收入与分部利润（百万港元）；利润不是可直接分配的现金。"><table class="wide-table"><caption>FY2026分部收入与分部利润（百万港元）；利润不是可直接分配的现金。</caption><thead><tr><th scope="col">分部</th><th scope="col">收入</th><th scope="col">收入占比</th><th scope="col">分部利润</th><th scope="col">主要变化／现金机制</th></tr></thead><tbody><tr><td>天然气</td><td class="numeric">48,395.5</td><td class="numeric">65.75%</td><td class="numeric">3,402.5</td><td>城市/乡镇气量23.4695bcm，-0.2%；直供/贸易17.9617bcm，+9.2%；顺价、采购成本和客户组合决定贡献</td></tr>
+<tr><td>工程、设计与接驳</td><td class="numeric">4,941.9</td><td class="numeric">6.71%</td><td class="numeric">969.3</td><td>新增居民接驳113.96万户，-18.6%；房地产新开工和回款拖累</td></tr>
+<tr><td>LPG</td><td class="numeric">14,972.1</td><td class="numeric">20.34%</td><td class="numeric">82.2</td><td>收入规模大但分部利润贡献小；交易价格、库存与采购融资不宜当作稳定公用事业现金</td></tr>
+<tr><td>增值服务</td><td class="numeric">3,699.9</td><td class="numeric">5.03%</td><td class="numeric">1,619.9</td><td>已有用户基础有渠道优势；安全产品更新和原料成本影响高利润率</td></tr>
+<tr><td>其他／综合能源</td><td class="numeric">1,594.5</td><td class="numeric">2.17%</td><td class="numeric">421.8</td><td>项目投运和前置投入决定现金；不假设储能/生物质自动复制成熟城燃回报</td></tr></tbody></table></div>
+<p>护城河主要来自本地管网、特许经营和庞大存量客户，不等于完全定价权：燃气顺价有监管滞后、工业需求有周期，跨区域贸易和新能源项目未必有相同保护。华润燃气、新奥能源、港华智慧能源等是经营模式参照，本次未建立同口径同日比较估值，不凭行业名称授予估值溢价。<a href="#S01">[S01]</a></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="五年历史经营骨架（截至每年3月31日；收入/利润百万港元；气量十亿立方米）。"><table class="wide-table"><caption>五年历史经营骨架（截至每年3月31日；收入/利润百万港元；气量十亿立方米）。</caption><thead><tr><th scope="col">财年</th><th scope="col">售气量</th><th scope="col">收入</th><th scope="col">归母净利</th><th scope="col">利润率</th><th scope="col">经营结论</th></tr></thead><tbody><tr><td>FY2022</td><td class="numeric">36.70</td><td class="numeric">88,225.2</td><td class="numeric">7,662.0</td><td class="numeric">8.68%</td><td>旧接驳/扩张模式仍有较高盈利；后续不可直接当正常态</td></tr>
+<tr><td>FY2023</td><td class="numeric">39.20</td><td class="numeric">91,988.4</td><td class="numeric">4,293.5</td><td class="numeric">4.67%</td><td>利润下滑，回收合同资产改善经营现金</td></tr>
+<tr><td>FY2024</td><td class="numeric">41.70</td><td class="numeric">81,410.1</td><td class="numeric">3,184.9</td><td class="numeric">3.91%</td><td>高经营现金含营运资金释放，新增投资和贷款垫付仍大</td></tr>
+<tr><td>FY2025</td><td class="numeric">39.96</td><td class="numeric">79,258.0</td><td class="numeric">3,251.6</td><td class="numeric">4.10%</td><td>会计利润稍稳，经营现金明显回落</td></tr>
+<tr><td>FY2026</td><td class="numeric">41.43</td><td class="numeric">73,603.9</td><td class="numeric">2,719.0</td><td class="numeric">3.69%</td><td>贸易销量增长但归母净利和股息再降</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="三至五年发展论证：只把已经披露的资本计划作为边界，不将激励目标当盈利指引。"><table class="wide-table"><caption>三至五年发展论证：只把已经披露的资本计划作为边界，不将激励目标当盈利指引。</caption><thead><tr><th scope="col">驱动</th><th scope="col">当前基线</th><th scope="col">FY2029方向</th><th scope="col">FY2031方向</th><th scope="col">资金及反证</th></tr></thead><tbody><tr><td>售气与顺价</td><td>662个项目；约4,959万累计居民用户；城/乡镇气量基本持平</td><td>Base总气量约43.11bcm，温和增长而非高增长</td><td>Base约43.98bcm；竞争、工业需求及替代能源影响边际量</td><td>持续维护、安全资本开支不能归零；连续两个披露期城燃负增长需下修</td></tr>
+<tr><td>接驳</td><td>新增居民户数同比-18.6%；分部利润969.3</td><td>Base收入再累计收缩；不假定房地产V形反弹</td><td>接驳在较低规模稳定；存量售气/服务需补利润</td><td>合同资产已达12,836.3；回款失速是现金而非仅估值风险</td></tr>
+<tr><td>增值服务</td><td>渠道强但2026分部利润下降</td><td>Base收入按3%/4%/4%的明确阶段假设恢复</td><td>降至3%增速；不是永续高增长</td><td>检验用户渗透率、现金毛利、关联主体少数权益，而非只看GMV</td></tr>
+<tr><td>新业务</td><td>募集款未用2,354百万港元指定综合能源；预期至2029使用</td><td>Base其他收入增速12%/12%/10%，逐项投运且先花钱</td><td>增速回落8%/6%；新增LNG协议2030起方进入经营期</td><td>生物质采购/运营上限不是订单；项目回报和LNG价差未经完整核验不进终值</td></tr></tbody></table></div>
+<p>基本面分类：<strong>转型／高度不确定（Transformation / High Uncertainty）</strong>。不能因旧接驳结构下滑就断言整个存量气网进入不可逆衰退，也不能因新能源叙事就认定结构性增长。收入驱动标签为<code>regulated_tariffs</code>与<code>contracted_volumes</code>，方向均为在成本和投资不恶化条件下较高水平支持现金，期限FY2027–FY2031；不生成任何组合权重。</p>
+<p>经济货币链：RMB售气/服务与RMB成本及主要债务形成自然匹配 → 子公司法定储备、税及本地资金需求 → 实际可上缴母公司的RMB现金 → HKD派息 → HKD投资者现金。新的美元LNG合同、商品/保证金和剩余外币债务使这种匹配不完全。第11节说明压力计算为何仍有缺口。<a href="#S01">[S01]</a> <a href="#S11">[S11]</a> <a href="#S12">[S12]</a> <a href="#S13">[S13]</a></p>
+</section>
+<section id="section-7"><h2>7. 股息轨迹与实际购买力</h2>
+<p class="takeaway">名义普通股息已出现两次年度下调；已付TTM暂时稳定也不等于实际购买力稳定。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="归属年度DPS及按本次现价回看；不是历史可成交收益率。"><table class="wide-table"><caption>归属年度DPS及按本次现价回看；不是历史可成交收益率。</caption><thead><tr><th scope="col">财年</th><th scope="col">普通／总DPS</th><th scope="col">特别／可变</th><th scope="col">DPS同比</th><th scope="col">按现价收益率</th><th scope="col">模式／限制</th></tr></thead><tbody><tr><td>FY2022</td><td class="numeric">0.55</td><td>无单列</td><td>窗口起点</td><td class="numeric">10.31%</td><td>普通分派；不等于当年现金流量表实付</td></tr>
+<tr><td>FY2023</td><td class="numeric">0.50</td><td>无单列</td><td class="numeric">-9.09%</td><td class="numeric">9.37%</td><td>Cut：0.55降至0.50</td></tr>
+<tr><td>FY2024</td><td class="numeric">0.50</td><td>无单列</td><td class="numeric">0.00%</td><td class="numeric">9.37%</td><td>普通分派；不等于当年现金流量表实付</td></tr>
+<tr><td>FY2025</td><td class="numeric">0.50</td><td>无单列</td><td class="numeric">0.00%</td><td class="numeric">9.37%</td><td>普通分派；不等于当年现金流量表实付</td></tr>
+<tr><td>FY2026</td><td class="numeric">0.35</td><td>无单列</td><td class="numeric">-30.00%</td><td class="numeric">6.56%</td><td>FY2026末期未付；Cut</td></tr></tbody></table></div>
+<p>FY2022–FY2026为五个年度、四个复合增长区间，归属DPS从0.55降至0.35。本报告不拿尚未支付的2026末期股息冒充历史实收，也不捏造各年的未复权参考股价。历史时点股息率栏未估计：缺少统一、可复核的当年价格序列；上表只是同一现价下的回顾性比较。<a href="#S01">[S01]</a> <a href="#S02">[S02]</a> <a href="#S03">[S03]</a> <a href="#S04">[S04]</a> <a href="#S18">[S18]</a></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="实际收入记录：相同一股、全现金选择、无再投资；消费篮子仅为香港综合CPI研究参照。"><table class="wide-table"><caption>实际收入记录：相同一股、全现金选择、无再投资；消费篮子仅为香港综合CPI研究参照。</caption><thead><tr><th scope="col">要素</th><th scope="col">起点</th><th scope="col">终点</th><th scope="col">复算／限制</th></tr></thead><tbody><tr><td>观察日期</td><td>2025-08-31</td><td>2026-08-31</td><td>相隔365日；365/365.25＝0.999316年</td></tr>
+<tr><td>各截至日过去一年已付现金</td><td>0.50港元</td><td>0.50港元</td><td>旧0.35末期＋0.15中期；按0%预扣场景、费用前，不是券商实收</td></tr>
+<tr><td>综合CPI（2019/20=100）</td><td class="numeric">109.0</td><td class="numeric">110.8</td><td>官方公开一位小数指数；不能混用CPI(C)</td></tr>
+<tr><td>名义／通胀CAGR</td><td>名义 0.00%</td><td>通胀 1.65%</td><td>以实际日数复利，不直接用两个CAGR相减</td></tr>
+<tr><td>实际现金购买力CAGR</td><td>计算：(0.50/0.50)/(110.8/109.0)</td><td class="numeric">-1.63%</td><td>Eroding；平稳容差±0.10%/年用于一位小数指数精度，不掩盖下降</td></tr></tbody></table></div>
+<p>消费篮子未由用户确认，故这是一股现金在香港一般家庭消费篮子的条件分析，不是个人生活成本结论。完整五年同篮子实收购买力序列尚未构建，不能将上述一年诊断升级为五年精确实际CAGR；评分的五年实质稳定核验仍保留未知。公告1.7%同比与指数端点复算约1.65%的差异来自原始指数舍入。<a href="#S16">[S16]</a> <a href="#S17">[S17]</a> <a href="#S18">[S18]</a></p>
+</section>
+<section id="section-8"><h2>8. 历史现金流与分红覆盖</h2>
+<p class="takeaway"><strong>FY2026的48.38亿港元披露FCF不是利息后、全投入后、可上缴的普通股东FAD。</strong>它恰等于经营现金7,017.584加净投资现金−2,179.206百万港元；现金利息仍列在融资活动。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="FY2026从披露FCF到保守投资后现金代理：单位百万港元。"><table class="wide-table"><caption>FY2026从披露FCF到保守投资后现金代理：单位百万港元。</caption><thead><tr><th scope="col">步骤</th><th scope="col">加／减项</th><th scope="col">余额</th><th scope="col">性质／来源</th></tr></thead><tbody><tr><td>披露自由现金流</td><td>7,017.584－2,179.206</td><td class="numeric">4,838.378</td><td>经营＋净投资现金，含处置和回收</td></tr>
+<tr><td>现金利息</td><td>−1,929.918</td><td class="numeric">2,908.460</td><td>融资现金流；全部付息计一次，不再另扣损益财务费用</td></tr>
+<tr><td>租赁本金</td><td>−96.043</td><td class="numeric">2,812.417</td><td>现金本金；不同于已扣的使用权资产现金添置</td></tr>
+<tr><td>少数股东股息</td><td>−568.198</td><td class="numeric">2,244.219</td><td>由集团现金转向非普通母公司股东</td></tr>
+<tr><td>融资区收购/结算</td><td>−18.051－37.615</td><td class="numeric">2,188.553</td><td>额外股权及应付收购价；不能正常化掉实际义务</td></tr>
+<tr><td>处置及资本回收</td><td>−1,107.973</td><td class="numeric">1,080.580</td><td>子公司/联营/JV/物业/股权等处置所得，非经常性经营能力</td></tr>
+<tr><td>保证金净释放</td><td>−216.435</td><td class="numeric">864.145</td><td>414.563提取－198.128存入；不当作营业FCF</td></tr>
+<tr><td>合资贷款回收</td><td>−436.559</td><td class="numeric">427.586</td><td>本金回收，不是股息</td></tr>
+<tr><td>少数股东还款</td><td>−3.570</td><td class="numeric">424.016</td><td>借款回收；保留所有当年实际新增投资支出</td></tr></tbody></table></div>
+<p>上述<em>保守全投入现金代理</em>剔除处置及投资本金回收，扣当期全部实物资本开支、股权/贷款新增投入和收购结算，未把外部融资当FCF。它不是经正常化及上缴核验的FAD，也不表示这424.016已在母公司可自由使用。包含成长投资，因此低于派息额本身不能证明公司应停建所有项目或马上违约；但不能拿较宽松FCF声称分红已被经常现金充分覆盖。<a href="#S01">[S01]</a></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="五年现金支出账本；均按现金流量表实际支付，不用折旧或损益利息替代（百万港元）。"><table class="wide-table"><caption>五年现金支出账本；均按现金流量表实际支付，不用折旧或损益利息替代（百万港元）。</caption><thead><tr><th scope="col">财年</th><th scope="col">经营现金（已税/未息）</th><th scope="col">全部实物Capex</th><th scope="col">现金利息</th><th scope="col">租赁本金</th><th scope="col">少数股息</th><th scope="col">投资收益现金</th></tr></thead><tbody><tr><td>FY2022</td><td class="numeric">9,876.339</td><td class="numeric">10,378.775</td><td class="numeric">2,111.360</td><td class="numeric">220.476</td><td class="numeric">850.534</td><td class="numeric">570.344</td></tr>
+<tr><td>FY2023</td><td class="numeric">10,027.284</td><td class="numeric">5,960.294</td><td class="numeric">2,477.891</td><td class="numeric">212.183</td><td class="numeric">655.357</td><td class="numeric">710.491</td></tr>
+<tr><td>FY2024</td><td class="numeric">11,340.195</td><td class="numeric">6,081.016</td><td class="numeric">2,752.442</td><td class="numeric">205.399</td><td class="numeric">299.688</td><td class="numeric">761.643</td></tr>
+<tr><td>FY2025</td><td class="numeric">6,440.956</td><td class="numeric">4,676.915</td><td class="numeric">2,271.042</td><td class="numeric">70.645</td><td class="numeric">775.359</td><td class="numeric">834.206</td></tr>
+<tr><td>FY2026</td><td class="numeric">7,017.584</td><td class="numeric">4,500.614</td><td class="numeric">1,929.918</td><td class="numeric">96.043</td><td class="numeric">568.198</td><td class="numeric">750.661</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="第二步才扣未在实物Capex中的股权/借款投资；不重复扣维护或成长支出。"><table class="wide-table"><caption>第二步才扣未在实物Capex中的股权/借款投资；不重复扣维护或成长支出。</caption><thead><tr><th scope="col">财年</th><th scope="col">全Capex后股东现金代理A</th><th scope="col">新增战略/金融投入</th><th scope="col">收购及结算</th><th scope="col">保守全投入代理B</th><th scope="col">经常性FAD</th><th scope="col">来源</th></tr></thead><tbody><tr><td>FY2022</td><td class="numeric">-3,114.462</td><td class="numeric">2,815.851</td><td class="numeric">3,502.051</td><td class="numeric">-9,432.364</td><td>未核定</td><td>S04</td></tr>
+<tr><td>FY2023</td><td class="numeric">1,432.050</td><td class="numeric">2,580.623</td><td class="numeric">2,068.121</td><td class="numeric">-3,216.694</td><td>未核定</td><td>S03/S04</td></tr>
+<tr><td>FY2024</td><td class="numeric">2,763.293</td><td class="numeric">3,136.832</td><td class="numeric">37.056</td><td class="numeric">-410.595</td><td>未核定</td><td>S02/S03</td></tr>
+<tr><td>FY2025</td><td class="numeric">-518.799</td><td class="numeric">375.248</td><td class="numeric">200.960</td><td class="numeric">-1,095.007</td><td>未核定</td><td>S01/S02</td></tr>
+<tr><td>FY2026</td><td class="numeric">673.472</td><td class="numeric">192.372</td><td class="numeric">57.084</td><td class="numeric">424.016</td><td>未核定</td><td>S01</td></tr></tbody></table></div>
+<p>A＝OCF＋实收利息/合联营股息－全部实物Capex－现金利息－租赁本金－少数股东股息。B＝A－新增合联营/股权投资、收购按金与投资性垫款－收购及递延结算；FY2025另扣投资活动列示的11.752衍生工具现金结算，避免将对应经营现金流入留作股东现金。FY2022大额投资物业和关联收购、FY2023–FY2024合资垫款都保留，未假定可省去。五年历史为各年当时的合并范围，不能把收购/处置前后的序列伪作当前恒定资产范围；这也是不直接用其均值或中位数建立N的原因。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="同期间实际现金分母与融资来源（百万港元）；负覆盖率保留，不截为零。"><table class="wide-table"><caption>同期间实际现金分母与融资来源（百万港元）；负覆盖率保留，不截为零。</caption><thead><tr><th scope="col">财年</th><th scope="col">实付普通股息</th><th scope="col">全现金等值权益</th><th scope="col">B／实付</th><th scope="col">净新增借款现金</th><th scope="col">发行／回购及奖励购股</th><th scope="col">资金来源判断</th></tr></thead><tbody><tr><td>FY2022</td><td class="numeric">3,062.449</td><td class="numeric">3,062.449</td><td class="numeric">-3.08倍</td><td class="numeric">5,325.296</td><td>11,602.8 / 3,932.2</td><td>混合：经营、资本回收、债务、存量现金及新股</td></tr>
+<tr><td>FY2023</td><td class="numeric">2,992.185</td><td class="numeric">2,992.185</td><td class="numeric">-1.08倍</td><td class="numeric">6,919.823</td><td>0.0 / 0.0</td><td>混合：经营、资本回收、债务、存量现金</td></tr>
+<tr><td>FY2024</td><td class="numeric">2,991.470</td><td class="numeric">2,991.470</td><td class="numeric">-0.14倍</td><td class="numeric">388.897</td><td>0.0 / 43.9</td><td>混合：经营、资本回收、债务、存量现金</td></tr>
+<tr><td>FY2025</td><td class="numeric">2,637.765</td><td class="numeric">2,718.066</td><td class="numeric">-0.42倍</td><td class="numeric">2,189.609</td><td>0.0 / 0.0</td><td>混合：经营、资本回收、债务、存量现金</td></tr>
+<tr><td>FY2026</td><td class="numeric">2,724.076</td><td class="numeric">2,724.076</td><td class="numeric">0.16倍</td><td class="numeric">2,904.736</td><td>0.0 / 0.0</td><td>混合：经营、资本回收、债务、存量现金</td></tr></tbody></table></div>
+<p>FY2024–FY2026实付现金合计8,353.311百万港元；A累计2,917.966，对应0.35倍；B累计-1,081.586，对应-0.13倍。改用全现金等值权益8,433.612作为分母，B覆盖为-0.13倍。这些都是明确口径的历史现金诊断，<strong>三年累计经常性FAD覆盖率仍未核定</strong>，不把代理值放进标准FAD指标。</p>
+<p>五年最差<strong>实际B代理</strong>为FY2022：-9,432.364百万港元／3,062.449百万港元＝-3.08倍。同年有11,602.791百万港元新股融资与5,325.296百万港元净新增借款现金，不能把负数解释为漏付股息。五年最差经常性覆盖率不可得，原因是维护/成长与营运资金正常化及母公司可上缴范围尚未闭合，而不是缺少现金流量表。</p>
+<p>FY2026保守全投入现金代理为4.24亿港元，对同年实付普通股息覆盖0.16倍，非经常性FAD。FY2025实付2,637.765与权益2,718.066的80.301差额是代息，不是每股股息少了；FY2026无代息现金节省。经营现金方面，FY2024存在净营运资金释放3,384.096，FY2025反为占用1,635.689、FY2026占用720.106百万港元，不能对高OCF年度机械平均后称正常化。</p>
+</section>
+<section id="section-9"><h2>9. 管理层资本配置与资金约束</h2>
+<p class="takeaway">下调股息可能是保留资金的合理选择，但“约70%盈利派息率”仍不能替代资金来源核验。</p>
+<p>正式政策为<code>discretionary</code>：每年预期中期及末期两次，董事会综合经营、盈利、流动性、资本需求和财务状况决定。本报告不把FY2026约70%的观察值改写为固定承诺。S01关于2021募集款的用途变更及2,354百万港元未用额，限制其可被视为派息“闲置现金”的范围。<a href="#S01">[S01]</a></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="资金、到期结构和母公司口径（百万港元；2026-03-31）。"><table><caption>资金、到期结构和母公司口径（百万港元；2026-03-31）。</caption><thead><tr><th scope="col">项目</th><th scope="col">金额／比例</th><th scope="col">含义及限制</th></tr></thead><tbody><tr><td>合并总借款</td><td class="numeric">66,135.996</td><td>较FY2025的60,230.797增加；不因管理层净杠杆率微降忽略绝对债务</td></tr>
+<tr><td>一年内／下一年到期</td><td>29,946.425 / 7,945.797</td><td>两年合计37,892.222；包括可要求偿还项目及债券条款</td></tr>
+<tr><td>可见现金／质押存款</td><td>12,289.276 / 104.907</td><td>大部分集团现金不能默认都在上市母公司自由支配</td></tr>
+<tr><td>公司净杠杆</td><td class="numeric">77.7%</td><td>扣除3,435.322贸易融资及含质押存款的银行现金；不等于全部借款净额</td></tr>
+<tr><td>较严格净借款／总权益</td><td class="numeric">83.12%</td><td>不排除贸易融资、不把质押存款计作可用；不是公司指引指标</td></tr>
+<tr><td>未用银行授信</td><td class="numeric">124,250.090</td><td>披露可用额度不是已提现金；承诺性、契约、可跨主体使用及期限仍须核实</td></tr>
+<tr><td>母公司自身现金</td><td class="numeric">264.844</td><td>不可用合并12,289.276替换</td></tr>
+<tr><td>母公司一年内借款</td><td class="numeric">17,657.396</td><td>另有应付子公司4,749.482；上缴和滚续是实质门槛</td></tr>
+<tr><td>母公司累计利润</td><td class="numeric">5,376.732</td><td>有账面储备不等于当期现金或已验证法定可分派额</td></tr>
+<tr><td>集团合联营担保</td><td class="numeric">10,867.002</td><td>S01财务工具附注所列最大金额；管理层认为付款概率低，不能在压力讨论中删除</td></tr></tbody></table></div>
+<p>集团不缺银行关系，且2026年4–6月仍发行债券，属于融资可达性的支持证据；但本次公开摘要未提供足以逐期闭合上市母公司未来五年净上缴、债务偿付及资金池限制的材料。中燃投资截至2026-06-30现金1,073.427百万元人民币、半年现金净减少684.250百万元人民币，只是部分子公司更新，不与集团港元财年现金直接相加。<a href="#S01">[S01]</a> <a href="#S12">[S12]</a></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="控制人／关联方资金渠道：关注方向与净影响，不推断动机。"><table class="wide-table"><caption>控制人／关联方资金渠道：关注方向与净影响，不推断动机。</caption><thead><tr><th scope="col">渠道</th><th scope="col">事实</th><th scope="col">保护／反证</th><th scope="col">待核及风险结论</th></tr></thead><tbody><tr><td>增值服务关联收购</td><td>2022年向管理层有关联卖方购买20%权益，代价3,000百万港元；分拆时间再延至2026年底</td><td>公告称不构成终止或不行使出售选择权；曾获独立股东审批</td><td>需核选择权有效性、分拆进程及继续持有的回报；不直接认定利益输送</td></tr>
+<tr><td>生物质运营／设备</td><td>FY2027/28/29运营上限RMB320.56/442.06/717.87百万；设备214.02/98.07/180.00百万</td><td>上限不是付款；正常商业条款、比较报价、董事回避、年度审查</td><td>需实际发生额/毛利/现金及外部少数权益；部分运营在合并内，不能全额当对外流失</td></tr>
+<tr><td>持股/控制关系</td><td>最大股东北控23.60%；管理层及家族有关联主体参与新业务</td><td>没有观察到仅为北控或管理层融资需求而强行提高派息的证据</td><td>watch；潜在重要性未知，未确认重大损害；不触发“已证实抽取”否决</td></tr></tbody></table></div>
+<p>这些渠道在本报告只记一次：运营服务成本在费用中、设备采购在Capex中、外部少数权益在权益/现金中。不把关联交易上限再从已扣现金中整笔重复扣除。<a href="#S01">[S01]</a> <a href="#S11">[S11]</a></p>
+</section>
+<section id="section-10"><h2>10. 回购质量与每股权益</h2>
+<p class="takeaway">最新财年没有执行回购；“有回购授权”和“回购曾发生”都不能代替继续股东权益变化的核对。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="每股权益审计。"><table><caption>每股权益审计。</caption><thead><tr><th scope="col">项目</th><th scope="col">量化证据</th><th scope="col">评价</th></tr></thead><tbody><tr><td>FY2022现金资本动作</td><td>新股净筹11,602.791；回购2,847.105；奖励信托购股1,085.120百万港元</td><td>不是纯粹经营现金回报；不以今天低价倒推所有历史交易都不经济</td></tr>
+<tr><td>FY2024执行</td><td>现金回购43.911百万港元</td><td>规模有限；未独立建立执行当时保守估值，不能给最高档</td></tr>
+<tr><td>FY2025代息稀释</td><td>新发12,579,569股；约0.2314%期初股数</td><td>现金股息与全现金权益差80.301百万港元</td></tr>
+<tr><td>FY2026及2026年8月</td><td>已发行5,448,152,741股不变；8月无增减</td><td>最新报表与月报一致；信托股不是新增经济产能</td></tr>
+<tr><td>2026奖励计划</td><td>有条件授予462,000,000新股，约现股本8.48%；不是截止日已发行</td><td>高层购买价5.00或5.50；有盈利归属条件与两期归属，不是无条件免费稀释</td></tr>
+<tr><td>全数发行敏感性</td><td>股本5,910,152,741股；不变分配总额下DPS下降约7.82%</td><td>相关购买款是融资而非FCF；若获配/归属时点前已发行，信托可能先享有股息，不能只看是否归属</td></tr></tbody></table></div>
+<p>模型不假设未来自发回购。FY2027–FY2031基准股数维持最新已发行数，因为月报尚无新发股，且不把有条件奖励视为必发；但按新股可能早于归属发行的方案另列上限敏感性。现有五年乐观模型的FY2031归母利润仍未达到以FY2026核心利润为基数的101.14%累计目标，归属判断还须使用实际经审计、剔除奖励费用等规定口径，不能用这里的简化预测自动判定。<a href="#S01">[S01]</a> <a href="#S07">[S07]</a> <a href="#S10">[S10]</a></p>
+<p>回购标签为不适用（Not Applicable，当前无执行计划），评分仍按可见每股结果给5/10；不因为没有回购而固定扣分，也不因股价下跌自动加分。</p>
+</section>
+<section id="section-11"><h2>11. 五年经营与现金流情景</h2>
+<p class="takeaway">以下先预测经营，再算现金；全部为条件模型。可核算不等于可派发：母公司FAD和强制净偿债仍未闭合。</p>
+<p>模型覆盖FY2027–FY2031，均截至3月31日。前三年为详细情景、后两年为增速收敛的扩展，不是单一DPS CAGR。货币为百万港元、股数为百万股。所有未来数字均为分析者估计，FY2027–FY2029经营层置信度中等，后两年较低；股东派息层整体置信度低。未把“奖励目标每年15%”当经营指引。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="各情景五年输入路径：依次FY2027/28/29/30/31；气量/接驳增长和毛利率为百分数。"><table class="wide-table"><caption>各情景五年输入路径：依次FY2027/28/29/30/31；气量/接驳增长和毛利率为百分数。</caption><thead><tr><th scope="col">情景</th><th scope="col">气量增长%</th><th scope="col">接驳收入增长%</th><th scope="col">综合毛利率%</th><th scope="col">全部实物Capex</th><th scope="col">营运资金占用</th><th scope="col">来源类型</th></tr></thead><tbody><tr><td>悲观（Bear）</td><td>-2 / -1 / 0 / 0 / 0</td><td>-20 / -15 / -10 / -5 / 0</td><td>14.0 / 13.8 / 13.8 / 14.0 / 14.0</td><td>4800 / 4600 / 4400 / 4300 / 4200</td><td>1500 / 1300 / 1200 / 1100 / 1000</td><td>S01历史锚＋分析者估计；不是公司指引</td></tr>
+<tr><td>基准（Base）</td><td>1 / 1.5 / 1.5 / 1 / 1</td><td>-10 / -8 / -5 / -3 / 0</td><td>14.8 / 15.0 / 15.2 / 15.3 / 15.3</td><td>4500 / 4400 / 4300 / 4300 / 4300</td><td>800 / 800 / 750 / 750 / 750</td><td>S01历史锚＋分析者估计；不是公司指引</td></tr>
+<tr><td>乐观（Bull）</td><td>3 / 3 / 2.5 / 2 / 2</td><td>-5 / 0 / 0 / 0 / 0</td><td>15.3 / 15.8 / 16.2 / 16.5 / 16.7</td><td>4800 / 4900 / 5000 / 4900 / 4800</td><td>500 / 450 / 400 / 450 / 500</td><td>S01历史锚＋分析者估计；不是公司指引</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="收入与成本的其余输入同样显式给出，避免用任意DPS折扣形成情景。"><table class="wide-table"><caption>收入与成本的其余输入同样显式给出，避免用任意DPS折扣形成情景。</caption><thead><tr><th scope="col">情景</th><th scope="col">LPG收入增长%</th><th scope="col">增值收入增长%</th><th scope="col">其他收入增长%</th><th scope="col">销管费增长%</th><th scope="col">税率／NCI利润比例</th><th scope="col">现金利息</th></tr></thead><tbody><tr><td>悲观（Bear）</td><td>-10 / -5 / 0 / 0 / 0</td><td>-5 / 0 / 0 / 1 / 1</td><td>5 / 5 / 5 / 3 / 3</td><td>0 / 0 / 0.5 / 0.5 / 0.5</td><td>28% / 24%</td><td>2200 / 2200 / 2150 / 2100 / 2050</td></tr>
+<tr><td>基准（Base）</td><td>-3 / 0 / 0 / 1 / 1</td><td>3 / 4 / 4 / 3 / 3</td><td>12 / 12 / 10 / 8 / 6</td><td>0 / 0.5 / 0.5 / 1 / 1</td><td>26% / 23%</td><td>1950 / 1900 / 1850 / 1800 / 1750</td></tr>
+<tr><td>乐观（Bull）</td><td>2 / 2 / 2 / 2 / 2</td><td>8 / 8 / 7 / 6 / 5</td><td>20 / 20 / 18 / 12 / 10</td><td>0 / 0.5 / 0.5 / 1 / 1</td><td>25% / 23%</td><td>1850 / 1750 / 1700 / 1650 / 1600</td></tr></tbody></table></div>
+<p>基线为S01分部收入：天然气48,395.504、接驳4,941.923、LPG14,972.092、增值3,699.906、其他1,594.508；天然气以41.4312bcm气量和同口径收入单价推导，后者只是分部混合收入强度，不是居民零售气价。基准和其他情景均不额外假设售气单价上涨；顺价/购气/业务组合变化集中反映在综合毛利率，避免重复增益。FY2026毛利率约14.8%、销管费5,209.855和折旧摊销3,187.617是起点，折旧逐年2%增长与持续投资配套。</p>
+<p>未来盈利列是<strong>经营归母利润代理</strong>，不是法定净利润或EPS预测：2026奖励计划未来股份支付费用的授予日估值、确认期及可归属性未能定值，未将其默认为公司实际费用为零。股数发行和信托权益用第10/12节上下界另行约束；这里没有同时扣一笔虚构现金回购费用。该盈利代理仅用于观察派息比例的示意计算，不能证明未来董事会法定派息基数。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="税息和投资收益假设：已知锚与未获公司承诺的模型选择分开。"><table class="wide-table"><caption>税息和投资收益假设：已知锚与未获公司承诺的模型选择分开。</caption><thead><tr><th scope="col">项目</th><th scope="col">悲观路径</th><th scope="col">基准路径</th><th scope="col">乐观路径</th><th scope="col">解释</th></tr></thead><tbody><tr><td>其他收入</td><td>200×5年</td><td>350×5年</td><td>450×5年</td><td>历史518.289，上一年996.758；不把政府/其他收益恢复到旧高点</td></tr>
+<tr><td>合联营账面利润</td><td>250×5年</td><td>380/390/400/410/420</td><td>450/475/500/525/550</td><td>与实收股息不同，不直接当现金</td></tr>
+<tr><td>合联营实收股息</td><td>400×5年</td><td>550/550/575/600/600</td><td>650/700/725/750/750</td><td>历史637.891；不能再同时加其经营FCF</td></tr>
+<tr><td>信用减值／年</td><td class="numeric">400</td><td class="numeric">200</td><td class="numeric">100</td><td>损益扣除后现金桥加回；实际收现风险进入营运资金占用，不能重复扣</td></tr>
+<tr><td>损益利息</td><td>1900/1900/1850/1800/1750</td><td>1700/1650/1600/1550/1500</td><td>1600/1500/1450/1400/1350</td><td>现金利息另列；不用损益利息替代付息</td></tr>
+<tr><td>现金税</td><td>当年模型税费＋100</td><td>当年模型税费＋100</td><td>当年模型税费＋100</td><td>税付现与计提时差敏感性，不是已确认未来税款</td></tr>
+<tr><td>少数股东实付</td><td>500×5年</td><td>600/600/625/650/650</td><td>650/675/700/750/800</td><td>基于历史299.688–850.534；不把母公司持股比例直接乘全集团OCF</td></tr>
+<tr><td>租赁／利息收入／额外投入</td><td>100 / 100 / 250每年</td><td>100 / 100 / 200每年</td><td>100 / 100 / 300每年</td><td>投入为实物Capex以外合联营/股权/贷款，另留50收购结算每年</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="十五个年度经营向量；不把相互独立的极端值拼成所谓正常态。"><table class="wide-table"><caption>十五个年度经营向量；不把相互独立的极端值拼成所谓正常态。</caption><thead><tr><th scope="col">年份／情景</th><th scope="col">气量bcm</th><th scope="col">收入</th><th scope="col">毛利率</th><th scope="col">销管费</th><th scope="col">Capex</th><th scope="col">营运资金占用</th></tr></thead><tbody><tr><td>FY2027 / 悲观（Bear）</td><td class="numeric">40.60</td><td class="numeric">70,045.2</td><td class="numeric">14.0%</td><td class="numeric">5,209.9</td><td class="numeric">4,800.0</td><td class="numeric">1,500.0</td></tr>
+<tr><td>FY2027 / 基准（Base）</td><td class="numeric">41.85</td><td class="numeric">73,446.9</td><td class="numeric">14.8%</td><td class="numeric">5,209.9</td><td class="numeric">4,500.0</td><td class="numeric">800.0</td></tr>
+<tr><td>FY2027 / 乐观（Bull）</td><td class="numeric">42.67</td><td class="numeric">75,723.0</td><td class="numeric">15.3%</td><td class="numeric">5,209.9</td><td class="numeric">4,800.0</td><td class="numeric">500.0</td></tr>
+<tr><td>FY2028 / 悲观（Bear）</td><td class="numeric">40.20</td><td class="numeric">68,387.8</td><td class="numeric">13.8%</td><td class="numeric">5,209.9</td><td class="numeric">4,600.0</td><td class="numeric">1,300.0</td></tr>
+<tr><td>FY2028 / 基准（Base）</td><td class="numeric">42.47</td><td class="numeric">74,191.0</td><td class="numeric">15.0%</td><td class="numeric">5,235.9</td><td class="numeric">4,400.0</td><td class="numeric">800.0</td></tr>
+<tr><td>FY2028 / 乐观（Bull）</td><td class="numeric">43.95</td><td class="numeric">78,226.2</td><td class="numeric">15.8%</td><td class="numeric">5,235.9</td><td class="numeric">4,900.0</td><td class="numeric">450.0</td></tr>
+<tr><td>FY2029 / 悲观（Bear）</td><td class="numeric">40.20</td><td class="numeric">68,139.7</td><td class="numeric">13.8%</td><td class="numeric">5,235.9</td><td class="numeric">4,400.0</td><td class="numeric">1,200.0</td></tr>
+<tr><td>FY2029 / 基准（Base）</td><td class="numeric">43.11</td><td class="numeric">75,089.1</td><td class="numeric">15.2%</td><td class="numeric">5,262.1</td><td class="numeric">4,300.0</td><td class="numeric">750.0</td></tr>
+<tr><td>FY2029 / 乐观（Bull）</td><td class="numeric">45.05</td><td class="numeric">80,536.7</td><td class="numeric">16.2%</td><td class="numeric">5,262.1</td><td class="numeric">5,000.0</td><td class="numeric">400.0</td></tr>
+<tr><td>FY2030 / 悲观（Bear）</td><td class="numeric">40.20</td><td class="numeric">68,079.0</td><td class="numeric">14.0%</td><td class="numeric">5,262.1</td><td class="numeric">4,300.0</td><td class="numeric">1,100.0</td></tr>
+<tr><td>FY2030 / 基准（Base）</td><td class="numeric">43.54</td><td class="numeric">75,921.0</td><td class="numeric">15.3%</td><td class="numeric">5,314.7</td><td class="numeric">4,300.0</td><td class="numeric">750.0</td></tr>
+<tr><td>FY2030 / 乐观（Bull）</td><td class="numeric">45.95</td><td class="numeric">82,509.2</td><td class="numeric">16.5%</td><td class="numeric">5,314.7</td><td class="numeric">4,900.0</td><td class="numeric">450.0</td></tr>
+<tr><td>FY2031 / 悲观（Bear）</td><td class="numeric">40.20</td><td class="numeric">68,171.5</td><td class="numeric">14.0%</td><td class="numeric">5,288.4</td><td class="numeric">4,200.0</td><td class="numeric">1,000.0</td></tr>
+<tr><td>FY2031 / 基准（Base）</td><td class="numeric">43.98</td><td class="numeric">76,846.2</td><td class="numeric">15.3%</td><td class="numeric">5,367.9</td><td class="numeric">4,300.0</td><td class="numeric">750.0</td></tr>
+<tr><td>FY2031 / 乐观（Bull）</td><td class="numeric">46.87</td><td class="numeric">84,455.1</td><td class="numeric">16.7%</td><td class="numeric">5,367.9</td><td class="numeric">4,800.0</td><td class="numeric">500.0</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="财务预测与税息后经营现金（百万港元）；不把账面收益当股东现金。"><table class="wide-table"><caption>财务预测与税息后经营现金（百万港元）；不把账面收益当股东现金。</caption><thead><tr><th scope="col">年份／情景</th><th scope="col">经营税前利润代理</th><th scope="col">经营归母利润代理</th><th scope="col">经营现金（税后/息前）</th><th scope="col">现金利息</th><th scope="col">税息后经营现金</th><th scope="col">全Capex后股东现金代理</th></tr></thead><tbody><tr><td>FY2027 / 悲观（Bear）</td><td class="numeric">2,746.5</td><td class="numeric">1,502.9</td><td class="numeric">5,578.8</td><td class="numeric">2,200.0</td><td class="numeric">3,378.8</td><td class="numeric">-1,521.2</td></tr>
+<tr><td>FY2027 / 基准（Base）</td><td class="numeric">4,490.3</td><td class="numeric">2,558.6</td><td class="numeric">7,094.2</td><td class="numeric">1,950.0</td><td class="numeric">5,144.2</td><td class="numeric">594.2</td></tr>
+<tr><td>FY2027 / 乐观（Bull）</td><td class="numeric">5,575.8</td><td class="numeric">3,220.0</td><td class="numeric">7,983.2</td><td class="numeric">1,850.0</td><td class="numeric">6,133.2</td><td class="numeric">1,333.2</td></tr>
+<tr><td>FY2028 / 悲观（Bear）</td><td class="numeric">2,377.7</td><td class="numeric">1,301.1</td><td class="numeric">5,578.3</td><td class="numeric">2,200.0</td><td class="numeric">3,378.3</td><td class="numeric">-1,321.7</td></tr>
+<tr><td>FY2028 / 基准（Base）</td><td class="numeric">4,782.7</td><td class="numeric">2,725.2</td><td class="numeric">7,315.6</td><td class="numeric">1,900.0</td><td class="numeric">5,415.6</td><td class="numeric">965.6</td></tr>
+<tr><td>FY2028 / 乐观（Bull）</td><td class="numeric">6,448.8</td><td class="numeric">3,724.2</td><td class="numeric">8,628.0</td><td class="numeric">1,750.0</td><td class="numeric">6,878.0</td><td class="numeric">2,003.0</td></tr>
+<tr><td>FY2029 / 悲观（Bear）</td><td class="numeric">2,367.4</td><td class="numeric">1,295.4</td><td class="numeric">5,687.2</td><td class="numeric">2,150.0</td><td class="numeric">3,537.2</td><td class="numeric">-962.8</td></tr>
+<tr><td>FY2029 / 基准（Base）</td><td class="numeric">5,101.5</td><td class="numeric">2,906.8</td><td class="numeric">7,607.8</td><td class="numeric">1,850.0</td><td class="numeric">5,757.8</td><td class="numeric">1,407.8</td></tr>
+<tr><td>FY2029 / 乐观（Bull）</td><td class="numeric">7,184.9</td><td class="numeric">4,149.3</td><td class="numeric">9,221.4</td><td class="numeric">1,700.0</td><td class="numeric">7,521.4</td><td class="numeric">2,546.4</td></tr>
+<tr><td>FY2030 / 悲观（Bear）</td><td class="numeric">2,519.0</td><td class="numeric">1,378.4</td><td class="numeric">5,914.0</td><td class="numeric">2,100.0</td><td class="numeric">3,814.0</td><td class="numeric">-586.0</td></tr>
+<tr><td>FY2030 / 基准（Base）</td><td class="numeric">5,311.2</td><td class="numeric">3,026.3</td><td class="numeric">7,770.7</td><td class="numeric">1,800.0</td><td class="numeric">5,970.7</td><td class="numeric">1,620.7</td></tr>
+<tr><td>FY2030 / 乐观（Bull）</td><td class="numeric">7,774.3</td><td class="numeric">4,489.7</td><td class="numeric">9,606.1</td><td class="numeric">1,650.0</td><td class="numeric">7,956.1</td><td class="numeric">3,056.1</td></tr>
+<tr><td>FY2031 / 悲观（Bear）</td><td class="numeric">2,555.6</td><td class="numeric">1,398.4</td><td class="numeric">6,059.4</td><td class="numeric">2,050.0</td><td class="numeric">4,009.4</td><td class="numeric">-290.6</td></tr>
+<tr><td>FY2031 / 基准（Base）</td><td class="numeric">5,459.6</td><td class="numeric">3,110.9</td><td class="numeric">7,889.5</td><td class="numeric">1,750.0</td><td class="numeric">6,139.5</td><td class="numeric">1,789.5</td></tr>
+<tr><td>FY2031 / 乐观（Bull）</td><td class="numeric">8,286.2</td><td class="numeric">4,785.3</td><td class="numeric">9,934.0</td><td class="numeric">1,600.0</td><td class="numeric">8,334.0</td><td class="numeric">3,484.0</td></tr></tbody></table></div>
+<p>公式：收入＝各分部基线×对应逐年增速；毛利＝收入×综合毛利率；税前利润＝毛利－销管费＋其他收入－信用损失－损益利息＋合联营利润；经营归母利润代理＝税后利润代理×(1−NCI利润比例)。营运资金前现金＝税前利润代理＋折旧摊销＋损益利息−合联营利润−100利息收入＋信用减值；经营现金＝该现金−营运资金占用−现金税。这样利息、减值和合联营利润只调整一次。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="累计投资后现金与每股经济：这里仍是集团代理，不是已核实母公司FAD。"><table class="wide-table"><caption>累计投资后现金与每股经济：这里仍是集团代理，不是已核实母公司FAD。</caption><thead><tr><th scope="col">情景</th><th scope="col">三年经常投入后代理累计</th><th scope="col">五年代理累计</th><th scope="col">FY2027每股代理</th><th scope="col">FY2029每股代理</th><th scope="col">FY2031每股代理</th><th scope="col">自给结论</th></tr></thead><tbody><tr><td>悲观（Bear）</td><td class="numeric">-4,555.6</td><td class="numeric">-5,932.2</td><td class="numeric">-0.325</td><td class="numeric">-0.223</td><td class="numeric">-0.099</td><td>经营投资仍缺口，需融资或调整</td></tr>
+<tr><td>基准（Base）</td><td class="numeric">2,367.6</td><td class="numeric">5,377.8</td><td class="numeric">0.072</td><td class="numeric">0.222</td><td class="numeric">0.292</td><td>投资后代理为正，但70%盈利派息仍有缺口</td></tr>
+<tr><td>乐观（Bull）</td><td class="numeric">4,982.6</td><td class="numeric">10,922.7</td><td class="numeric">0.190</td><td class="numeric">0.412</td><td class="numeric">0.584</td><td>投资后代理为正，但70%盈利派息仍有缺口</td></tr></tbody></table></div>
+<p>Base的五年现金改善不是凭空增长：FY2027→FY2031毛利增加、费用控制及现金利息下降，加上Capex由4,500降至4,300，逐步提高集团现金代理；没有持续释放应收款的假设。Bear保留安全维护和已规划项目支出，不能通过把Capex归零伪造股息覆盖。Bull的成长需要更高Capex，不能同时把这笔钱派掉。到期本金、母公司资金池和上缴税的净影响未能界定，因此流动性最低点和净再融资额不作精确五年估计。</p>
+<h3>单驱动敏感性</h3>
+<div class="table-scroll" tabindex="0" role="region" aria-label="围绕FY2027 Base，每次仅改变一项；变化为模型局部估计，不是新股息承诺。"><table class="wide-table"><caption>围绕FY2027 Base，每次仅改变一项；变化为模型局部估计，不是新股息承诺。</caption><thead><tr><th scope="col">驱动冲击</th><th scope="col">类型</th><th scope="col">集团现金代理变化</th><th scope="col">示意DPS变化</th><th scope="col">费用前收益率变化</th><th scope="col">N／收息边界</th><th scope="col">推导／限制</th></tr></thead><tbody><tr><td>综合毛利率−1个百分点</td><td>persistent</td><td class="numeric">-543.5</td><td class="numeric">-0.054</td><td>-1.01个百分点</td><td>N未核定；需先重建现金与政策链</td><td>收入×1%×税后；NCI利润归属仅用于盈利端</td></tr>
+<tr><td>收款暂缓、营运资金多占500</td><td>transient</td><td>−500.0</td><td>0.000（盈利规则机械不变）</td><td>0.00个百分点（并非仍可支付）</td><td>N/A，不改变正常化边界</td><td>资金缺口增加500；不是借更多钱即可维持派息的结论</td></tr>
+<tr><td>Capex持续每年多500</td><td>persistent</td><td>−500.0</td><td>盈利基数当期不变；派息需复议</td><td>未形成已支持的现金变化</td><td>重估长期FAD，不以DPS随意打折</td><td>本期不假定即时利润回报；下一期折旧/产能需再建</td></tr>
+<tr><td>融资利率持续上行100bp</td><td>persistent</td><td>精确现金变化未核定</td><td>不作精确DPS</td><td>未估计</td><td>现金付息与再融资重建后才重估N</td><td>公司披露税后会计利润敏感性−162.908；含资本化与套保口径，不能改称等额现金</td></tr>
+<tr><td>特许/顺价制度或LNG贸易约束改变</td><td>structural</td><td>需要重建完整模型</td><td>需要重建完整模型</td><td>未估计</td><td>Rebuild required</td><td>同时重跑五年现金、评分、否决及估值；不是单变量线性外推</td></tr></tbody></table></div>
+<h3>经济汇率压力记录</h3>
+<p>外汇风险状态为<code>not_assessed</code>（实质经济敞口已识别，但投资者现金冲击尚不能可靠量化）。上市母公司和多数子公司的功能货币是RMB；年度披露的货币性项目敏感性只是一个时点，公司本身说明不代表全年风险。已看到天然对冲及衍生工具，但没有本次未来期间套保现金、上缴安排及相关税务的可闭合现金链。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="同一FY2027的两条必要压力路径均保留，但不以零冲击填充未知。"><table class="wide-table"><caption>同一FY2027的两条必要压力路径均保留，但不以零冲击填充未知。</caption><thead><tr><th scope="col">压力</th><th scope="col">共同起点</th><th scope="col">要求检验的变化</th><th scope="col">投资者净现金／变化</th><th scope="col">缺失证据</th></tr></thead><tbody><tr><td>fx_only</td><td>FY2027 Base；经营非汇率假设不变</td><td>RMB经营净现金转为HKD；外币债务、LNG与套保净现金影响</td><td>未估计</td><td>资金上缴、期间套保与费用；不能将RMB贬值简单乘在已港元宣告股息上</td></tr>
+<tr><td>combined_bear</td><td>FY2027 Bear；与上一行同年</td><td>相同币种冲击叠加连贯经营压力，仅加尚未计入的汇率影响</td><td>未估计</td><td>先确认Bear模型中的经济FX处理，避免双乘汇率或重复加损失</td></tr></tbody></table></div>
+<p>不宣称港元派息消除了汇率风险，也不把未知套保、券商费或净上缴税当零。因此不输出FX后可执行估值、强买或核心收息结论。<a href="#S01">[S01]</a> <a href="#S13">[S13]</a></p>
+</section>
+<section id="section-12"><h2>12. 分配现金桥与股份假设</h2>
+<p class="takeaway">可估的集团现金代理与未知的母公司可分配现金必须分开。空值是证据边界，不是零成本。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="逐年分配桥（百万港元）；实际承诺偿债未知使标准Recurring FAD保留空值。"><table class="wide-table"><caption>逐年分配桥（百万港元）；实际承诺偿债未知使标准Recurring FAD保留空值。</caption><thead><tr><th scope="col">年份／情景</th><th scope="col">全Capex后股东现金代理</th><th scope="col">剩余成长投资</th><th scope="col">强制净偿债/上缴限制</th><th scope="col">经常性母公司FAD</th><th scope="col">集团实际代理（再扣50）</th><th scope="col">多余现金动用</th></tr></thead><tbody><tr><td>FY2027 / 悲观（Bear）</td><td class="numeric">-1,521.2</td><td class="numeric">250.0</td><td>未闭合</td><td>未估计</td><td class="numeric">-1,821.2</td><td>未确认；不调用</td></tr>
+<tr><td>FY2027 / 基准（Base）</td><td class="numeric">594.2</td><td class="numeric">200.0</td><td>未闭合</td><td>未估计</td><td class="numeric">344.2</td><td>未确认；不调用</td></tr>
+<tr><td>FY2027 / 乐观（Bull）</td><td class="numeric">1,333.2</td><td class="numeric">300.0</td><td>未闭合</td><td>未估计</td><td class="numeric">983.2</td><td>未确认；不调用</td></tr>
+<tr><td>FY2028 / 悲观（Bear）</td><td class="numeric">-1,321.7</td><td class="numeric">250.0</td><td>未闭合</td><td>未估计</td><td class="numeric">-1,621.7</td><td>未确认；不调用</td></tr>
+<tr><td>FY2028 / 基准（Base）</td><td class="numeric">965.6</td><td class="numeric">200.0</td><td>未闭合</td><td>未估计</td><td class="numeric">715.6</td><td>未确认；不调用</td></tr>
+<tr><td>FY2028 / 乐观（Bull）</td><td class="numeric">2,003.0</td><td class="numeric">300.0</td><td>未闭合</td><td>未估计</td><td class="numeric">1,653.0</td><td>未确认；不调用</td></tr>
+<tr><td>FY2029 / 悲观（Bear）</td><td class="numeric">-962.8</td><td class="numeric">250.0</td><td>未闭合</td><td>未估计</td><td class="numeric">-1,262.8</td><td>未确认；不调用</td></tr>
+<tr><td>FY2029 / 基准（Base）</td><td class="numeric">1,407.8</td><td class="numeric">200.0</td><td>未闭合</td><td>未估计</td><td class="numeric">1,157.8</td><td>未确认；不调用</td></tr>
+<tr><td>FY2029 / 乐观（Bull）</td><td class="numeric">2,546.4</td><td class="numeric">300.0</td><td>未闭合</td><td>未估计</td><td class="numeric">2,196.4</td><td>未确认；不调用</td></tr>
+<tr><td>FY2030 / 悲观（Bear）</td><td class="numeric">-586.0</td><td class="numeric">250.0</td><td>未闭合</td><td>未估计</td><td class="numeric">-886.0</td><td>未确认；不调用</td></tr>
+<tr><td>FY2030 / 基准（Base）</td><td class="numeric">1,620.7</td><td class="numeric">200.0</td><td>未闭合</td><td>未估计</td><td class="numeric">1,370.7</td><td>未确认；不调用</td></tr>
+<tr><td>FY2030 / 乐观（Bull）</td><td class="numeric">3,056.1</td><td class="numeric">300.0</td><td>未闭合</td><td>未估计</td><td class="numeric">2,706.1</td><td>未确认；不调用</td></tr>
+<tr><td>FY2031 / 悲观（Bear）</td><td class="numeric">-290.6</td><td class="numeric">250.0</td><td>未闭合</td><td>未估计</td><td class="numeric">-590.6</td><td>未确认；不调用</td></tr>
+<tr><td>FY2031 / 基准（Base）</td><td class="numeric">1,789.5</td><td class="numeric">200.0</td><td>未闭合</td><td>未估计</td><td class="numeric">1,539.5</td><td>未确认；不调用</td></tr>
+<tr><td>FY2031 / 乐观（Bull）</td><td class="numeric">3,484.0</td><td class="numeric">300.0</td><td>未闭合</td><td>未估计</td><td class="numeric">3,134.0</td><td>未确认；不调用</td></tr></tbody></table></div>
+<p>扣除账本：维护与成长实物Capex没有足够披露可分开，本模型直接扣全部，不再在“剩余成长支出”重复扣网络或新能源同一项目；剩余支出只指Capex之外的合联营/股权/贷款投资。现金税在OCF中、现金利息在股东现金桥中、租赁本金100及少数股息另计；50/年收购结算为历史支出量级约束下的估计，不删除真实既有合同。未支用募集资金2,354有指定用途，不作每年重复可用的超额现金。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="有权股数和以股代息假设：每个预测财年均采用同一基准，事件变化时必须重算。"><table class="wide-table"><caption>有权股数和以股代息假设：每个预测财年均采用同一基准，事件变化时必须重算。</caption><thead><tr><th scope="col">期间／情景</th><th scope="col">有权股数（百万）</th><th scope="col">EPS稀释检查</th><th scope="col">现金结算</th><th scope="col">新发／回购</th><th scope="col">敏感性</th></tr></thead><tbody><tr><td>FY2027–FY2031；三情景</td><td class="numeric">5,448.152741</td><td>以现有5,395.413百万加权平均作独立参考，不替代派息分母</td><td>100%现金试算；无未来scrip假定</td><td>无自发回购/新发的基线；奖励计划另列条件</td><td>最多462百万奖励股；总额不变DPS降低约7.82%，收到款是融资</td></tr></tbody></table></div>
+<p>每次派息理论上都用各自登记日有权股份。预测尚无未来登记册，采用最新月报和明确无变动假设，未来中期/末期若跨新发日期须拆成两次算式；不能把5,395.413 EPS加权分母直接带入。奖励信托的股息权与参与者归属权不同，不能默认未归属就没有发行人股息现金义务。</p>
+<p class="limitations"><strong>未来股息不能据此作为已获资金支持的预测。</strong>第13节DPS是基于经营模型、归母盈利和70%观察派息比例的示意试算（illustrative rather than evidence-backed），因为母公司实际可上缴/可用现金、剩余偿债/融资承诺及未来董事会分派决策未闭合。缺少的不是精确未来股数，而是资金与派息可兑现性。</p>
+</section>
+<section id="section-13"><h2>13. 未来股息与收益率路径</h2>
+<p class="takeaway">70%作用于归母盈利，不作用于FAD；模型不偷偷压低股息使覆盖好看，真实缺口保留。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="政策权益审计：金额百万港元；这是延续最新观察比例的分析者假设，不是正式政策承诺。"><table class="wide-table"><caption>政策权益审计：金额百万港元；这是延续最新观察比例的分析者假设，不是正式政策承诺。</caption><thead><tr><th scope="col">年份／情景</th><th scope="col">经营盈利代理基数</th><th scope="col">观察比例</th><th scope="col">政策示意权益</th><th scope="col">模型权益</th><th scope="col">现金比例／调整</th><th scope="col">全现金集团缺口</th></tr></thead><tbody><tr><td>FY2027 / 悲观（Bear）</td><td class="numeric">1,502.9</td><td class="numeric">70%</td><td class="numeric">1,052.0</td><td class="numeric">1,052.0</td><td>100% / 0（纯现金假设）</td><td class="numeric">2,873.2</td></tr>
+<tr><td>FY2027 / 基准（Base）</td><td class="numeric">2,558.6</td><td class="numeric">70%</td><td class="numeric">1,791.0</td><td class="numeric">1,791.0</td><td>100% / 0（纯现金假设）</td><td class="numeric">1,446.8</td></tr>
+<tr><td>FY2027 / 乐观（Bull）</td><td class="numeric">3,220.0</td><td class="numeric">70%</td><td class="numeric">2,254.0</td><td class="numeric">2,254.0</td><td>100% / 0（纯现金假设）</td><td class="numeric">1,270.8</td></tr>
+<tr><td>FY2028 / 悲观（Bear）</td><td class="numeric">1,301.1</td><td class="numeric">70%</td><td class="numeric">910.7</td><td class="numeric">910.7</td><td>100% / 0（纯现金假设）</td><td class="numeric">2,532.4</td></tr>
+<tr><td>FY2028 / 基准（Base）</td><td class="numeric">2,725.2</td><td class="numeric">70%</td><td class="numeric">1,907.6</td><td class="numeric">1,907.6</td><td>100% / 0（纯现金假设）</td><td class="numeric">1,192.0</td></tr>
+<tr><td>FY2028 / 乐观（Bull）</td><td class="numeric">3,724.2</td><td class="numeric">70%</td><td class="numeric">2,606.9</td><td class="numeric">2,606.9</td><td>100% / 0（纯现金假设）</td><td class="numeric">953.9</td></tr>
+<tr><td>FY2029 / 悲观（Bear）</td><td class="numeric">1,295.4</td><td class="numeric">70%</td><td class="numeric">906.8</td><td class="numeric">906.8</td><td>100% / 0（纯现金假设）</td><td class="numeric">2,169.6</td></tr>
+<tr><td>FY2029 / 基准（Base）</td><td class="numeric">2,906.8</td><td class="numeric">70%</td><td class="numeric">2,034.8</td><td class="numeric">2,034.8</td><td>100% / 0（纯现金假设）</td><td class="numeric">877.0</td></tr>
+<tr><td>FY2029 / 乐观（Bull）</td><td class="numeric">4,149.3</td><td class="numeric">70%</td><td class="numeric">2,904.5</td><td class="numeric">2,904.5</td><td>100% / 0（纯现金假设）</td><td class="numeric">708.1</td></tr>
+<tr><td>FY2030 / 悲观（Bear）</td><td class="numeric">1,378.4</td><td class="numeric">70%</td><td class="numeric">964.9</td><td class="numeric">964.9</td><td>100% / 0（纯现金假设）</td><td class="numeric">1,850.8</td></tr>
+<tr><td>FY2030 / 基准（Base）</td><td class="numeric">3,026.3</td><td class="numeric">70%</td><td class="numeric">2,118.4</td><td class="numeric">2,118.4</td><td>100% / 0（纯现金假设）</td><td class="numeric">747.8</td></tr>
+<tr><td>FY2030 / 乐观（Bull）</td><td class="numeric">4,489.7</td><td class="numeric">70%</td><td class="numeric">3,142.8</td><td class="numeric">3,142.8</td><td>100% / 0（纯现金假设）</td><td class="numeric">436.7</td></tr>
+<tr><td>FY2031 / 悲观（Bear）</td><td class="numeric">1,398.4</td><td class="numeric">70%</td><td class="numeric">978.9</td><td class="numeric">978.9</td><td>100% / 0（纯现金假设）</td><td class="numeric">1,569.5</td></tr>
+<tr><td>FY2031 / 基准（Base）</td><td class="numeric">3,110.9</td><td class="numeric">70%</td><td class="numeric">2,177.6</td><td class="numeric">2,177.6</td><td>100% / 0（纯现金假设）</td><td class="numeric">638.1</td></tr>
+<tr><td>FY2031 / 乐观（Bull）</td><td class="numeric">4,785.3</td><td class="numeric">70%</td><td class="numeric">3,349.7</td><td class="numeric">3,349.7</td><td>100% / 0（纯现金假设）</td><td class="numeric">215.7</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="唯一的预测现金成本/DPS主表；全部DPS为illustrative，分配现金列仅集团代理，非已核实母公司能力。"><table class="wide-table"><caption>唯一的预测现金成本/DPS主表；全部DPS为illustrative，分配现金列仅集团代理，非已核实母公司能力。</caption><thead><tr><th scope="col">年份／情景</th><th scope="col">集团实际现金代理</th><th scope="col">派息依据</th><th scope="col">股息现金支出</th><th scope="col">推导DPS（HKD）</th><th scope="col">现价费用前净率</th><th scope="col">集团资金缺口</th></tr></thead><tbody><tr><td><span id="runway-Bear-2027">FY2027 / 悲观（Bear）</span></td><td class="numeric">-1,821.2</td><td>归母盈利×70%；须资金审核</td><td class="numeric">1,052.0</td><td class="numeric">0.193</td><td class="numeric">3.62%</td><td class="numeric">2,873.2</td></tr>
+<tr><td><span id="runway-Base-2027">FY2027 / 基准（Base）</span></td><td class="numeric">344.2</td><td>归母盈利×70%；须资金审核</td><td class="numeric">1,791.0</td><td class="numeric">0.329</td><td class="numeric">6.16%</td><td class="numeric">1,446.8</td></tr>
+<tr><td><span id="runway-Bull-2027">FY2027 / 乐观（Bull）</span></td><td class="numeric">983.2</td><td>归母盈利×70%；须资金审核</td><td class="numeric">2,254.0</td><td class="numeric">0.414</td><td class="numeric">7.75%</td><td class="numeric">1,270.8</td></tr>
+<tr><td><span id="runway-Bear-2028">FY2028 / 悲观（Bear）</span></td><td class="numeric">-1,621.7</td><td>归母盈利×70%；须资金审核</td><td class="numeric">910.7</td><td class="numeric">0.167</td><td class="numeric">3.13%</td><td class="numeric">2,532.4</td></tr>
+<tr><td><span id="runway-Base-2028">FY2028 / 基准（Base）</span></td><td class="numeric">715.6</td><td>归母盈利×70%；须资金审核</td><td class="numeric">1,907.6</td><td class="numeric">0.350</td><td class="numeric">6.56%</td><td class="numeric">1,192.0</td></tr>
+<tr><td><span id="runway-Bull-2028">FY2028 / 乐观（Bull）</span></td><td class="numeric">1,653.0</td><td>归母盈利×70%；须资金审核</td><td class="numeric">2,606.9</td><td class="numeric">0.479</td><td class="numeric">8.97%</td><td class="numeric">953.9</td></tr>
+<tr><td><span id="runway-Bear-2029">FY2029 / 悲观（Bear）</span></td><td class="numeric">-1,262.8</td><td>归母盈利×70%；须资金审核</td><td class="numeric">906.8</td><td class="numeric">0.166</td><td class="numeric">3.12%</td><td class="numeric">2,169.6</td></tr>
+<tr><td><span id="runway-Base-2029">FY2029 / 基准（Base）</span></td><td class="numeric">1,157.8</td><td>归母盈利×70%；须资金审核</td><td class="numeric">2,034.8</td><td class="numeric">0.373</td><td class="numeric">7.00%</td><td class="numeric">877.0</td></tr>
+<tr><td><span id="runway-Bull-2029">FY2029 / 乐观（Bull）</span></td><td class="numeric">2,196.4</td><td>归母盈利×70%；须资金审核</td><td class="numeric">2,904.5</td><td class="numeric">0.533</td><td class="numeric">9.99%</td><td class="numeric">708.1</td></tr>
+<tr><td><span id="runway-Bear-2030">FY2030 / 悲观（Bear）</span></td><td class="numeric">-886.0</td><td>归母盈利×70%；须资金审核</td><td class="numeric">964.9</td><td class="numeric">0.177</td><td class="numeric">3.32%</td><td class="numeric">1,850.8</td></tr>
+<tr><td><span id="runway-Base-2030">FY2030 / 基准（Base）</span></td><td class="numeric">1,370.7</td><td>归母盈利×70%；须资金审核</td><td class="numeric">2,118.4</td><td class="numeric">0.389</td><td class="numeric">7.29%</td><td class="numeric">747.8</td></tr>
+<tr><td><span id="runway-Bull-2030">FY2030 / 乐观（Bull）</span></td><td class="numeric">2,706.1</td><td>归母盈利×70%；须资金审核</td><td class="numeric">3,142.8</td><td class="numeric">0.577</td><td class="numeric">10.81%</td><td class="numeric">436.7</td></tr>
+<tr><td><span id="runway-Bear-2031">FY2031 / 悲观（Bear）</span></td><td class="numeric">-590.6</td><td>归母盈利×70%；须资金审核</td><td class="numeric">978.9</td><td class="numeric">0.180</td><td class="numeric">3.37%</td><td class="numeric">1,569.5</td></tr>
+<tr><td><span id="runway-Base-2031">FY2031 / 基准（Base）</span></td><td class="numeric">1,539.5</td><td>归母盈利×70%；须资金审核</td><td class="numeric">2,177.6</td><td class="numeric">0.400</td><td class="numeric">7.49%</td><td class="numeric">638.1</td></tr>
+<tr><td><span id="runway-Bull-2031">FY2031 / 乐观（Bull）</span></td><td class="numeric">3,134.0</td><td>归母盈利×70%；须资金审核</td><td class="numeric">3,349.7</td><td class="numeric">0.615</td><td class="numeric">11.52%</td><td class="numeric">215.7</td></tr></tbody></table></div>
+<p>资金缺口＝max(0，示意现金支出−集团实际现金代理)，负现金代理不截零，因此缺口还包含经营投资赤字。母公司真实资金缺口未估计，不用集团数掩盖法律主体差异。没有假定新增借款、处置或代息会自动补齐。Base在五个年度仍不能以此代理覆盖70%盈利分配；这不是断言董事会会照此派，而是显示需要调整资本计划/派息或确认不同的资金证据。</p>
+<p>政策敏感性示例：FY2027 Base即使将盈利分配比例改为50%，权益仍为1,279.3百万港元，高于模型集团实际现金代理344.2；不能只改一个派息率就假装闭合。由实际派息削减、回款、投资收缩或可靠上缴改善形成的新路径，应按披露重新建模。</p>
+<p>这些是财年归属DPS，不是从2026-09-25买入后十二个月的实收表。FY2026已除净但未付款的0.20不属于新买家；FY2027及以后尚无确切派息/除净日期，不把一整年股息放进不足一年的持有期，也不算未经证实的股息现值或总回报。</p>
+</section>
+<section id="section-14"><h2>14. 红利陷阱清单</h2>
+<p class="takeaway">否决状态为不明确（Unclear）：有可见资金警讯和关键缺口，但没有把未知等同于已证实困境。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="在任何估值前逐项检验。"><table><caption>在任何估值前逐项检验。</caption><thead><tr><th scope="col">检查</th><th scope="col">状态</th><th scope="col">证据与影响</th></tr></thead><tbody><tr><td>股价下跌造成高TTM</td><td>有风险信号</td><td>TTM0.50含旧高末期；最新年度0.35已降30%；9.37%不是前瞻承诺</td></tr>
+<tr><td>普通股息经常现金覆盖</td><td>未通过证据门槛</td><td>披露FCF不是FAD；合并代理不足，母公司上缴未闭合</td></tr>
+<tr><td>历史股息超全投入现金</td><td>存在</td><td>FY2022–FY2026多年度保守代理不足；融资和资本回收补充资金，不单凭此判定破产</td></tr>
+<tr><td>再融资/到期墙</td><td>重要、未闭合</td><td>两年到期37,892.222百万；授信较大，但承诺性与母公司配合未验证</td></tr>
+<tr><td>债务、发行或资产回收支撑</td><td>历史混合来源</td><td>2022增发、持续借款、2026贷款/资产回收；不列入经常FAD</td></tr>
+<tr><td>代息/奖励稀释</td><td>需监测</td><td>2025代息现金分母较小；2026有条件奖励462百万新股，未当成已发行</td></tr>
+<tr><td>特别/一次性当普通</td><td>未发现此类股息混算</td><td>分派均列普通；但公司FCF中的资本回收已剔除</td></tr>
+<tr><td>派息政策变弱或失效</td><td>已重设普通DPS</td><td>正式政策本来酌情；约70%观察值不代表未来保证</td></tr>
+<tr><td>N沿用峰值/近端平均</td><td>已避免；N未建立</td><td>不给历史0.50、近期Base均值或旧接驳高利润贴正常化标签</td></tr>
+<tr><td>错误现金代理/双扣</td><td>已逐项纠正</td><td>现金利息、租赁、NCI一次扣除；账面合联营利润只作盈利基数</td></tr>
+<tr><td>遗漏成长投资/终值</td><td>不通过成长估值</td><td>所有实物投资保留；未用募集款有用途；无可信资金支持的终值</td></tr>
+<tr><td>关联方重大损害</td><td>未证实；重要性待核</td><td>渠道和条款存在，不从身份或资金需求臆测抽取；上限不等于已付款</td></tr>
+<tr><td>经济汇率/上缴</td><td>重要缺口</td><td>人民币经营与港元派息，未来实际现金压力未闭合</td></tr>
+<tr><td>回购保护每股权益</td><td>中性/有限证据</td><td>当前未执行；无当时估值证据，不给优质回购标签</td></tr>
+<tr><td>结构性衰退/有限期收割</td><td>不满足例外</td><td>并非已宣布退出/清算，仍有大量新业务投入；不构造永续或有限收割买点</td></tr></tbody></table></div>
+<p><strong>买入区间暂停。</strong>在经营现金、上缴/资本和分派权利链闭合前，不能以低价格绕过这些缺口。若后续证实普通派息长期依赖债务或重大关联方损害，应升级为Triggered并重评；反之，如果可验证的经常现金与资金安排支持新股息，可解除相关限制，而不需要等待所有经营不确定性消失。</p>
+</section>
+<section id="section-15"><h2>15. 回报要求与分阶段入场计划</h2>
+<p class="takeaway"><strong>估值模式：暂停（suspended）。普通收息区间：暂停。</strong>本次是在等资金证据，不是把强买价当成唯一可以买的价格；目前三个阶段都未具备公共前提。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="与价格独立的机会成本参考；它不能弥补证据缺口，也不是用户的最低收益率。"><table class="wide-table"><caption>与价格独立的机会成本参考；它不能弥补证据缺口，也不是用户的最低收益率。</caption><thead><tr><th scope="col">基准／日期</th><th scope="col">币种／期限</th><th scope="col">税务／期限处理</th><th scope="col">无风险锚</th><th scope="col">独立风险溢价</th><th scope="col">总回报区间</th><th scope="col">普通收息要求</th></tr></thead><tbody><tr><td>香港10年政府债；2026-09-25</td><td>HKD／10年；名义</td><td>HK个人研究场景、费用前；10年只近似长期现金久期，非同步可成交报价</td><td class="numeric">4.03%</td><td>4.00%–6.00%</td><td>8.03%–10.03%</td><td>不给增长信用，r＝R；但无N可换算价格</td></tr></tbody></table></div>
+<p>风险溢价先由业务和资金特征设定：需求/监管/转型2–3个百分点、再融资与资本不确定性1–2个百分点、剩余治理/执行1个百分点，合计4–6个百分点。现金模型已扣税和利息；这些不是再扣同一笔现金，也未由股息率、综合评分或想要的买价反推。该区间为分析判断，不是市场事实或行业预设。官方HKMA接口未成功读取，使用S14同日4.03%的公开指示值并降低利率取证置信度；因估值已暂停，不用增加溢价修复上缴缺口。<a href="#S14">[S14]</a></p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="正常化四链证据清单：缺什么、向哪里补，而不一概写“资料不足”。"><table class="wide-table"><caption>正常化四链证据清单：缺什么、向哪里补，而不一概写“资料不足”。</caption><thead><tr><th scope="col">环节</th><th scope="col">状态／已知</th><th scope="col">缺失输入／待取来源</th><th scope="col">影响</th></tr></thead><tbody><tr><td>经营现金</td><td>supported：五年合并现金流、分部及营运资金已取证；有条件经营模型</td><td>正常化营运资金、项目成熟度仍需解释</td><td>可分析现金发动机；不能将高OCF年度或当前DPS直接作N</td></tr>
+<tr><td>资金能力</td><td>missing：母公司现金/负债已知，但上缴与净偿债桥不完整</td><td>母公司现金流/子公司净上缴、承诺授信、契约和项目资金计划</td><td>无可执行N、B或成长估值；保留cash_coverage模块区间</td></tr>
+<tr><td>派息政策</td><td>supported：董事会酌情；最新普通全年0.35和当前0%预扣公告</td><td>未来决策不要求预知，但需可审计的政策/现金协调范围</td><td>70%仅敏感性假设，不能用来承诺未来DPS</td></tr>
+<tr><td>有权股数</td><td>supported：8月月报与股息权益已核；明确无新发基线和奖励敏感性</td><td>未来具体分期日期可用假设，已批准奖励实际发行时须更新</td><td>股数可有据估计，不是本次阻断估值的主要原因</td></tr></tbody></table></div>
+<p>正常化状态：未评估。现有FY2022–FY2026覆盖疫情/地产接驳冲击、回款释放和新业务转向，不是已验证的完整供需/资本周期。无法负责任选出中央可持续的上缴后派息状态，故N、B均保留未估计，也不画周期低/中/高股息。不得用0.35/某个想要收益率制造新的入场价；不生成buy_zone来容纳无依据参数。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="第1节决策卡的唯一权威入场计划。"><table class="wide-table"><caption>第1节决策卡的唯一权威入场计划。</caption><thead><tr><th scope="col">阶段</th><th scope="col">模型价</th><th scope="col">收入约束后价</th><th scope="col">距5.335</th><th scope="col">状态</th><th scope="col">条件</th></tr></thead><tbody><tr><td>starter</td><td>未估计</td><td>未估计</td><td>不适用</td><td>unavailable</td><td>先核上缴、资本、现金与派息链，再计算N/r_low</td></tr>
+<tr><td>add</td><td>未估计</td><td>未估计</td><td>不适用</td><td>unavailable</td><td>前提通过后，再核压力现金及N/r_high</td></tr>
+<tr><td>strong_buy</td><td>未估计</td><td>未估计</td><td>不适用</td><td>unavailable</td><td>须高置信度、强安全、可信B和本金风险审核；低价本身不足</td></tr></tbody></table></div>
+<p>收入目标：Not Assessed；未提供偏好或硬门槛，不能声称6.56%对用户“达标/不达标”。收入约束价格上限因此为空，而非无穷大。当前<code>action_assessment.status=suspended</code>，<code>strong_buy_eligible=false</code>，<code>current_action=wait_for_evidence</code>。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="统一三年持有期总回报审核；缺少可兑现现金和退出依据时，不编造目标价。"><table class="wide-table"><caption>统一三年持有期总回报审核；缺少可兑现现金和退出依据时，不编造目标价。</caption><thead><tr><th scope="col">情景／期末</th><th scope="col">实收净现金</th><th scope="col">退出价格</th><th scope="col">费用</th><th scope="col">累计总回报</th><th scope="col">缺失与结果</th></tr></thead><tbody><tr><td>悲观（Bear）／2029-09-25</td><td>未获资金支持，未估计</td><td>未估计</td><td>券商/交易成本未确认</td><td>未估计</td><td>未能通过资金及退出价值桥；risk_review=not_assessed</td></tr>
+<tr><td>基准（Base）／2029-09-25</td><td>未获资金支持，未估计</td><td>未估计</td><td>券商/交易成本未确认</td><td>未估计</td><td>未能通过资金及退出价值桥；risk_review=not_assessed</td></tr>
+<tr><td>乐观（Bull）／2029-09-25</td><td>未获资金支持，未估计</td><td>未估计</td><td>券商/交易成本未确认</td><td>未估计</td><td>未能通过资金及退出价值桥；risk_review=not_assessed</td></tr></tbody></table></div>
+<p>期末价值不能用当前股息率机械还原，未来现金还要处理付款日期和资格。因此没有把示意DPS加上任意卖出价，伪装成Bear/Base/Bull总回报。现价对应市值29.066十亿港元、已发行股口径市值/归母盈利约10.69倍、市净率约0.51倍，只是账面横截面，不证明低估。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="机会、催化、失效与下一份证据。"><table class="wide-table"><caption>机会、催化、失效与下一份证据。</caption><thead><tr><th scope="col">事项</th><th scope="col">明确条件</th><th scope="col">复查时间／文件</th><th scope="col">响应</th></tr></thead><tbody><tr><td>机会假说</td><td>城燃顺价与资本纪律使利息后、全投入后、可上缴现金改善</td><td>下一次集团中期业绩；截至本报告尚未取得正式董事会日期</td><td>先核现金桥，不仅核EPS增长</td></tr>
+<tr><td>现金确认门槛</td><td>经常性及实际母公司资金同时覆盖全部现金等值股息，来源不依赖重复处置/借新还息</td><td>中期现金流、母公司资金/子公司上缴及项目承诺</td><td>据新事实重算安全、N/B和分阶段价格</td></tr>
+<tr><td>融资确认门槛</td><td>两年到期债务有匹配可执行资金，且不侵占必要Capex和股息缓冲</td><td>借款/债券到期与回售、已承诺授信和实际滚续</td><td>不满足则优先本金保护复评</td></tr>
+<tr><td>反证阈值</td><td>城燃持续负增长、回款恶化，或Base可见年度投资后现金继续不足</td><td>连续两个经营披露期或重大资本事件，以先到者为准</td><td>持续性→重估正常态；结构性→重跑完整模型</td></tr>
+<tr><td>治理/新业务</td><td>2026年底分拆/选择权状态、2029前募集款投入回报和关联交易实际发生额</td><td>相关公告、年度审查；2030 LNG起供前合同资金风险</td><td>重大已证实损害才触发治理否决，不用传闻</td></tr></tbody></table></div>
+<p>市场预期差未知：第三方目标价并未提供可复核的市场隐含资金模型。低市净率可说明市场给予较低账面价值估价，不能据此断言市场错了。</p>
+</section>
+<section id="section-16"><h2>16. 图文总结</h2>
+<p class="takeaway">读这家公司，要把“收到过的股息”“董事会最新宣告”“未来经营能支付多少”分成三件事。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="一页逻辑总览。"><table class="wide-table"><caption>一页逻辑总览。</caption><thead><tr><th scope="col">问题</th><th scope="col">事实</th><th scope="col">假设／判断</th><th scope="col">决策含义</th></tr></thead><tbody><tr><td>现金收入</td><td>旧TTM0.50，最新年度0.35</td><td>普通分红已重设；TTM滞后</td><td>不把9.37%当远期收益</td></tr>
+<tr><td>利润与业务</td><td>存量气网在，接驳/利润下降</td><td>Base温和恢复、Bear继续承压</td><td>不是默认结构性增长或清算标的</td></tr>
+<tr><td>真实现金</td><td>FCF定义含资本回收且未付融资利息</td><td>全投入代理仍不足，正常化和母公司层待核</td><td>暂不以合并FCF做安全评级的通过依据</td></tr>
+<tr><td>成长</td><td>新业务资金有用途、长期LNG已签约</td><td>收入必须晚于投入，后两年增速收敛</td><td>不给未经资金支持的终值</td></tr>
+<tr><td>治理与汇率</td><td>关联交易及RMB经济敞口真实存在</td><td>损害和投资者现金压力未闭合</td><td>监控，不臆测意图或假定无风险</td></tr>
+<tr><td>行动</td><td>阶段价格未形成</td><td>等待证据；低价不修复关键缺口</td><td>观察名单，不自动买卖</td></tr></tbody></table></div>
+<p>若未来证据改善，可以改变安全、置信度和行动；若只是价格下跌，质量17–44/85和证券角色不会自动升级。本报告的主要价值是把资金缺口定位到可复查的来源与科目，而不是给出一个看似精确的低价。</p>
+</section>
+<section id="section-17"><h2>17. 评分、组合角色与持仓复评</h2>
+<h3>17A. 统一评分及逐项核验</h3>
+<p>采用Schema 2.5／rubric 2固定七模块，不沿用旧报告的酌情总分。精确模块raw＝档位下界＋floor(档位宽度×met数/3)，final＝min(raw，明确上限)。有界模块下端仅算met，上端允许unknown解决为met，遍历候选连续档；not_met在两端都不获加分。单个已评模块的unknown核验不另加罚分。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="七模块完整账本；来源类型、档位、原始分与上限均保留。"><table class="wide-table"><caption>七模块完整账本；来源类型、档位、原始分与上限均保留。</caption><thead><tr><th scope="col">模块／权重／状态</th><th scope="col">输入／期间</th><th scope="col">档位／候选档位</th><th scope="col">检查／原始分</th><th scope="col">上限／最终</th><th scope="col">来源／缺口</th></tr></thead><tbody><tr><td>净股息率／15<br><code>bounded</code></td><td>最新年度普通0.35／5.335＝6.56%；有界recurring_income_proxy，不是N</td><td>档2：10–12；归一化未证实</td><td>3项未知；原始10–12</td><td>上限9；9–9</td><td>S01/S05/S08；N/压力股息/独立回报匹配均未知</td></tr>
+<tr><td>五年稳定性／15<br><code>assessed</code></td><td>FY2022–FY2026普通0.55/0.50/0.50/0.50/0.35；已披露实际支付</td><td>档4：0–3；存在削减</td><td>1 met / 1 unknown / 1 not_met；0＋floor(3×1/3)=1</td><td>上限15；1</td><td>S01–S04/S18；未获完整五年消费篮子现金序列</td></tr>
+<tr><td>现金覆盖／20<br><code>not_assessable</code></td><td>实际五年现金已取证；三年经常性母公司FAD不可得</td><td>not_assessable；不强套实际代理档位</td><td>无可据以评分的正常化/上缴分子</td><td>可能贡献0–20；不赋中性分</td><td>已读四份年报、母公司附注、债务与子公司更新；需现金上缴/净资本约束</td></tr>
+<tr><td>资产负债表／15<br><code>assessed</code></td><td>借款66,136；两年到期37,892；自由银行现金12,289；净杠杆约78%</td><td>档3：4–7；高杠杆/滚续依赖</td><td>0 met / 2 unknown / 1 not_met；4＋floor(3×0/3)=4</td><td>上限15；4</td><td>S01/S12；大额度支持流动性但不是无条件承诺资金</td></tr>
+<tr><td>资本配置／15<br><code>bounded</code></td><td>酌情政策与减派股息有解释；募集款改用途、关联权益和选择权延期需评估</td><td>候选档2/3：8–11或4–7</td><td>1 met / 1 unknown / 1 not_met；端点5–10</td><td>上限15；5–10</td><td>S01/S10/S11；不预判价值毁损、不另加隐性折扣</td></tr>
+<tr><td>回购质量／10<br><code>assessed</code></td><td>当前无执行计划；股数稳定、有条件新股风险另列</td><td>档2：5–7；中性/有限稀释</td><td>1 met / 2 unknown；5＋floor(2×1/3)=5</td><td>上限10；5</td><td>S01/S07/S10；无当时保守价值与压力资金证据，未给最高档</td></tr>
+<tr><td>三至五年可见性／10<br><code>bounded</code></td><td>存量气量可估；新业务、上缴、资本和派息兑现仍不确定</td><td>候选档2/3：5–7或2–4</td><td>0 met / 1 unknown / 2 not_met；原始2–5</td><td>示意DPS显式上限4；2–4</td><td>S01/S11–S13；不是因为未做模型而给最低0–1档</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="每模块三项核验按规则原顺序列示；unknown不等于公司失败。"><table class="wide-table"><caption>每模块三项核验按规则原顺序列示；unknown不等于公司失败。</caption><thead><tr><th scope="col">模块</th><th scope="col">检查1</th><th scope="col">检查2</th><th scope="col">检查3</th></tr></thead><tbody><tr><td>净股息率</td><td>unknown：没有证据支持的N与远期全现金比较</td><td>unknown：B未建立</td><td>unknown：N/P未建立</td></tr>
+<tr><td>五年稳定性</td><td>met：年度有现金支付且近期事件按公告时间线对应；非券商逐笔核验</td><td>unknown：没有完整五年匹配CPI的实收序列</td><td>not_met：逆风期间出现普通DPS下调，历史需混合融资</td></tr>
+<tr><td>现金覆盖</td><td>unknown：不能把未核实母公司能力当零或自动通过</td><td>not_met：五年实际现金代理最低明显小于1倍</td><td>unknown：缺承诺授信及同主体压力资金桥</td></tr>
+<tr><td>资产负债表</td><td>unknown：授信可见但24月可执行资金与承诺用途未闭合</td><td>unknown：未获得可验证的所有关键契约压力余量</td><td>not_met：计划仍需滚续融资，非完全内部资金覆盖</td></tr>
+<tr><td>资本配置</td><td>met：正式政策酌情，股息下调与资金/经营因素有解释</td><td>not_met：最新净借款现金增加、未见已实现的持续每股现金改善</td><td>unknown：关联收购/募集款改用途的持续股东回报待核</td></tr>
+<tr><td>回购质量</td><td>met：已发行、代息、当前无回购与奖励数量能对账</td><td>unknown：未建立各次执行当时保守价值证据</td><td>unknown：未来压力资金/资本计划尚不能闭合</td></tr>
+<tr><td>可见性</td><td>unknown：集团经营到现金可算，但母公司到DPS未闭合</td><td>not_met：第四、五年有界但不满足已获资金支持扩展</td><td>not_met：新业务15%激励目标不是已验证交付记录</td></tr></tbody></table></div>
+<div class="table-scroll" tabindex="0" role="region" aria-label="评分汇总不进行权重放大；缺失模块不使整份报告无法评分。"><table><caption>评分汇总不进行权重放大；缺失模块不使整份报告无法评分。</caption><thead><tr><th scope="col">指标</th><th scope="col">值</th><th scope="col">解释</th></tr></thead><tbody><tr><td>质量分</td><td>17–44 / 85（暂定）</td><td>六个非价格模块；quality_assessment.status=provisional，price_independent=true</td></tr>
+<tr><td>收息分</td><td>9 / 15（暂定）</td><td>6.56%当前普通收入代理，原始档2但显式上限9；不等于N</td></tr>
+<tr><td>综合</td><td>26–53 / 100；等级E–D（暂定）</td><td>没有取中点，没有把质量分填为综合分</td></tr>
+<tr><td>精确已评小计／权重</td><td>10分／40权重</td><td>不是10/40放大到100</td></tr>
+<tr><td>有界／缺失权重</td><td>40／20</td><td>缺失现金覆盖是区间最大来源；需母公司现金和正常化证据收窄</td></tr>
+<tr><td>总／质量／收入证据覆盖</td><td>80.00%／76.47%／100.00%</td><td>覆盖只描述研究证据范围，不描述质量、回报或置信度</td></tr>
+<tr><td>结构衰退等级上限／收割例外</td><td>均不适用</td><td>未作结构性衰退判断，也没有管理层有序退出政策</td></tr>
+<tr><td>可见性上限</td><td>4/10</td><td>未来DPS为illustrative；只在该模块执行一次</td></tr></tbody></table></div>
+<p>质量各分项区间：稳定性[1,1]、现金覆盖[0,20]、资产负债表[4,4]、资本配置[5,10]、回购[5,5]、可见性[2,4]。质量标量与综合标量为空是因为区间未收敛；收息区间[9,9]已收敛，保留标量9。<code>range_kind=rubric_bounds</code>，不存在另一个与总表不一致的“质量打分”。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="八项评级审计：每个标签都有判据和可观察的上/下调条件。"><table class="wide-table"><caption>八项评级审计：每个标签都有判据和可观察的上/下调条件。</caption><thead><tr><th scope="col">评级</th><th scope="col">本次标签</th><th scope="col">判据</th><th scope="col">证据</th><th scope="col">上调条件</th><th scope="col">下调条件</th></tr></thead><tbody><tr><td>股息质量</td><td>低（Low，暂定）</td><td>质量17–44/85两端均低于51；无额外评级降档</td><td>S01–S04、评分表</td><td>质量下界至少51且输入改善</td><td>派息/资本进一步恶化会降低对应模块</td></tr>
+<tr><td>股息安全</td><td>不明确（Unclear）</td><td>正常化母公司FAD及资金桥无法确认，不用会计盈利派息率替代</td><td>S01/S12</td><td>覆盖≥1且资金/资本证据支持Base才可Acceptable</td><td>证实持续失血/不可续借/上缴被阻则Weak并重跑否决</td></tr>
+<tr><td>预扣效率</td><td>高（High）</td><td>当前发行人0%预扣≤10%，不等于无费用</td><td>S05/S15</td><td>维持当前公告与托管链一致</td><td>新公告/托管处理出现实质扣税则重评</td></tr>
+<tr><td>回购质量</td><td>不适用（Not Applicable）</td><td>当前无执行计划；仍按已知每股纪律计5分</td><td>S01/S07/S10</td><td>有价值锚、实际注销及资金支持才可Good</td><td>融资压力下回购或持股持续被稀释则下调</td></tr>
+<tr><td>三年股息展望</td><td>高度不确定（High Uncertainty）</td><td>Base试算增长不满足已获资金支持条件，不能标Grow</td><td>S01、第11–13节</td><td>连续可兑现的现金/派息桥形成后按三年变化评估</td><td>进一步削减或缺口扩大</td></tr>
+<tr><td>基本面趋势</td><td>转型／高度不确定</td><td>气网存量仍有价值；接驳结构下降，新业务资本回收待证</td><td>S01/S11/S13</td><td>存量现金稳定且新投入改善每股现金</td><td>特许/定价或长期需求被破坏须重评Structural Decline</td></tr>
+<tr><td>预测置信度</td><td>低（Low，股息层）</td><td>有经营模型但母公司资金/未来回款和净融资关键范围未闭合</td><td>S01/S12</td><td>公开资料可界定并对账关键资金范围可升Medium</td><td>主要现金发动机或资本可达性失效可Not Forecastable</td></tr>
+<tr><td>组合角色</td><td>观察名单（Watchlist）</td><td>quality_safety_and_constraints；不可凭价格更低变Core</td><td>第14–15节</td><td>现金安全和行动门槛通过后重新审视非核心/周期角色</td><td>已证实不适配或重大损害才考虑Avoid</td></tr></tbody></table></div>
+<h3>17B. 证券角色与组合限制</h3>
+<p><strong>最终角色：观察名单（Watchlist）。</strong>依据是价格独立质量、分红安全和资金约束，不是按总分自动映射；<code>basis=quality_safety_and_constraints</code>，<code>price_alone_changes_role=false</code>。当前未通过关键资金门槛，不能用高股息率或低市净率解释为核心收息。不知道用户持仓及其他燃气、地产、RMB收入资产的暴露，不能声称本标的能分散组合风险。</p>
+<h3>17C. 持仓复评</h3>
+<p>持仓复评<code>action=review</code>、<code>portfolio_inputs_available=false</code>、<code>position_change_fraction=null</code>、<code>automatic_trade=false</code>。如已有持仓，股息削减和现金口径是证券层面的复评触发，不等于个人卖出指令；没有持仓不能虚构仓位。未知成本只影响税费等个别处理，不用“回本价”阻止前瞻复评。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="持仓复评触发不依赖买入成本或股价涨跌。"><table><caption>持仓复评触发不依赖买入成本或股价涨跌。</caption><thead><tr><th scope="col">类别</th><th scope="col">触发／证据</th><th scope="col">研究动作</th></tr></thead><tbody><tr><td>现金／资本</td><td>股息全现金权益不能被经常性及实际母公司能力覆盖，或续借/上缴受限</td><td>优先重建资金链，不因价格低而延后</td></tr>
+<tr><td>业务</td><td>接驳和回款持续差于已列Base，或顺价/特许发生结构变化</td><td>按持续/结构性影响重算五年经营与现金</td></tr>
+<tr><td>治理</td><td>关联权益条款导致已证实重大损害；不是仅有交易上限</td><td>采用同一控制人记录；触发否决时立即复评</td></tr>
+<tr><td>估值</td><td>本次没有有效N/成长值</td><td>不给自动减仓价；待估值恢复后再评前瞻机会成本</td></tr>
+<tr><td>组合／换仓</td><td>缺持股、资金规模、收入目标、相关敞口和同口径替代品</td><td>仓位和switch_analysis不评估，不虚构更好的替代证券</td></tr></tbody></table></div>
+<p>下一次复查：下一份集团中期业绩及现金/资本披露（预计通常在11月，正式日期截至本次未核定），或更早的再融资、派息、项目资金和关联交易重大公告。这是首次本次口径研究，没有可比的旧安全复评基准，不声称安全“维持/改善”。</p>
+</section>
+<section id="section-18"><h2>18. 来源、数据质量与边界</h2>
+<p class="takeaway">重要数值优先来自原始报表；二级页面只作交叉核对，矛盾不按对结论有利的方向选择。</p>
+<div class="table-scroll" tabindex="0" role="region" aria-label="关键跨来源/口径差异与处理。"><table><caption>关键跨来源/口径差异与处理。</caption><thead><tr><th scope="col">项目</th><th scope="col">观察到的差异</th><th scope="col">采用处理</th></tr></thead><tbody><tr><td>收入／归母净利</td><td>HKEX73.603933bn/2.719049bn；Stock Analysis73.60bn/2.72bn</td><td>舍入差均小于1%，采用HKEX原数</td></tr>
+<tr><td>价格／市值</td><td>腾讯5.335、29.06589bn；Stock Analysis舍入5.34但市值29.47bn</td><td>后者偏差约1.39%，约等于使用前收5.41；用同一时点价格×官方股数复算29.065895bn</td></tr>
+<tr><td>派息率</td><td>二级股息页面100.18%；最新归属股息与利润约70.13%</td><td>明确归属年度与全现金股数；采用官方金额复算，不混用TTM分子</td></tr>
+<tr><td>登记日</td><td>二级页面2026-08-26，官方2026-08-31</td><td>8月26日为递交过户截止，8月31日才是登记；依S05</td></tr>
+<tr><td>FCF</td><td>披露4,838.378与股东可支配现金不是同义</td><td>现金流表可复算为OCF＋净投资CF；另建利息/NCI/资本回收桥</td></tr>
+<tr><td>年报抽取</td><td>2026年报亮点页文本抽取存在数值与标签错位</td><td>按正式损益表、财务评述和现金流表交叉核，不据错位文本下结论</td></tr>
+<tr><td>期间／币种</td><td>FY截至3月；子公司半年截至6月且人民币、中国会计准则</td><td>单列更新，不加总到HKD集团财年，不误称合并半年报</td></tr>
+<tr><td>利率／通胀</td><td>HKMA API不可用；CPI公开端点一位小数与发布同比略不同</td><td>利率引用明确二级指示来源；购买力使用同基期实际公开指数，不混系列</td></tr></tbody></table></div>
+<p>信息丰富度：<strong>A（公开历史较丰富）</strong>，但可获得报表不等于每个法律实体的未来可分派现金都可知。已查阅四份集团年报、当前股息表、股东大会结果、8月股数、激励通函、最新关联交易及子公司更新，尝试官方利率及第三方交叉来源。资料不足集中于正常化/母公司资金、未来资本和经济FX，不扩大为“公司所有资料不足”，也不把研究覆盖度等同投资安全。</p>
+<p>事实：已披露的报表、股息、股数、债务与合同。假设：投资者税务场景、未来经营向量、70%观察比例延续、无新增股本基线和现金结算。判断：Low置信度、Unclear安全、暂停估值与Watchlist。未来DPS均属示意而非资金已证实预测；没有个人收入目标、持仓、券商费用或交易授权。</p>
+<article id="S01"><h3>S01 · China Gas Holdings Limited — Annual Report 2025/26</h3><p>披露／观察日期：2026-07-27。核心主源。PDF页9经营量；24–28管理层现金/融资讨论；53政策；73–79股权和关联交易；85–88资金用途/激励；104–106现金流；139–140分部；152股息；185–190借款/税；202–215风险；234–235母公司；237五年摘要。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0727/2026072700334.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2026/0727/2026072700334.pdf</a></p></article>
+<article id="S02"><h3>S02 · China Gas Holdings Limited — Annual Report 2024/25</h3><p>披露／观察日期：2025-07-29。PDF页101–103现金流，核对FY2024/FY2025；历史报表为双语，正文使用英文数值及当期中文定义。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2025/0729/2025072900101.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2025/0729/2025072900101.pdf</a></p></article>
+<article id="S03"><h3>S03 · China Gas Holdings Limited — Annual Report 2023/24</h3><p>披露／观察日期：2024-07-25。PDF页101–103现金流，核对FY2023/FY2024；年度股息0.50及此前0.50，不能将付款期间与归属年度混用。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2024/0725/2024072500657.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2024/0725/2024072500657.pdf</a></p></article>
+<article id="S04"><h3>S04 · China Gas Holdings Limited — Annual Report 2022/23</h3><p>披露／观察日期：2023-07-20。PDF页99–101现金流，核对FY2022/FY2023；FY2022融资、回购、股息及资本支出。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2023/0720/2023072000228.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2023/0720/2023072000228.pdf</a></p></article>
+<article id="S05"><h3>S05 · Cash Dividend Announcement — Final dividend for the year ended 31 March 2026</h3><p>披露／观察日期：2026-06-26。普通现金股息HKD0.20；除净8月25日，登记8月31日，10月2日付款；预扣税栏为Not applicable，无以股代息安排。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600437.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2026/0626/2026062600437.pdf</a></p></article>
+<article id="S06"><h3>S06 · Poll Results of the Annual General Meeting held on 21 August 2026</h3><p>披露／观察日期：2026-08-21。末期股息议案已通过；已发行股数5,448,152,741。已获授权回购不代表已执行。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0821/2026082100528.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2026/0821/2026082100528.pdf</a></p></article>
+<article id="S07"><h3>S07 · Monthly Return — Month Ended 31 August 2026</h3><p>披露／观察日期：2026-09-01。月末普通股5,448,152,741股、交易所定义库存股0；当月无增减。授权和未归属奖励不是已发行股份。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0901/2026090102305.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2026/0901/2026090102305.pdf</a></p></article>
+<article id="S08"><h3>S08 · 腾讯证券公开行情 — hk00384</h3><p>披露／观察日期：2026-09-25 10:20:58 HKT。本报告冻结的延迟盘中报价HKD5.335；前收5.410；市值约290.6589亿港元；股数与S07一致。该链接会随行情更新，不是历史快照服务。</p><p><a href="https://qt.gtimg.cn/q=hk00384" rel="noopener noreferrer">https://qt.gtimg.cn/q=hk00384</a></p></article>
+<article id="S09"><h3>S09 · Stock Analysis / S&amp;P Global Market Intelligence / Financial Modeling Prep</h3><p>披露／观察日期：2026-09-25。交叉核对收入73.60bn、归母净利2.72bn、约5.45bn股；盘中显示5.34为舍入值。页面市值29.47bn与前收价而非同屏盘中价一致，不混用。</p><p><a href="https://stockanalysis.com/quote/hkg/0384/" rel="noopener noreferrer">https://stockanalysis.com/quote/hkg/0384/</a></p></article>
+<article id="S10"><h3>S10 · Circular — Proposed Adoption of 2026 Share Award Scheme</h3><p>披露／观察日期：2026-06-04。新股来源、购买价、归属条件、信托股息权及监管审批；配合S01披露的独立股东批准。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0604/2026060402867.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2026/0604/2026060402867.pdf</a></p></article>
+<article id="S11"><h3>S11 · Continuing Connected Transactions — Biomass Gas Projects / Equipment</h3><p>披露／观察日期：2026-07-23。PDF页6年度上限、9–10关联持股和董事回避。上限不是已发生付款；集团内部合并抵销与对外少数权益分开。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0723/2026072301488.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2026/0723/2026072301488.pdf</a></p></article>
+<article id="S12"><h3>S12 · Financial information of Zhongran Investment — six months ended 30 June 2026</h3><p>披露／观察日期：2026-08-28。未审计、中国会计准则、仅一家子公司；人民币期末现金10.734亿元，半年现金减少6.842亿元，不等于上市母公司现金流。</p><p><a href="https://www.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082802862.pdf" rel="noopener noreferrer">https://www.hkexnews.hk/listedco/listconews/sehk/2026/0828/2026082802862.pdf</a></p></article>
+<article id="S13"><h3>S13 · Reuters / BOE Report — China Gas signs 20-year LNG import deal</h3><p>披露／观察日期：2026-09-14。新增每年0.5百万吨、2030年起20年，Venture Global合计长协2.5百万吨/年。交易对手官网访问失败，以Reuters转刊核对；价格、担保和转售收益未获完整合同。</p><p><a href="https://boereport.com/2026/09/14/china-gas-signs-20-year-lng-import-deal-with-us-based-venture-global/" rel="noopener noreferrer">https://boereport.com/2026/09/14/china-gas-signs-20-year-lng-import-deal-with-us-based-venture-global/</a></p></article>
+<article id="S14"><h3>S14 · Trading Economics — Hong Kong 10-Year Government Bond Yield</h3><p>披露／观察日期：2026-09-25。同日场外市场指示收益率4.03%，非与股价同步的可成交报价。HKMA官方API请求超时；保留二级来源和时间精度限制。</p><p><a href="https://tradingeconomics.com/hong-kong/government-bond-yield" rel="noopener noreferrer">https://tradingeconomics.com/hong-kong/government-bond-yield</a></p></article>
+<article id="S15"><h3>S15 · PwC Worldwide Tax Summaries — Bermuda, Withholding taxes</h3><p>披露／观察日期：2026-02-19（页面复核2026-09-25）。百慕达目前不对股息等支付征预扣税。实际事件以S05发行人说明优先；不将内地子公司上缴税重复扣在已宣告DPS上。</p><p><a href="https://taxsummaries.pwc.com/bermuda/corporate/withholding-taxes" rel="noopener noreferrer">https://taxsummaries.pwc.com/bermuda/corporate/withholding-taxes</a></p></article>
+<article id="S16"><h3>S16 · C&amp;SD — Consumer Price Indices for August 2025, Table 1</h3><p>披露／观察日期：2025-09-22。2019/20=100的综合消费物价指数109.0；并非CPI(C)107.5。</p><p><a href="https://gia.info.gov.hk/general/202509/22/P2025092200357_512004_1_1758525780658.pdf" rel="noopener noreferrer">https://gia.info.gov.hk/general/202509/22/P2025092200357_512004_1_1758525780658.pdf</a></p></article>
+<article id="S17"><h3>S17 · C&amp;SD — Consumer Price Indices for August 2026, Table 1</h3><p>披露／观察日期：2026-09-23。同基期综合消费物价指数110.8；公布同比1.7%使用未舍入底层数据。本报告从公开一位小数指数复算，差异如实披露。</p><p><a href="https://gia.info.gov.hk/general/202609/23/P2026092300316_557135_1_1790145693430.pdf" rel="noopener noreferrer">https://gia.info.gov.hk/general/202609/23/P2026092300316_557135_1_1790145693430.pdf</a></p></article>
+<article id="S18"><h3>S18 · Stock Analysis — China Gas Dividend History</h3><p>披露／观察日期：2026-09-25抓取；页面标注2026-09-24检查。付款日交叉核对：2024-10-04、2025-02-18、2025-10-09、2026-02-06；该页将2026登记日写8月26日、派息率写100.18%，与官方口径冲突，不采用。</p><p><a href="https://stockanalysis.com/quote/hkg/0384/dividend/" rel="noopener noreferrer">https://stockanalysis.com/quote/hkg/0384/dividend/</a></p></article>
+<p class="limitations">可复算不等于来源绝对无误，历史表现不保证未来派息。本报告为研究资料，不构成个性化投资、税务或法律建议。归档仅保存本基准日研究，不是在线行情、自动交易系统或收益回测。</p>
+</section>
+    </main>
+  </div>
+  <footer class="report-footer">
+    <p>本报告为研究资料，不构成个性化投资、税务或法律建议。结论受数据截止日、已列假设与证据限制约束。</p>
+  </footer>
+</body>
+</html>

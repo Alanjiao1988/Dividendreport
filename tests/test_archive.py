@@ -51,6 +51,20 @@ class ArchiveTests(unittest.TestCase):
         self.write_report(entry)
         return entry
 
+    def use_v25_html(self, content='<p>Price: HK$<strong>4.78</strong>.</p>'):
+        entry = self.entries[1]
+        old_path = self.root / entry['path']
+        entry['ruleset'] = '2.5'
+        entry['score'] = '71-81 / B (provisional)'
+        entry['path'] = Path(entry['path']).with_suffix('.html').as_posix()
+        self.write_report(entry)
+        path = self.root / entry['path']
+        metadata = path.read_text(encoding='utf8').split('-->', 1)[0] + '-->'
+        path.write_text('<!doctype html><html><head><meta charset="UTF-8"></head>'
+                        f'<body>{metadata}{content}</body></html>', encoding='utf8')
+        old_path.unlink()
+        return entry
+
     def write_views(self):
         (self.root / 'reports/index.json').write_text(json.dumps(self.entries), encoding='utf8')
         for relative, text in rendered_files(self.entries).items():
@@ -173,3 +187,70 @@ class ArchiveTests(unittest.TestCase):
         self.write_views()
         self.assertEqual(validate_archive(self.root), [])
         self.assertIn('pre-2.2 0 份、2.2 1 份、2.4 1 份', rendered_files(self.entries)['README.md'])
+
+    def test_v25_html_preserves_markdown_predecessor_and_score_range(self):
+        entry = self.use_v25_html()
+        self.write_views()
+        self.assertEqual(validate_archive(self.root), [])
+        self.assertIn('HTML报告（下载后打开）', rendered_files(self.entries)['README.md'])
+        self.assertIn('71-81 / B (provisional)', rendered_files(self.entries)['reports/0316.HK/README.md'])
+        self.assertTrue((self.root / entry['supersedes']).is_file())
+
+    def test_html_evidence_decodes_entities_and_normalizes_whitespace(self):
+        self.use_v25_html('<p>Price:&#32;HK$<strong>4.78</strong>.\n</p>')
+        self.assertEqual(validate_entries(self.entries, self.root), [])
+
+    def test_html_evidence_cannot_come_from_comments_scripts_or_attributes(self):
+        for content in ('<!-- Price: HK$4.78. -->', '<script>Price: HK$4.78.</script>',
+                        '<style>/* Price: HK$4.78. */</style>',
+                        '<p title="Price: HK$4.78.">Nothing</p>'):
+            with self.subTest(content=content):
+                entry = self.entries[1]
+                if entry['path'].endswith('.html'):
+                    entry['path'] = Path(entry['path']).with_suffix('.md').as_posix()
+                    self.write_report(entry)
+                self.use_v25_html(content)
+                self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_html_evidence_cannot_come_from_explicitly_hidden_content(self):
+        for attribute in ('hidden', 'aria-hidden="true"', 'inert',
+                          'style="display: none"', 'style="visibility: hidden !important;"'):
+            with self.subTest(attribute=attribute):
+                entry = self.entries[1]
+                if entry['path'].endswith('.html'):
+                    entry['path'] = Path(entry['path']).with_suffix('.md').as_posix()
+                    self.write_report(entry)
+                self.use_v25_html(f'<div {attribute}><p>Price: HK$4.78.</p></div>')
+                self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_html_metadata_and_utf8_remain_required(self):
+        entry = self.use_v25_html()
+        path = self.root / entry['path']
+        text = path.read_text(encoding='utf8')
+        path.write_text(text.replace('charset="UTF-8"', 'charset="ASCII"'), encoding='utf8')
+        self.assertTrue(any('UTF-8' in e for e in validate_entries(self.entries, self.root)))
+        path.write_text(text.replace('ruleset: 2.5', 'ruleset: 2.4'), encoding='utf8')
+        self.assertTrue(any('metadata' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_unindexed_html_is_detected(self):
+        (self.root / 'reports/0316.HK/unindexed.html').write_text('<html></html>', encoding='utf8')
+        self.assertTrue(any('missing from index' in e for e in validate_archive(self.root)))
+
+    def test_v25_score_ranges_have_order_and_provisional_label(self):
+        entry = self.use_v25_html()
+        for score in ('81-71 / B (provisional)', '71-81 / B',
+                      '40-71 / B-D (provisional)', '71 / D-B (provisional)'):
+            with self.subTest(score=score):
+                entry['score'] = score
+                self.assertTrue(validate_entries(self.entries, self.root))
+        entry['score'] = '40-71 / D-B (provisional)'
+        self.assertEqual(validate_entries(self.entries, self.root), [])
+
+    def test_v25_still_requires_summary_evidence(self):
+        entry = self.use_v25_html()
+        entry['summary_evidence'] = []
+        self.assertTrue(any('transcription evidence' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_legacy_score_format_is_not_silently_migrated(self):
+        self.entries[0]['score'] = '71-81 / B (provisional)'
+        self.assertTrue(validate_entries(self.entries, self.root))

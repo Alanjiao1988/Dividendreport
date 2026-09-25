@@ -7,12 +7,87 @@ import re
 import unicodedata
 from collections import defaultdict
 from datetime import datetime
+from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 from jsonschema import Draft202012Validator, FormatChecker
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+class ReportText(HTMLParser):
+    """Extract static report text, excluding non-content and explicitly hidden nodes."""
+
+    VOID_TAGS = {'area', 'base', 'br', 'col', 'embed', 'hr', 'img', 'input',
+                 'link', 'meta', 'param', 'source', 'track', 'wbr'}
+    BLOCK_TAGS = {'address', 'article', 'aside', 'blockquote', 'br', 'caption',
+                  'dd', 'div', 'dl', 'dt', 'figcaption', 'figure', 'footer',
+                  'h1', 'h2', 'h3', 'h4', 'header', 'hr', 'li', 'main', 'nav',
+                  'ol', 'p', 'pre', 'section', 'table', 'td', 'th', 'tr', 'ul'}
+    OMIT_TAGS = {'head', 'script', 'style', 'template', 'noscript'}
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.stack = []
+        self.parts = []
+        self.has_html = False
+        self.has_body = False
+        self.has_utf8 = False
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        self.has_html |= tag == 'html'
+        self.has_body |= tag == 'body'
+        self.has_utf8 |= tag == 'meta' and (attrs.get('charset') or '').lower() in ('utf-8', 'utf8')
+        style = re.sub(r'\s+', '', attrs.get('style') or '').lower()
+        hidden = (bool(self.stack and self.stack[-1][1]) or tag in self.OMIT_TAGS
+                  or 'hidden' in attrs or 'inert' in attrs
+                  or (attrs.get('aria-hidden') or '').lower() == 'true'
+                  or re.search(r'(?:^|;)(?:display:none|visibility:hidden)(?:!important)?(?:;|$)', style))
+        if not hidden and tag in self.BLOCK_TAGS:
+            self.parts.append(' ')
+        if tag not in self.VOID_TAGS:
+            self.stack.append((tag, bool(hidden)))
+
+    def handle_startendtag(self, tag, attrs):
+        self.handle_starttag(tag, attrs)
+        if tag not in self.VOID_TAGS:
+            self.handle_endtag(tag)
+
+    def handle_endtag(self, tag):
+        if tag in self.BLOCK_TAGS and not (self.stack and self.stack[-1][1]):
+            self.parts.append(' ')
+        for index in range(len(self.stack) - 1, -1, -1):
+            if self.stack[index][0] == tag:
+                del self.stack[index:]
+                break
+
+    def handle_data(self, data):
+        if not (self.stack and self.stack[-1][1]):
+            self.parts.append(data)
+
+    @property
+    def text(self):
+        return ' '.join(''.join(self.parts).split())
+
+
+def score_errors(score):
+    if score == 'Not assessed':
+        return []
+    match = re.fullmatch(r'(\d+)(?:-(\d+))? / ([A-E])(?:-([A-E]))?( \(provisional\))?', score)
+    if not match:
+        return ['invalid score format']
+    low, high, worst, best, provisional = match.groups()
+    errors = []
+    if high is not None:
+        if int(low) >= int(high):
+            errors.append('score interval must have increasing distinct endpoints')
+        if not provisional:
+            errors.append('score interval must be labelled provisional')
+    if best is not None and (high is None or worst <= best):
+        errors.append('grade interval must run from worst to best and accompany a score interval')
+    return errors
 
 
 def plain(text):
@@ -48,10 +123,20 @@ def validate_entries(entries, root=ROOT):
         if entry['path'] in paths:
             errors.append(f'{label}: duplicate report path')
         paths.add(entry['path'])
-        if relative.parent.as_posix() != f"reports/{entry['ticker']}" or not relative.name.startswith(entry['as_of_date'] + '-') or not relative.name.endswith('-' + entry['ticker'] + '.md'):
+        if relative.parent.as_posix() != f"reports/{entry['ticker']}" or not relative.name.startswith(entry['as_of_date'] + '-') or not relative.stem.endswith('-' + entry['ticker']):
             errors.append(f'{label}: report path disagrees with ticker/date')
         groups[entry['ticker']].append(entry)
         text = path.read_text(encoding='utf-8')
+        evidence_text = text
+        is_html = relative.suffix == '.html'
+        if is_html:
+            document = ReportText()
+            document.feed(text)
+            if not (document.has_html and document.has_body and document.has_utf8):
+                errors.append(f'{label}: HTML report requires html/body elements and a UTF-8 charset declaration')
+            evidence_text = document.text
+        if entry['ruleset'] == '2.5':
+            errors.extend(f'{label}: {error}' for error in score_errors(entry['score']))
         metadata = re.search(r'<!--\s*dividend-report-meta\s*\n(.*?)-->', text, re.S)
         if not metadata:
             # An optional block would let a report silently skip every metadata cross-check.
@@ -75,7 +160,8 @@ def validate_entries(entries, root=ROOT):
             errors.append(f'{label}: damaged monetary literal in summary')
         for evidence in entry['summary_evidence']:
             excerpt, value = evidence['source_excerpt'], evidence['value']
-            if excerpt not in text:
+            normalized_excerpt = ' '.join(excerpt.split()) if is_html else excerpt
+            if normalized_excerpt not in evidence_text:
                 errors.append(f'{label}: evidence excerpt is absent from archived report')
             if not contains_value(excerpt, value) or not contains_value(entry['summary'], value):
                 errors.append(f'{label}: evidence value is inconsistent with source/summary')
@@ -109,7 +195,8 @@ def validate_archive(root=ROOT):
             if not target.is_relative_to(root) or not target.is_file():
                 errors.append(f'{relative}: missing or unsafe local link {angle or ordinary}')
     indexed = {e['path'] for e in entries}
-    actual = {p.relative_to(root).as_posix() for p in (root / 'reports').glob('*/*.md') if p.name != 'README.md'}
+    actual = {p.relative_to(root).as_posix() for p in (root / 'reports').glob('*/*')
+              if p.is_file() and p.suffix in ('.md', '.html') and p.name != 'README.md'}
     for orphan in sorted(actual - indexed):
         errors.append(f'{orphan}: archived report missing from index')
     return errors

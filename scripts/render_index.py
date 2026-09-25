@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-RULESET_NOTE = {'pre-2.2': 'pre-2.2', '2.2': '2.2', '2.4': '2.4'}
+RULESET_NOTE = {'pre-2.2': 'pre-2.2', '2.2': '2.2', '2.4': '2.4', '2.5': '2.5'}
 PROVENANCE_NOTE = {'original_unverified': '原文摘要', 'repaired_with_evidence': '附证据'}
 
 
@@ -36,6 +36,7 @@ def rendered_files(entries):
         f'归档含 **{len(entries)} 份报告、{len(groups)} 个不同标的**；同一标的的多个版本不构成独立样本。', '',
         '以下为各报告基准日的历史结论。价格、税务、评分与买入区间未因本次归档整理而重新研究；旧版 Fair / Strong Buy 等标签沿用原文，不代表当前建议。', '',
         '索引以 [reports/index.json](reports/index.json) 为唯一维护入口；本页及各标的 README 由本地工具生成。', '',
+        'HTML 报告为可离线阅读的单文件；GitHub 文件页可能显示源码，请下载后用浏览器打开。归档不启用在线托管。', '',
         '[发布契约与验证方式](PUBLISHING.md) · [规则版本迁移说明](MIGRATION.md) · [历史修复依据](ARCHIVE-REPAIRS.md)', '',
         f'规则版本：**{ruleset_counts}**。pre-2.2 报告的所需收益率来自已退役的行业预设表，且只做三年预测，不满足现行五年展望要求；其区间与标签不构成当前结论，差异见 [MIGRATION.md](MIGRATION.md)。', '',
         f'摘要证据覆盖：**{evid} / {len(entries)}** 份附原文数字摘录；其余 {len(entries) - evid} 份保留原作者摘要，未逐项核验。', '',
@@ -44,7 +45,8 @@ def rendered_files(entries):
         '|---|---|---|---|---|---|---|',
     ]
     for e in ordered:
-        row=[e['as_of_date'],e['company'],e['ticker'],e['exchange'],f"[报告](<{e['path']}>)",ruleset_cell(e),e['summary']]
+        label = 'HTML报告（下载后打开）' if Path(e['path']).suffix == '.html' else '报告'
+        row=[e['as_of_date'],e['company'],e['ticker'],e['exchange'],f"[{label}](<{e['path']}>)",ruleset_cell(e),e['summary']]
         root.append('| ' + ' | '.join(map(cell,row)) + ' |')
     latest=max(entries,key=lambda e:datetime.fromisoformat(e['published_at']))['published_at']
     root.extend(['', f'最近报告声明发布时间 / Latest author-declared publication timestamp: {latest}', '',
