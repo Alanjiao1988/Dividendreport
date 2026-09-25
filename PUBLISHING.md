@@ -5,9 +5,9 @@
 每条记录须包含 `as_of_date`、`ticker`、`company`、`exchange`、`path`、`summary`、`score`、`portfolio_role`、`published_at`、`ruleset`、`summary_provenance` 和 `summary_evidence`。评分使用 `75 / B` 形式，等级范围 A–E；无法评估时使用 `Not assessed`。发布日期带时区，数据基准日不随修复更新。
 
 
-`ruleset` 记录报告产生时的规则版本：`pre-2.2`、`2.2` 或 `2.4`。不得为通过归档校验而降低报告规则版本。技能 v2.2 变更了所需收益率推导、预测期长度、收息区间标签、保险行业现金口径与以股代息口径，因此 `pre-2.2` 报告的区间、标签与 veto 结论不得当作当前判断复用；v2.4 的价格独立质量评分等记录及归档兼容说明见 [MIGRATION.md](MIGRATION.md)。
+`ruleset` 记录报告产生时的规则版本：`pre-2.2`、`2.2`、`2.3` 或 `2.4`。不得为通过归档校验而降低或冒用报告规则版本。技能 v2.2 变更了所需收益率推导、预测期长度、收息区间标签、保险行业现金口径与以股代息口径，因此 `pre-2.2` 报告的区间、标签与 veto 结论不得当作当前判断复用；v2.3 标记兼容及 v2.4 的价格独立质量评分等说明见 [MIGRATION.md](MIGRATION.md)。
 
-`summary_provenance` 取 `original_unverified` 或 `repaired_with_evidence`。前者保留原作者摘要文字，允许 `summary_evidence` 为空数组——这是显式记录的豁免，不代表内容已核实；后者必须附非空 `summary_evidence`。以 `ruleset: 2.2` 或 `2.4` 发布的新报告必须为 `repaired_with_evidence`。
+`summary_provenance` 取 `original_unverified` 或 `repaired_with_evidence`。前者保留原作者摘要文字，允许 `summary_evidence` 为空数组——这是显式记录的豁免，不代表内容已核实；后者必须附非空 `summary_evidence`。以 `ruleset: 2.2`、`2.3` 或 `2.4` 发布的新报告必须为 `repaired_with_evidence`。
 
 每份报告正文开头须有 `dividend-report-meta` 注释块，字段 `ticker`、`company`、`exchange`、`as_of_date`、`published_at`、`ruleset` 与索引一致；索引有 `supersedes` 时注释块须给出相同值，索引没有时注释块也不得出现该字段。缺少注释块会使全部元数据交叉核对失效，因此验证器将其视为错误而非跳过。
 
@@ -32,4 +32,4 @@ python -X utf8 -m unittest discover -s tests -v
 
 生成器先校验索引，再同步根 README 和全部 ticker README；不修改报告正文。验证器只读检查字段、日期、路径、版本链、已记录数字证据及导航一致性。提交前检查差异，确认没有意外更新投资结论。新报告按用户授权发布；历史修复不能充当收益回测或新版本技能的分析结果。
 
-Markdown 报告可在 GitHub 文件页直接阅读。本地发布不需要 GitHub Actions、GitHub Pages 或其他托管；推送与合并只针对获授权的仓库和分支，并在完成后核对远端提交、报告与索引。
+Markdown 报告可在 GitHub 文件页直接阅读。用户要求 HTML 时，可由同一正文生成独立离线文件交付；索引仍归档 Markdown，不以 HTML 替换规范路径。本地发布不需要 GitHub Actions、GitHub Pages 或其他托管；推送与合并只针对获授权的仓库和分支，并在完成后核对远端提交、报告与索引。

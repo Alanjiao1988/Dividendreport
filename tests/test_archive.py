@@ -143,7 +143,7 @@ class ArchiveTests(unittest.TestCase):
         self.assertEqual(validate_archive(self.root), [])
         views = rendered_files(self.entries)
         self.assertIn(f"[报告](<{entry['path']}>)", views['README.md'])
-        self.assertIn('pre-2.2 1 份、2.2 0 份、2.4 1 份', views['README.md'])
+        self.assertIn('pre-2.2 1 份、2.2 0 份、2.3 0 份、2.4 1 份', views['README.md'])
         self.assertIn('Not assessed', views['reports/0316.HK/README.md'])
         self.assertIn(Path(self.entries[0]['path']).name, views['reports/0316.HK/README.md'])
         self.assertTrue((self.root / self.entries[0]['path']).is_file())
@@ -172,4 +172,36 @@ class ArchiveTests(unittest.TestCase):
         self.use_v24()
         self.write_views()
         self.assertEqual(validate_archive(self.root), [])
-        self.assertIn('pre-2.2 0 份、2.2 1 份、2.4 1 份', rendered_files(self.entries)['README.md'])
+        self.assertIn('pre-2.2 0 份、2.2 1 份、2.3 0 份、2.4 1 份', rendered_files(self.entries)['README.md'])
+
+    def test_v23_preserves_metadata_evidence_and_version_chain(self):
+        entry = self.entries[1]
+        entry['ruleset'] = '2.3'
+        entry['score'] = 'Not assessed'
+        self.write_report(entry)
+        self.write_views()
+        self.assertEqual(validate_archive(self.root), [])
+        self.assertIn('pre-2.2 1 份、2.2 0 份、2.3 1 份、2.4 0 份',
+                      rendered_files(self.entries)['README.md'])
+        entry['summary_evidence'][0]['source_excerpt'] = 'Price: HK$999.'
+        self.assertTrue(any('excerpt' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_v23_requires_evidence_and_matching_ruleset(self):
+        entry = self.entries[1]
+        entry['ruleset'] = '2.3'
+        self.assertTrue(any('index ruleset' in e for e in validate_entries(self.entries, self.root)))
+        self.write_report(entry)
+        entry['summary_provenance'] = 'original_unverified'
+        entry['summary_evidence'] = []
+        self.assertTrue(any('current ruleset' in e for e in validate_entries(self.entries, self.root)))
+        entry['summary_provenance'] = 'repaired_with_evidence'
+        self.assertTrue(any('transcription evidence' in e for e in validate_entries(self.entries, self.root)))
+
+    def test_v23_and_v24_counts_are_not_combined(self):
+        self.entries[0]['ruleset'] = '2.3'
+        self.write_report(self.entries[0])
+        self.use_v24()
+        self.write_views()
+        self.assertEqual(validate_archive(self.root), [])
+        self.assertIn('pre-2.2 0 份、2.2 0 份、2.3 1 份、2.4 1 份',
+                      rendered_files(self.entries)['README.md'])
