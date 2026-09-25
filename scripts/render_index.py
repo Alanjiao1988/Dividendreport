@@ -10,7 +10,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
-RULESET_NOTE = {'pre-2.2': 'pre-2.2', '2.2': '2.2', '2.4': '2.4'}
+RULESET_NOTE = {'pre-2.2': 'pre-2.2', '2.2': '2.2', '2.3': '2.3', '2.4': '2.4'}
 PROVENANCE_NOTE = {'original_unverified': '原文摘要', 'repaired_with_evidence': '附证据'}
 
 

@@ -1,5 +1,55 @@
 [
   {
+    "as_of_date": "2026-09-25",
+    "ticker": "2388.HK",
+    "company": "中银香港 BOC Hong Kong (Holdings) Limited",
+    "exchange": "HKEX",
+    "path": "reports/2388.HK/2026-09-25-中银香港-BOC-Hong-Kong-2388.HK.md",
+    "summary": "观察名单（Watchlist）：2026-09-25收盘HK$51.15；按0%预扣情景，付款日TTM普通净息率4.72%，含特别息5.19%，FY2025普通股息对应4.15%。TTM跨入五次普通付款，特别息不作常态。盈利及资本基础较强，但前瞻监管缓冲、母公司可用现金与上缴日程未闭合；五年股息路径仅示意，暂停正常化股息、买入区间及总分。",
+    "score": "Not assessed",
+    "portfolio_role": "Watchlist",
+    "published_at": "2026-09-25T19:00:53+08:00",
+    "ruleset": "2.3",
+    "summary_provenance": "repaired_with_evidence",
+    "supersedes": "reports/2388.HK/2026-07-03-中银香港-BOC-Hong-Kong-2388.HK.md",
+    "publication_provenance": {
+      "kind": "report_metadata",
+      "note": "研究截止2026-09-25 18:39香港时间，报价为当日收市参考。此为作者声明的报告发布时间，不是独立验证的推送时间。HTML由同一Markdown正文生成并作为会话离线文件交付；规范归档仍为Markdown。当前加载技能使用2.3，不冒用2.4或降低至旧版本。"
+    },
+    "summary_evidence": [
+      {
+        "field": "reference_close_hkd",
+        "value": "51.15",
+        "source_excerpt": "| HK$51.15 | 4.72% | 5.19% | 4.15% | 暂不给出（资金证据不足） | 观察名单 |"
+      },
+      {
+        "field": "ttm_ordinary_net_yield_before_fees",
+        "value": "4.72%",
+        "source_excerpt": "| HK$51.15 | 4.72% | 5.19% | 4.15% | 暂不给出（资金证据不足） | 观察名单 |"
+      },
+      {
+        "field": "ttm_net_yield_including_special_before_fees",
+        "value": "5.19%",
+        "source_excerpt": "| HK$51.15 | 4.72% | 5.19% | 4.15% | 暂不给出（资金证据不足） | 观察名单 |"
+      },
+      {
+        "field": "latest_fy_ordinary_yield_not_normalized",
+        "value": "4.15%",
+        "source_excerpt": "| HK$51.15 | 4.72% | 5.19% | 4.15% | 暂不给出（资金证据不足） | 观察名单 |"
+      },
+      {
+        "field": "withholding_research_scenario",
+        "value": "0%",
+        "source_excerpt": "研究假设为香港税务居民个人、非港股通普通券商账户、普通现金股息，采用**0%香港预扣**；这不是对用户身份或券商实收的认定，费用与支付替代股息另行核实。[税务依据][tax]"
+      },
+      {
+        "field": "portfolio_role",
+        "value": "Watchlist",
+        "source_excerpt": "行动：观察，暂停买点 ｜ 预测可信度：低（前瞻股息）｜ 红利陷阱：待确认 ｜ 评分：暂不评估 ｜ 组合角色：观察名单（Watchlist）"
+      }
+    ]
+  },
+  {
     "as_of_date": "2026-09-12",
     "ticker": "0101.HK",
     "company": "恒隆地产 Hang Lung Properties Limited",
